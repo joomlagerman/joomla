@@ -1,4 +1,4 @@
-/* $Id: de_dlg.js 484 2009-06-24 10:44:43Z sisko1990 $ */
+/* $Id$ */
 
 tinyMCE.addI18n('de.xhtmlxtras_dlg',{
 attribute_label_title:"Titel",

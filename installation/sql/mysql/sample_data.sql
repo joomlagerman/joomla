@@ -1,4 +1,4 @@
-# $Id: sample_data.sql 476 2009-05-16 19:25:01Z sisko1990 $
+# $Id$
 #
 # Anmerkung: Alle SQL-Skripte müssen als UTF-8 gespeichert werden - Kein BOM!
 #

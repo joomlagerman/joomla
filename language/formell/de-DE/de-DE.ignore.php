@@ -1,6 +1,6 @@
 <?php
 /**
-* @version		$Id: de-DE.ignore.php 413 2008-12-24 13:25:16Z sisko1990 $
+* @version		$Id$
 * @package		Joomla
 * @copyright	Copyright (C) 2005 - 2009 Open Source Matters. All rights reserved.
 * @license		GNU/GPL, see LICENSE.php

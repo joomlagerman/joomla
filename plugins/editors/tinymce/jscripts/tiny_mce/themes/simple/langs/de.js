@@ -1,4 +1,4 @@
-/* $Id: de.js 484 2009-06-24 10:44:43Z sisko1990 $ */
+/* $Id$ */
 
 tinyMCE.addI18n('de.simple',{
 bold_desc:"Fett (Strg+B)",

@@ -1,5 +1,5 @@
 <?php
-/* $Id: de.php 484 2009-06-24 10:44:43Z sisko1990 $ */
+/* $Id$ */
 /*
 TinyBrowser 1.41 - A TinyMCE file browser (C) 2008  Bryn Jones
 Language 'de'

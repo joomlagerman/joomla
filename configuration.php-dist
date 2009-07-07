@@ -1,0 +1,106 @@
+<?php
+/**
+* @version		$Id: configuration.php-dist 459 2009-03-11 19:40:22Z sisko1990 $
+* @package		Joomla
+* @copyright	Copyright (C) 2005 - 2009 Open Source Matters. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* Joomla! is free software and parts of it may contain or be derived from the
+* GNU General Public License or other free or open source software licenses.
+* See COPYRIGHT.php for copyright notices and details.
+*
+* -------------------------------------------------------------------------
+* DIESES SOLLTE NUR ALS LETZTE MÖGLICHKEIT BENUTZT WERDEN, WENN DER INSTALLER FEHLSCHLÄGT
+*
+* Wenn Sie Joomla! manuell installieren, z.B. nicht über den Web-Installer, 
+* dannt benennen Sie diese Datei in configuration.php um, z.B.
+*
+* UNIX -> mv configuration.php-dist configuration.php
+* Windows -> rename configuration.php-dist configuration.php
+*
+* Ab hier können Sie die Datei und die Parameter Ihrer Site und Datenbank 
+* konfigurieren.
+*/
+class JConfig {
+	/**
+	* -------------------------------------------------------------------------
+	* Bereich: Konfiguration der Webseite
+	* -------------------------------------------------------------------------
+	*/
+	/* Seiten-Einstellungen */
+	var $offline = '0';
+	var $offline_message = 'Diese Website ist wegen technischer Wartung vorübergehend nicht verfügbar.<br /> Bitte versuchen Sie es später wieder.';
+	var $sitename        = 'Joomla!';			 // Name der Joomla!-Site
+	var $editor          = 'tinymce';
+	var $list_limit      = '20';
+	var $legacy          = '0';
+	
+	/**
+	* -------------------------------------------------------------------------
+	* Bereich: Konfiguration der Datenbank
+	* -------------------------------------------------------------------------
+	*/
+	/* Datenbank-Einstellungen */
+	var $dbtype          = 'mysql';					// Normalerweise: mysql
+	var $host            = 'localhost';			// Normalerweise: localhost
+	var $user            = '';						  // MySQL Benutezrname
+	var $password        = '';						  // MySQL Passwort
+	var $db              = '';							// MySQL Datenbankname
+	var $dbprefix        = 'jos_';					// Nicht ändern, wenn nicht zwingend nötig!
+	
+	/* Server-Einstellungen */
+	var $secret          = 'FBVtggIk5lAzEU9H'; // In etwas sicheres ändern
+	var $gzip            = '0';
+	var $error_reporting = '-1';
+	var $helpurl         = 'http://help.joomla.org';
+	var $xmlrpc_server   = '1';
+	var $ftp_host        = '';
+	var $ftp_port        = '';
+	var $ftp_user        = '';
+	var $ftp_pass        = '';
+	var $ftp_root        = '';
+	var $ftp_enable      = '';
+	var $tmp_path	       = '/tmp';
+	var $log_path	       = '/var/logs';
+	var $offset          = '0';
+	var $live_site       = ''; 					    // Optional; Vollständige URL zur Joomla!-Installation.
+	
+	/* Session-Einstellungen */
+	var $lifetime        = '15';					  // Session time
+	var $session_handler = 'database';
+	
+	/* E-Mail-Einstellungen */
+	var $mailer          = 'mail';
+	var $mailfrom        = '';
+	var $fromname        = '';
+	var $sendmail        = '/usr/sbin/sendmail';
+	var $smtpauth        = '0';
+	var $smtpuser        = '';
+	var $smtppass        = '';
+	var $smtphost        = 'localhost';
+	
+	/* Cache-Einstellungen */
+	var $caching         = '0';
+	var $cachetime       = '15';
+	var $cache_handler   = 'file';
+
+	/* Debug-Einstellungen */
+	var $debug           = '0';
+	var $debug_db        = '0';
+	var $debug_lang      = '0';
+	
+	/* Meta-Einstellungen */
+	var $MetaDesc        = 'Joomla! - Dynamische Portal-Engine und Content-Management-System';
+	var $MetaKeys        = 'joomla, Joomla';
+	var $MetaTitle       = '1';
+	var $MetaAuthor      = '1';
+	
+	/* SEO-Einstellungen */
+	var $sef             = '0';
+	var $sef_rewrite     = '0';
+	var $sef_suffix      = '';
+				
+	/* Feed-Einstellungen */
+	var $feed_limit      = 10;
+	var $feed_email      = 'author';
+}
+?>

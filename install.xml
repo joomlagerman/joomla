@@ -3,8 +3,8 @@
 <install type="language" version="1.5" client="both" method="upgrade">
   <name>German (Germany-Switzerland-Austria)</name>
 	<tag>de-DE</tag>
-	<version>1.5.13.1</version>
-	<creationDate>--.--.2009</creationDate>
+	<version>1.5.12.2</version>
+	<creationDate>19.07.2009</creationDate>
 	<author>J!German</author>
 	<authorEmail>info@jgerman.de</authorEmail>
 	<authorUrl>http://www.jgerman.de</authorUrl>
@@ -17,7 +17,7 @@
 		    <td width="100%" colspan="2">
 		      <div align="center">
 		        <h3>Die gerade installierte Übersetzung ist:</h3>
-		        <img border="0" src="http://versioncheck.jgerman.de/lang/1.5.13.1/middle" alt="Wahrscheinlich ist ein Fehler aufgetreten!" />
+		        <img border="0" src="http://versioncheck.jgerman.de/lang/1.5.12.2/middle" alt="Wahrscheinlich ist ein Fehler aufgetreten!" />
 		      </div>
 		      <hr />
 		    </td>
@@ -28,7 +28,7 @@
 	    </tr>
 	    <tr>
 		    <td width="18%"><u><b>Bereich:</b></u></td>
-		    <td width="80%">Administrator (Backend) und Site (Frontend)</td>
+		    <td width="80%">Administrator (Backend) und Website (Frontend)</td>
 	    </tr>
 	    <tr>
 		    <td width="18%"><u><b>Autor:</b></u></td>
@@ -36,11 +36,11 @@
 	    </tr>
 	    <tr>
 		    <td width="18%"><u><b>Website:</b></u></td>
-		    <td width="80%"><a target="_blank" href="http://www.jgerman.de">http://www.jgerman.de</a></td>
+		    <td width="80%"><a href="http://www.jgerman.de" target="_blank">http://www.jgerman.de</a></td>
 	    </tr>
 	    <tr>
 		    <td width="18%"><u><b>&Uuml;bersetzungsversion:</b></u></td>
-		    <td width="80%">1.5.13.1</td>
+		    <td width="80%">1.5.12v2</td>
 	    </tr>
 	    <tr>
 		    <td width="100%" colspan="2">

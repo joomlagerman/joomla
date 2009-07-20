@@ -51,7 +51,7 @@ class JConfig {
 	var $secret          = 'FBVtggIk5lAzEU9H'; // In etwas sicheres ändern
 	var $gzip            = '0';
 	var $error_reporting = '-1';
-	var $helpurl         = 'http://help.joomla.org';
+	var $helpurl         = 'http://hilfe.jgerman.de';
 	var $xmlrpc_server   = '1';
 	var $ftp_host        = '';
 	var $ftp_port        = '';
@@ -63,9 +63,10 @@ class JConfig {
 	var $log_path	       = '/var/logs';
 	var $offset          = '0';
 	var $live_site       = ''; 					    // Optional; Vollständige URL zur Joomla!-Installation.
+	var $force_ssl       = 0;		            // Zwingt bestimmte Bereiche zu einer SSL-Verschlüsselung. 0 = Kein Bereich, 1 = Administrator, 2 = Beide Bereiche (Site und Administrator)
 	
 	/* Session-Einstellungen */
-	var $lifetime        = '15';					  // Session time
+	var $lifetime        = '15';					  // Session-Zeit
 	var $session_handler = 'database';
 	
 	/* E-Mail-Einstellungen */

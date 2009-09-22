@@ -489,7 +489,7 @@ INSERT INTO `#__modules` VALUES (12, 'Admin-Menü','', 1,'menu', 0,'0000-00-00 0
 INSERT INTO `#__modules` VALUES (13, 'Admin-Untermenü','', 1,'submenu', 0,'0000-00-00 00:00:00', 1,'mod_submenu', 0, 2, 1, '', 0, 1, '');
 INSERT INTO `#__modules` VALUES (14, 'Benutzerstatus','', 1,'status', 0,'0000-00-00 00:00:00', 1,'mod_status', 0, 2, 1, '', 0, 1, '');
 INSERT INTO `#__modules` VALUES (15, 'Titel','', 1,'title', 0,'0000-00-00 00:00:00', 1,'mod_title', 0, 2, 1, '', 0, 1, '');
-INSERT INTO `#__modules` VALUES (43, 'Update nötig?','', 2,'cpanel', 0,'0000-00-00 00:00:00', 1,'mod_jgerman', 0, 2, 1, 'auto_check=auto_check_no\ncheck_core=check_core_show\nnotice=notice_show\nimagesize=middle\n\n', 0, 1, '');
+INSERT INTO `#__modules` VALUES (43, 'Update nötig?','', 2,'cpanel', 0,'0000-00-00 00:00:00', 1,'mod_jgerman', 0, 2, 1, 'auto_check=auto_check_no\ncheck_core=check_core_show\ndelete_notice=delte_notice_show\nimage_size=middle\n\n', 0, 1, '');
 
 # --------------------------------------------------------
 

@@ -9,10 +9,10 @@
 * See COPYRIGHT.php for copyright notices and details.
 *
 * -------------------------------------------------------------------------
-* DIESES SOLLTE NUR ALS LETZTE MÖGLICHKEIT BENUTZT WERDEN, WENN DER INSTALLER FEHLSCHLÄGT
+* DIESES SOLLTE NUR ALS LETZTE MÖGLICHKEIT BENUTZT WERDEN, WENN DER INSTALLER FEHLSCHLÄGT!
 *
 * Wenn Sie Joomla! manuell installieren, z.B. nicht über den Web-Installer, 
-* dannt benennen Sie diese Datei in configuration.php um, z.B.
+* dann benennen Sie diese Datei in configuration.php um, z.B.
 *
 * UNIX -> mv configuration.php-dist configuration.php
 * Windows -> rename configuration.php-dist configuration.php
@@ -42,7 +42,7 @@ class JConfig {
 	/* Datenbank-Einstellungen */
 	var $dbtype          = 'mysql';					// Normalerweise: mysql
 	var $host            = 'localhost';			// Normalerweise: localhost
-	var $user            = '';						  // MySQL Benutezrname
+	var $user            = '';						  // MySQL Benutzername
 	var $password        = '';						  // MySQL Passwort
 	var $db              = '';							// MySQL Datenbankname
 	var $dbprefix        = 'jos_';					// Nicht ändern, wenn nicht zwingend nötig!
@@ -62,7 +62,7 @@ class JConfig {
 	var $tmp_path	       = '/tmp';
 	var $log_path	       = '/var/logs';
 	var $offset          = '0';
-	var $live_site       = ''; 					    // Optional; Vollständige URL zur Joomla!-Installation.
+	var $live_site       = ''; 					    // Optional; Vollständige URL zur Joomla!-Installation
 	var $force_ssl       = 0;		            // Zwingt bestimmte Bereiche zu einer SSL-Verschlüsselung. 0 = Kein Bereich, 1 = Administrator, 2 = Beide Bereiche (Site und Administrator)
 	
 	/* Session-Einstellungen */

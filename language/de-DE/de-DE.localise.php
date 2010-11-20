@@ -1,6 +1,6 @@
 <?php
 /**
- * @version		$Id: language.php 15628 2010-03-27 05:20:29Z infograf768 $
+ * @version		$Id$
  * @copyright	Copyright (C) 2005 - 2010 Open Source Matters, Inc. All rights reserved.
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  */

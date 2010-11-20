@@ -1,25 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Id: de-DE.xml 4 2009-07-07 21:04:54Z sisko1990 $ -->
-<metafile version="1.5" client="site">
+<!-- $Id -->
+<metafile version="1.6"  client="site">
 	<name>German (Germany-Switzerland-Austria)</name>
-	<tag>de-DE</tag>
-	<version>1.5.22.1</version>
-	<creationDate>05.11.2010</creationDate>
+	<version>1.6.0</version>
+	<creationDate>2010-11-20</creationDate>
 	<author>J!German</author>
 	<authorEmail>team@jgerman.de</authorEmail>
 	<authorUrl>www.jgerman.de</authorUrl>
 	<copyright>Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.</copyright>
-	<copyright>Copyright (C) German Translation 2008 - 2010 J!German. Alle Rechte vorbehalten.</copyright>
-	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<description>Deutsches Sprachpaket für das Frontend.</description>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>de-DE site language</description>
+	<files>
+		<filename>de-DE.com_contact.ini</filename>
+		<filename>de-DE.com_content.ini</filename>
+		<filename>de-DE.com_mailto.ini</filename>
+		<filename>de-DE.com_media.ini</filename>
+		<filename>de-DE.com_messages.ini</filename>
+		<filename>de-DE.com_newsfeeds.ini</filename>
+		<filename>de-DE.com_search.ini</filename>
+		<filename>de-DE.com_users.ini</filename>
+		<filename>de-DE.com_weblinks.ini</filename>
+		<filename>de-DE.com_wrapper.ini</filename>
+		<filename>de-DE.ini</filename>
+		<filename>de-DE.localise.php</filename>
+		<filename>de-DE.mod_articles_archive.ini</filename>
+		<filename>de-DE.mod_articles_archive.sys.ini</filename>
+		<filename>de-DE.mod_articles_categories.ini</filename>
+		<filename>de-DE.mod_articles_categories.sys.ini</filename>
+		<filename>de-DE.mod_articles_category.ini</filename>
+		<filename>de-DE.mod_articles_category.sys.ini</filename>
+		<filename>de-DE.mod_articles_latest.ini</filename>
+		<filename>de-DE.mod_articles_latest.sys.ini</filename>
+		<filename>de-DE.mod_articles_news.ini</filename>
+		<filename>de-DE.mod_articles_news.sys.ini</filename>
+		<filename>de-DE.mod_articles_popular.ini</filename>
+		<filename>de-DE.mod_articles_popular.sys.ini</filename>
+		<filename>de-DE.mod_banners.ini</filename>
+		<filename>de-DE.mod_banners.sys.ini</filename>
+		<filename>de-DE.mod_breadcrumbs.ini</filename>
+		<filename>de-DE.mod_breadcrumbs.sys.ini</filename>
+		<filename>de-DE.mod_custom.ini</filename>
+		<filename>de-DE.mod_custom.sys.ini</filename>
+		<filename>de-DE.mod_feed.ini</filename>
+		<filename>de-DE.mod_feed.sys.ini</filename>
+		<filename>de-DE.mod_footer.ini</filename>
+		<filename>de-DE.mod_footer.sys.ini</filename>
+		<filename>de-DE.mod_languages.ini</filename>
+		<filename>de-DE.mod_languages.sys.ini</filename>
+		<filename>de-DE.mod_login.ini</filename>
+		<filename>de-DE.mod_login.sys.ini</filename>
+		<filename>de-DE.mod_menu.ini</filename>
+		<filename>de-DE.mod_menu.sys.ini</filename>
+		<filename>de-DE.mod_random_image.ini</filename>
+		<filename>de-DE.mod_random_image.sys.ini</filename>
+		<filename>de-DE.mod_related_items.ini</filename>
+		<filename>de-DE.mod_related_items.sys.ini</filename>
+		<filename>de-DE.mod_search.ini</filename>
+		<filename>de-DE.mod_search.sys.ini</filename>
+		<filename>de-DE.mod_stats.ini</filename>
+		<filename>de-DE.mod_stats.sys.ini</filename>
+		<filename>de-DE.mod_syndicate.ini</filename>
+		<filename>de-DE.mod_syndicate.sys.ini</filename>
+		<filename>de-DE.mod_users_latest.ini</filename>
+		<filename>de-DE.mod_users_latest.sys.ini</filename>
+		<filename>de-DE.mod_weblinks.ini</filename>
+		<filename>de-DE.mod_weblinks.sys.ini</filename>
+		<filename>de-DE.mod_whosonline.ini</filename>
+		<filename>de-DE.mod_whosonline.sys.ini</filename>
+		<filename>de-DE.mod_wrapper.ini</filename>
+		<filename>de-DE.mod_wrapper.sys.ini</filename>
+		<filename>de-DE.tpl_atomic.ini</filename>
+		<filename>de-DE.tpl_atomic.sys.ini</filename>
+		<filename>de-DE.tpl_beez_20.ini</filename>
+		<filename>de-DE.tpl_beez_20.sys.ini</filename>
+		<filename>de-DE.tpl_beez5.ini</filename>
+		<filename>de-DE.tpl_beez5.sys.ini</filename>
+		<filename>de-DE.tpl_rhuk_milkyway.ini</filename>
+		<filename>de-DE.tpl_rhuk_milkyway.sys.ini</filename>
+	</files>
 	<metadata>
-		<name>Deutsch (DE-CH-AT)</name>
+		<name>German (Germany-Switzerland-Austria)</name>
 		<tag>de-DE</tag>
 		<rtl>0</rtl>
-		<locale>de_DE.UTF-8, de_CH.UTF-8, de_AT.UTF-8, de_DE.UTF-8@euro, de_CH.UTF-8@euro, de_AT.UTF-8@euro, de-DE.utf8, de-CH.utf8, de-AT.utf8, de-DE.utf8@euro, de-CH.utf8@euro, de-AT.utf8@euro, de_DE, de_CH, de_AT, ger_DE, ger_CH, ger_AT, ger-DE, ger-CH, ger-AT, deu_de, deu_ch, deu_at, de, ch, at, deu, ger, german-de, german-ch, german-at, german, swiss, germany, switzerland, austria</locale>
-		<winCodePage>iso-8859-1</winCodePage>
-		<backwardLang>german</backwardLang>
-		<pdfFontName>freesans</pdfFontName>
 	</metadata>
 	<params />
 </metafile>

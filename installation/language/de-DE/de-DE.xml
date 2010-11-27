@@ -7,9 +7,10 @@
 	<version>1.6.0</version>
 	<creationDate>2010-11-20</creationDate>
 	<author>J!German</author>
-	<authorEmail>admin@joomla.org</authorEmail>
-	<authorUrl>www.joomla.org</authorUrl>
+	<authorEmail>team@jgerman.de</authorEmail>
+	<authorUrl>www.jgerman.de</authorUrl>
 	<copyright>Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.</copyright>
+	<copyright>Copyright (C) German Translation 2008 - 2010 J!German. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<description></description>
 	<files>

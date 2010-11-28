@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Id -->
+<!-- $Id$ -->
 <metafile version="1.6"  client="site">
 	<name>German (Germany-Switzerland-Austria)</name>
 	<version>1.6.0</version>
@@ -79,7 +79,7 @@
 		<filename>de-DE.tpl_rhuk_milkyway.sys.ini</filename>
 	</files>
 	<metadata>
-		<name>German (Germany-Switzerland-Austria)</name>
+		<name>German (DE-CH-AT)</name>
 		<tag>de-DE</tag>
 		<rtl>0</rtl>
 	</metadata>

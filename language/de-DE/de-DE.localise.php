@@ -11,7 +11,7 @@
  * @package		Joomla.Site
  * @since		1.6
  */
-abstract class de_GBLocalise {
+abstract class de_DELocalise {
 	/**
 	 * Returns the potential suffixes for a specific number of items
 	 *
@@ -39,9 +39,9 @@ abstract class de_GBLocalise {
 	 */
 	public static function getIgnoredSearchWords() {
 		$search_ignore = array();
-		$search_ignore[] = "and";
+		$search_ignore[] = "und";
 		$search_ignore[] = "in";
-		$search_ignore[] = "on";
+		$search_ignore[] = "auf";
 		return $search_ignore;
 	}
 	/**

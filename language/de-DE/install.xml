@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- $Id$ -->
+<install version="1.6" client="site" type="language" method="upgrade">
+    <name>German (DE-CH-AT)</name>
+    <tag>de-DE</tag>
+    <version>1.6.0</version>
+    <creationDate>20.11.2010</creationDate>
+    <author>J!German</author>
+    <authorEmail>team@jgerman.de</authorEmail>
+    <authorUrl>www.jgerman.de</authorUrl>
+    <copyright>Copyright (C) 2008 - 2010 J!German. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <description>German Website Language Package for Joomla! 1.6</description>
+    <files>
+        <filename>index.html</filename>
+        <filename>de-DE.com_contact.ini</filename>
+    		<filename>de-DE.com_content.ini</filename>
+    		<filename>de-DE.com_mailto.ini</filename>
+    		<filename>de-DE.com_media.ini</filename>
+    		<filename>de-DE.com_messages.ini</filename>
+    		<filename>de-DE.com_newsfeeds.ini</filename>
+    		<filename>de-DE.com_search.ini</filename>
+    		<filename>de-DE.com_users.ini</filename>
+    		<filename>de-DE.com_weblinks.ini</filename>
+    		<filename>de-DE.com_wrapper.ini</filename>
+    		<filename>de-DE.files_joomla.sys.ini</filename>
+    		<filename>de-DE.mod_articles_archive.ini</filename>
+    		<filename>de-DE.mod_articles_archive.sys.ini</filename>
+    		<filename>de-DE.mod_articles_categories.ini</filename>
+    		<filename>de-DE.mod_articles_categories.sys.ini</filename>
+    		<filename>de-DE.mod_articles_category.ini</filename>
+    		<filename>de-DE.mod_articles_category.sys.ini</filename>
+    		<filename>de-DE.mod_articles_latest.ini</filename>
+    		<filename>de-DE.mod_articles_latest.sys.ini</filename>
+    		<filename>de-DE.mod_articles_news.ini</filename>
+    		<filename>de-DE.mod_articles_news.sys.ini</filename>
+    		<filename>de-DE.mod_articles_popular.ini</filename>
+    		<filename>de-DE.mod_articles_popular.sys.ini</filename>
+    		<filename>de-DE.mod_banners.ini</filename>
+    		<filename>de-DE.mod_banners.sys.ini</filename>
+    		<filename>de-DE.mod_breadcrumbs.ini</filename>
+    		<filename>de-DE.mod_breadcrumbs.sys.ini</filename>
+    		<filename>de-DE.mod_custom.ini</filename>
+    		<filename>de-DE.mod_custom.sys.ini</filename>
+    		<filename>de-DE.mod_feed.ini</filename>
+    		<filename>de-DE.mod_feed.sys.ini</filename>
+    		<filename>de-DE.mod_footer.ini</filename>
+    		<filename>de-DE.mod_footer.sys.ini</filename>
+    		<filename>de-DE.mod_languages.ini</filename>
+    		<filename>de-DE.mod_languages.sys.ini</filename>
+    		<filename>de-DE.mod_login.ini</filename>
+    		<filename>de-DE.mod_login.sys.ini</filename>
+    		<filename>de-DE.mod_menu.ini</filename>
+    		<filename>de-DE.mod_menu.sys.ini</filename>
+    		<filename>de-DE.mod_random_image.ini</filename>
+    		<filename>de-DE.mod_random_image.sys.ini</filename>
+    		<filename>de-DE.mod_related_items.ini</filename>
+    		<filename>de-DE.mod_related_items.sys.ini</filename>
+    		<filename>de-DE.mod_search.ini</filename>
+    		<filename>de-DE.mod_search.sys.ini</filename>
+    		<filename>de-DE.mod_stats.ini</filename>
+    		<filename>de-DE.mod_stats.sys.ini</filename>
+    		<filename>de-DE.mod_syndicate.ini</filename>
+    		<filename>de-DE.mod_syndicate.sys.ini</filename>
+    		<filename>de-DE.mod_users_latest.ini</filename>
+    		<filename>de-DE.mod_users_latest.sys.ini</filename>
+    		<filename>de-DE.mod_weblinks.ini</filename>
+    		<filename>de-DE.mod_weblinks.sys.ini</filename>
+    		<filename>de-DE.mod_whosonline.ini</filename>
+    		<filename>de-DE.mod_whosonline.sys.ini</filename>
+    		<filename>de-DE.mod_wrapper.ini</filename>
+    		<filename>de-DE.mod_wrapper.sys.ini</filename>
+    		<filename>de-DE.tpl_atomic.ini</filename>
+    		<filename>de-DE.tpl_atomic.sys.ini</filename>
+    		<filename>de-DE.tpl_beez_20.ini</filename>
+    		<filename>de-DE.tpl_beez_20.sys.ini</filename>
+    		<filename>de-DE.tpl_beez5.ini</filename>
+    		<filename>de-DE.tpl_beez5.sys.ini</filename>
+    		<filename>de-DE.tpl_rhuk_milkyway.ini</filename>
+    		<filename>de-DE.tpl_rhuk_milkyway.sys.ini</filename>
+    		<filename>de-DE.ini</filename>
+        <filename file="meta">de-DE.xml</filename>
+        <filename file="meta">install.xml</filename>
+        <filename>de-DE.localise.php</filename>
+    </files>
+</install>

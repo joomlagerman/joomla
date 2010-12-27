@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- $Id$ -->
+<extension type="package" version="1.6">
+    <name>German Language Pack</name>
+    <packagename>de-DE</packagename>
+    <version>1.6.0</version>
+    <url></url>
+    <packager></packager>
+    <packagerurl></packagerurl>
+    <description>Joomla! 1.6 German Language Package</description>
+    <files>
+        <file type="language" client="site" id="de-DE">site_de-DE.zip</file>
+        <file type="language" client="admin" id="de-DE">admin_de-DE.zip</file>
+    </files>
+</extension>

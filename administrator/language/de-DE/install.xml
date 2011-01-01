@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- $Id$ -->
-<install version="1.6" Kunde="administrator" type="language" method="upgrade">
+<install version="1.6" client="administrator" type="language" method="upgrade">
     <name>German (DE-CH-AT)</name>
     <tag>de-DE</tag>
     <version>1.6.0</version>

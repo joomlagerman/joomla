@@ -3,8 +3,8 @@
 <install version="1.6" client="administrator" type="language" method="upgrade">
     <name>German (DE-CH-AT)</name>
     <tag>de-DE</tag>
-    <version>1.6.0</version>
-    <creationDate>20.11.2010</creationDate>
+    <version>1.6.0v1</version>
+    <creationDate>11.01.2011</creationDate>
     <author>J!German</author>
     <authorEmail>team@jgerman.de</authorEmail>
     <authorUrl>www.jgerman.de</authorUrl>

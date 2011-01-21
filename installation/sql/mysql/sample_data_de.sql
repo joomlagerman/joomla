@@ -171,9 +171,9 @@ INSERT INTO `#__assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `titl
 --
 
 INSERT IGNORE INTO `#__banners` VALUES
-(2, 1, 0, 'Shop 1', 'shop-1', 0, 16, 0, 'http://shop.joomla.org/amazoncom-bookstores.html', 1, 15, 'Get books about Joomla! at the Joomla! book shop.', '', 0, 1, '', '{"imageurl":"images\\/banners\\/shop-ad-books.jpg","width":"","height":"","alt":"Joomla! Books"}', 0, '', -1, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '2011-01-01 00:00:01', 'en-GB'),
-(3, 1, 0, 'Shop 2', 'shop-2', 0, 22, 0, 'http://shop.joomla.org', 1, 15, 'T Shirts, caps and more from the Joomla! Shop.', '', 0, 2, '', '{"imageurl":"images\\/banners\\/shop-ad.jpg","width":"","height":"","alt":"Joomla! Shop"}', 0, '', -1, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '2011-01-01 00:00:01', 'en-GB'),
-(4, 1, 0, 'Support Joomla!', 'support-joomla', 0, 19, 0, 'http://contribute.joomla.org', 1, 15, 'Your contributions of time, talent and money make Joomla! possible.', '', 0, 3, '', '{"imageurl":"images\\/banners\\/white.png","width":"","height":"","alt":""}', 0, '', -1, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '22011-01-01 00:00:01', 'en-GB');
+(2, 1, 0, 'Shop 1', 'shop-1', 0, 16, 0, 'http://shop.joomla.org/amazoncom-bookstores.html', 1, 15, 'Bücher über Joomla! im Joomla!-Büchershop kaufen.', '', 0, 1, '', '{"imageurl":"images\\/banners\\/shop-ad-books.jpg","width":"","height":"","alt":"Joomla!-Bücher"}', 0, '', -1, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '2011-01-01 00:00:01', 'de-DE'),
+(3, 1, 0, 'Shop 2', 'shop-2', 0, 22, 0, 'http://shop.joomla.org', 1, 15, 'T-Shirts, Caps und mehr im Joomla!-Shop.', '', 0, 2, '', '{"imageurl":"images\\/banners\\/shop-ad.jpg","width":"","height":"","alt":"Joomla!-Shop"}', 0, '', -1, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '2011-01-01 00:00:01', 'de-DE'),
+(4, 1, 0, 'Joomla! unterstützen', 'joomla-unterstuetzen', 0, 19, 0, 'http://contribute.joomla.org', 1, 15, 'Ihre Mitwirkung in Zeit, Talent und Geld macht Joomla! möglich.', '', 0, 3, '', '{"imageurl":"images\\/banners\\/white.png","width":"","height":"","alt":""}', 0, '', -1, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '22011-01-01 00:00:01', 'de-DE');
 
 
 --
@@ -181,7 +181,7 @@ INSERT IGNORE INTO `#__banners` VALUES
 --
 
 INSERT IGNORE INTO `#__banner_clients` VALUES
-(1, 'Joomla!', 'Administrator', 'email@email.com', '', 1, 0, '0000-00-00 00:00:00', '', 0, '', -1, -1, -1);
+(1, 'Joomla!', 'Administrator', 'e-mail@e-mail.de', '', 1, 0, '0000-00-00 00:00:00', '', 0, '', -1, -1, -1);
 
 TRUNCATE `#__categories`;
 --

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- $Id$ -->
+<extension type="file" version="1.6" method="upgrade">
+	<name>TinyMCE de-DE</name>
+	<author>J!German</author>
+	<authorEmail>team@jgerman.de</authorEmail>
+	<authorUrl>http://www.jgerman.de</authorUrl>
+	<copyright>Copyright (C) 2008 - 2011 J!German. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.6v1</version>
+	<creationDate>11.01.2011</creationDate>
+	<description><![CDATA[
+		<h2>Successfully installed German language pack for TinyMCE 3.3.9.3 in Joomla 1.6</h2>
+		If you use other languages than English and German, please make sure that you also installed all other language packs for TinyMCE before you enabling "Automatic Language Selection" through the following steps:<br />
+		<ol>
+		<li>Extensions</li>
+		<li>Plugin Manager</li>
+		<li><a href="index.php?option=com_plugins&view=plugins&filter_search=Editor - TinyMCE">Editor - TinyMCE</a></li>
+		<li>Basic Options</li>
+		<li>Automatic Language Selection :: Yes</li>
+		<li>Functionality :: Extended (Optional -- If you want to use full functions of TinyMCE)</li>
+		</ol>
+		]]>
+	</description>
+
+	<!-- Fileset definition -->
+	<fileset>
+		<files target="media/editors">
+					<filename>tinymce/jscripts/tiny_mce/langs/de.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/advhr/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/advimage/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/advlink/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/autosave/langs/de.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/emotions/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/example/langs/de.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/example/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/fullpage/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/media/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/paste/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/searchreplace/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/style/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/table/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/template/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/themes/advanced/langs/de.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/themes/advanced/langs/de_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/themes/simple/langs/de.js</filename>
+		</files>
+	</fileset>
+</extension>

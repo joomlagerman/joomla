@@ -10,18 +10,44 @@
 	<version>1.6v1</version>
 	<creationDate>11.01.2011</creationDate>
 	<description><![CDATA[
-		<h2>Successfully installed German language pack for TinyMCE 3.3.9.3 in Joomla 1.6</h2>
-		If you use other languages than English and German, please make sure that you also installed all other language packs for TinyMCE before you enabling "Automatic Language Selection" through the following steps:<br />
-		<ol>
-		<li>Extensions</li>
-		<li>Plugin Manager</li>
-		<li><a href="index.php?option=com_plugins&view=plugins&filter_search=Editor - TinyMCE">Editor - TinyMCE</a></li>
-		<li>Basic Options</li>
-		<li>Automatic Language Selection :: Yes</li>
-		<li>Functionality :: Extended (Optional -- If you want to use full functions of TinyMCE)</li>
-		</ol>
-		]]>
-	</description>
+    <div align="center">
+      <table border="0" width="90%">
+  	    <tr>
+  		    <td width="100%" colspan="2">
+  		      <div align="center">
+  		        <h3>Deutsche Übersetzung für Joomla! 1.6 von J!German</h3>
+  		      </div>
+  		      <hr />
+  		    </td>
+  	    </tr>
+  	    <tr>
+  		    <td width="22%"><u><strong>Bereich:</strong></u></td>
+  		    <td width="80%">TinyMCE</td>
+  	    </tr>
+  	    <tr>
+  		    <td width="22%"><u><strong>Joomla!-Version:</strong></u></td>
+  		    <td width="80%">1.6</td>
+  	    </tr>
+  	    <tr>
+  		    <td width="22%"><u><strong>&Uuml;bersetzungsversion:</strong></u></td>
+  		    <td width="80%">1.6v1</td>
+  	    </tr>
+  	    <tr>
+  		    <td width="22%"><u><strong>Hinweis:</strong></u></td>
+  		    <td width="80%">Eventuell muss die deutsche Sprache noch in den <a href="index.php?option=com_plugins&view=plugins&filter_search=TinyMCE">Plugineinstellungen von TinyMCE</a> angepasst werden!</td>
+  	    </tr>
+  	    <td width="100%" colspan="2"><hr /></td>
+  	    <tr>
+  		    <td width="22%"><u><strong>J!German-Website:</strong></u></td>
+  		    <td width="80%"><a href="http://www.jgerman.de" target="_blank">http://www.jgerman.de</a></td>
+  	    </tr>
+  	    <tr>
+  		    <td width="100%" colspan="2">
+  		      <strong><font color="#008000">Bitte überprüfen Sie regelmäßig unsere Projektseite, ob Sie noch die aktuelle Übersetzungsversion einsetzen.</font></strong>
+          </td>
+  	    </tr>
+      </table>
+    </div>]]></description>
 
 	<!-- Fileset definition -->
 	<fileset>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- $Id$ -->
-<install version="1.6" client="site" type="language" method="upgrade">
+<extension version="1.6" client="site" type="language" method="upgrade">
     <name>German (DE-CH-AT)</name>
     <tag>de-DE</tag>
     <version>1.6.0v1</version>
@@ -115,4 +115,4 @@
         <filename file="meta">install.xml</filename>
         <filename>de-DE.localise.php</filename>
     </files>
-</install>
+</extension>

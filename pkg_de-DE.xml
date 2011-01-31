@@ -44,6 +44,6 @@
     </div>]]></description>
     <files>
         <file type="language" client="site" id="de-DE">de-DE_joomla_lang_site.zip</file>
-        <file type="language" client="admin" id="de-DE">de-DE_joomla_lang_admin.zip</file>
+        <file type="language" client="administrator" id="de-DE">de-DE_joomla_lang_admin.zip</file>
     </files>
 </extension>

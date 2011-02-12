@@ -770,16 +770,16 @@ DELETE FROM `#__usergroups`;
 --
 
 INSERT INTO `#__usergroups` (`id`, `parent_id`, `lft`, `rgt`, `title`) VALUES
-(1, 0, 1, 20, 'Public'),
-(2, 1, 6, 17, 'Registered'),
-(3, 2, 7, 14, 'Author'),
+(1, 0, 1, 20, 'Öffentlich'),
+(2, 1, 6, 17, 'Registriert'),
+(3, 2, 7, 14, 'Autor'),
 (4, 3, 8, 11, 'Editor'),
 (5, 4, 9, 10, 'Publisher'),
 (6, 1, 2, 5, 'Manager'),
 (7, 6, 3, 4, 'Administrator'),
-(8, 1, 18, 19, 'Super Users'),
-(12, 2, 15, 16, 'Customer Group'),
-(10, 3, 12, 13, 'Shop Suppliers');
+(8, 1, 18, 19, 'Super Benutzer'),
+(12, 2, 15, 16, 'Kundengruppe'),
+(10, 3, 12, 13, 'Shoplieferanten');
 
 
 --
@@ -787,7 +787,7 @@ INSERT INTO `#__usergroups` (`id`, `parent_id`, `lft`, `rgt`, `title`) VALUES
 --
 
 INSERT IGNORE INTO `#__viewlevels` (`id`, `title`, `ordering`, `rules`) VALUES
-(4, 'Customer Access Level', 3, '[6,3,12]');
+(4, 'Eigene Zugriffsebene', 3, '[6,3,12]');
 
 --
 -- Dumping data for table `#__weblinks`

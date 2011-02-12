@@ -926,14 +926,14 @@ CREATE TABLE IF NOT EXISTS `#__usergroups` (
 
 INSERT INTO `#__usergroups` (`id` ,`parent_id` ,`lft` ,`rgt` ,`title`)
 VALUES
-(1, 0, 1, 20, 'Public'),
-	(2, 1, 6, 17, 'Registered'),
-		(3, 2, 7, 14, 'Author'),
+(1, 0, 1, 20, 'Öffentlich'),
+	(2, 1, 6, 17, 'Registriert'),
+		(3, 2, 7, 14, 'Autor'),
 			(4, 3, 8, 11, 'Editor'),
 				(5, 4, 9, 10, 'Publisher'),
 (6, 1, 2, 5, 'Manager'),
 	(7, 6, 3, 4, 'Administrator'),
-(8, 1, 18, 19, 'Super Users');
+(8, 1, 18, 19, 'Super Benutzer');
 
 # -------------------------------------------------------
 
@@ -1038,8 +1038,8 @@ CREATE TABLE IF NOT EXISTS `#__viewlevels` (
 #
 
 INSERT INTO `#__viewlevels` (`id`, `title`, `ordering`, `rules`) VALUES
-(1, 'Public', 0, '[1]'),
-(2, 'Registered', 1, '[6,2,8]'),
+(1, 'Öffentlich', 0, '[1]'),
+(2, 'Registriert', 1, '[6,2,8]'),
 (3, 'Special', 2, '[6,3,8]');
 
 # -------------------------------------------------------

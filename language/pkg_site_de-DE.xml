@@ -2,7 +2,7 @@
 <!-- $Id$ -->
 <extension type="package" version="1.6">
     <name>German Site Language Pack</name>
-    <packagename>de-DE_site</packagename>
+    <packagename>site_de-DE</packagename>
     <version>1.6.0v1</version>
     <url></url>
     <packager></packager>

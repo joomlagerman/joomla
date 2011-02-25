@@ -114,5 +114,6 @@
         <filename file="meta">de-DE.xml</filename>
         <filename file="meta">install.xml</filename>
         <filename>de-DE.localise.php</filename>
+        <filename>de-DE.lib_joomla.ini</filename>
     </files>
 </extension>

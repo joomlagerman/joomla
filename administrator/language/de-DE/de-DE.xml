@@ -2,13 +2,13 @@
 <!-- $Id$ -->
 <metafile version="1.5" client="administrator">
 	<name>German (Germany-Switzerland-Austria)</name>
-	<version>1.5.22.1</version>
-	<creationDate>05.11.2010</creationDate>
+	<version>1.5.23.1</version>
+	<creationDate>05.04.2011</creationDate>
 	<author>J!German</author>
 	<authorEmail>team@jgerman.de</authorEmail>
 	<authorUrl>www.jgerman.de</authorUrl>
-	<copyright>Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.</copyright>
-	<copyright>Copyright (C) German Translation 2008 - 2010 J!German. Alle Rechte vorbehalten.</copyright>
+	<copyright>Copyright (C) 2005 - 2011 Open Source Matters. All rights reserved.</copyright>
+	<copyright>Copyright (C) German Translation 2008 - 2011 J!German. Alle Rechte vorbehalten.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<description>Deutsches Sprachpaket für das Backend.</description>
 	<metadata>

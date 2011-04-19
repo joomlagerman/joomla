@@ -2,14 +2,14 @@
 <!-- $Id$ -->
 <metafile version="1.6" client="site">
   	<name>German (Germany-Switzerland-Austria)</name>
-  	<version>1.6.2v1</version>
-  	<creationDate>15.04.2011</creationDate>
+  	<version>1.6.3v1</version>
+  	<creationDate>19.04.2011</creationDate>
   	<author>J!German</author>
   	<authorEmail>team@jgerman.de</authorEmail>
   	<authorUrl>www.jgerman.de</authorUrl>
   	<copyright>Copyright (C) 2005 - 2011 Open Source Matters &amp; J!German. All rights reserved.</copyright>
   	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-  	<description>German Administrator Language Package for Joomla! 1.6.2. Translation version: 1.6.2v1</description>
+  	<description>German Administrator Language Package for Joomla! 1.6.3. Translation version: 1.6.3v1</description>
   	<metadata>
         <name>german</name>
         <tag>de-DE</tag>

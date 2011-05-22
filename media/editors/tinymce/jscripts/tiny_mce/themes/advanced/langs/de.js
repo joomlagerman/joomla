@@ -58,5 +58,11 @@ clipboard_msg:"Kopieren, Ausschneiden und Einf\u00FCgen sind im Mozilla Firefox 
 path:"Pfad",
 newdocument:"Wollen Sie wirklich den ganzen Inhalt l\u00F6schen?",
 toolbar_focus:"Zur Werkzeugleiste springen: Alt+Q; Zum Editor springen: Alt-Z; Zum Elementpfad springen: Alt-X",
-more_colors:"Weitere Farben"
+more_colors:"Weitere Farben",
+
+// Accessibility Strings
+shortcuts_desc:'Barrierefreiheitshilfe',
+help_shortcut:'. ALT und F10 f\u00FCr Toolbar dr\u00FCcken und ALT und 0 f\u00FCr Hilfe.',
+rich_text_area:"Rich Text-Bereich",
+toolbar:"Toolbar"
 });

@@ -177,7 +177,7 @@ desc:"Multimedia einbetten/bearbeiten",
 edit:"Multimediaeinbettung bearbeiten"
 },
 fullpage:{
-desc:"Dokument-Eigenschaften"
+desc:"Dokumenteneigenschaften"
 },
 template:{
 desc:"Vorgefertigten Vorlageninhalt einf\u00FCgen"
@@ -194,7 +194,8 @@ langs:"Sprachen",
 wait:"Bitte warten...",
 sug:"Vorschl\u00E4ge",
 no_sug:"Keine Vorschl\u00E4ge",
-no_mpell:"Keine Rechtschreibfehler gefunden!"
+no_mpell:"Keine Rechtschreibfehler gefunden!",
+learn_word:"Word lernen"
 },
 pagebreak:{
 desc:"Seitenumbruch einf\u00FCgen."
@@ -213,4 +214,8 @@ square:"Square"
 },
 aria:{
 rich_text_area:"Rich Text-Bereich"
-}}});
+},
+wordcount:{
+words: 'Worte: '
+}
+}});

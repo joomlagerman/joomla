@@ -91,7 +91,6 @@ align_bottom_right:"Unten Rechts",
 flv_options:"Optionen f\u00FCr Flash Video",
 flv_scalemode:"Skalierungsmodus",
 flv_buffer:"Puffer",
-flv_startimage:"Startbild",
 flv_starttime:"Startzeitpunkt",
 flv_defaultvolume:"Standardlautst\u00E4rke",
 flv_hiddengui:"Versteckte GUI",
@@ -99,5 +98,12 @@ flv_autostart:"Autostart",
 flv_loop:"Wiederholung",
 flv_showscalemodes:"Skalierungsmodi anzeigen",
 flv_smoothvideo:"Smooth Video",
-flv_jscallback:"JS Callback"
+flv_jscallback:"JS Callback",
+html5_video_options:"HTML5-Video-Optionen",
+altsource1:"Alternative Quelle 1",
+altsource2:"Alternative Quelle 2",
+preload:"Preload",
+poster:"Poster",
+
+source:"Quelle"
 });

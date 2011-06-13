@@ -3,7 +3,7 @@
 <extension type="package" version="1.6">
     <name>German Site Language Pack</name>
     <packagename>site_de-DE</packagename>
-    <version>1.6.3v1</version>
+    <version>1.7.0v1</version>
     <url></url>
     <packager></packager>
     <packagerurl></packagerurl>
@@ -13,7 +13,7 @@
   	    <tr>
   		    <td width="100%" colspan="2">
   		      <div align="center">
-  		        <h3>Deutsche Übersetzung für Joomla! 1.6 von J!German</h3>
+  		        <h3>Deutsche Übersetzung für Joomla! 1.7 von J!German</h3>
   		      </div>
   		      <hr />
   		    </td>
@@ -24,11 +24,11 @@
   	    </tr>
   	    <tr>
   		    <td width="20%"><u><strong>Joomla!-Version:</strong></u></td>
-  		    <td width="80%">1.6.3</td>
+  		    <td width="80%">1.7.0</td>
   	    </tr>
   	    <tr>
   		    <td width="20%"><u><strong>&Uuml;bersetzungsversion:</strong></u></td>
-  		    <td width="80%">1.6.3v1</td>
+  		    <td width="80%">1.7.0v1</td>
   	    </tr>
   	    <td width="100%" colspan="2"><hr /></td>
   	    <tr>

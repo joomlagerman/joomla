@@ -61,6 +61,18 @@ VALUES
 # -------------------------------------------------------
 
 #
+# Table structure for table `#__associations`
+#
+
+CREATE TABLE IF NOT EXISTS `#__associations` (
+  `id` VARCHAR(50) NOT NULL COMMENT 'A reference to the associated item.',
+  `context` VARCHAR(50) NOT NULL COMMENT 'The context of the associated item.',
+  `key` CHAR(32) NOT NULL COMMENT 'The key for the association computed from an md5 on associated ids.',
+  PRIMARY KEY `idx_context_id` (`context`, `id`),
+  INDEX `idx_key` (`key`)
+) DEFAULT CHARSET=utf8;
+
+#
 # Table structure for table `#__banners`
 #
 
@@ -516,6 +528,9 @@ INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `folder`
 INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
 (700, 'Joomla! CMS', 'file', 'joomla', '', 0, 1, 1, 1, '{"legacy":false,"name":"files_joomla","type":"file","creationDate":"July 2011","author":"Joomla!","copyright":"(C) 2005 - 2011 Open Source Matters. All rights reserved","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"1.7.0","description":"FILES_JOOMLA_XML_DESCRIPTION","group":""}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
 
+INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+(800, 'joomla', 'package', 'pkg_joomla', '', 0, 1, 1, 1, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+
 # -------------------------------------------------------
 
 #
@@ -533,14 +548,16 @@ CREATE TABLE `#__languages` (
   `metakey` text NOT NULL,
   `metadesc` text NOT NULL,
   `published` int(11) NOT NULL default '0',
+  `ordering` int(11) NOT NULL default '0',
   PRIMARY KEY  (`lang_id`),
-  UNIQUE `idx_sef` (`sef`)
+  UNIQUE `idx_sef` (`sef`),
+  INDEX `idx_ordering` (`ordering`)
 )  DEFAULT CHARSET=utf8;
 
-INSERT INTO `#__languages` (`lang_id`,`lang_code`,`title`,`title_native`,`sef`,`image`,`description`,`metakey`,`metadesc`,`published`)
+INSERT INTO `#__languages` (`lang_id`,`lang_code`,`title`,`title_native`,`sef`,`image`,`description`,`metakey`,`metadesc`, `published`, `ordering`)
 VALUES
-(1, 'en-GB', 'English (UK)', 'English (UK)', 'en', 'en', '', '', '', 1),
-(2, 'de-DE', 'German (DE-CH-AT)', 'Deutsch', 'de', 'de', '', '', '', 1);
+(1, 'en-GB', 'English (UK)', 'English (UK)', 'en', 'en', '', '', '', 1, 1),
+(2, 'de-DE', 'German (DE-CH-AT)', 'Deutsch', 'de', 'de', '', '', '', 1, 2);
 #
 # Table structure for table `#__menu`
 #

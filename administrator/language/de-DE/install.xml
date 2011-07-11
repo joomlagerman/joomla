@@ -3,7 +3,7 @@
 <extension version="1.6" client="administrator" type="language" method="upgrade">
     <name>German (DE-CH-AT)</name>
     <tag>de-DE</tag>
-    <version>1.6.4v1</version>
+    <version>1.6.5v1</version>
     <creationDate>28.06.2011</creationDate>
     <author>J!German</author>
     <authorEmail>team@jgerman.de</authorEmail>
@@ -27,11 +27,11 @@
   	    </tr>
   	    <tr>
   		    <td width="20%"><u><strong>Joomla!-Version:</strong></u></td>
-  		    <td width="80%">1.6.4</td>
+  		    <td width="80%">1.6.5</td>
   	    </tr>
   	    <tr>
   		    <td width="20%"><u><strong>&Uuml;bersetzungsversion:</strong></u></td>
-  		    <td width="80%">1.6.4v1</td>
+  		    <td width="80%">1.6.5v1</td>
   	    </tr>
   	    <td width="100%" colspan="2"><hr /></td>
   	    <tr>

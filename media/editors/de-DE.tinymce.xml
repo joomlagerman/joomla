@@ -7,8 +7,8 @@
 	<authorUrl>http://www.jgerman.de</authorUrl>
 	<copyright>Copyright (C) 2008 - 2011 J!German. All rights reserved.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<version>1.7v1</version>
-	<creationDate>13.06.2011</creationDate>
+	<version>1.7v2</version>
+	<creationDate>14.08.2011</creationDate>
 	<description><![CDATA[
     <div align="center">
       <table border="0" width="90%">
@@ -26,11 +26,11 @@
   	    </tr>
   	    <tr>
   		    <td width="20%"><u><strong>&Uuml;bersetzungsversion:</strong></u></td>
-  		    <td width="80%">1.7v1</td>
+  		    <td width="80%">1.7v2</td>
   	    </tr>
   	    <tr>
   		    <td width="20%"><u><strong>Hinweis:</strong></u></td>
-  		    <td width="80%">Eventuell muss die deutsche Sprache noch in den <a href="index.php?option=com_plugins&view=plugins&filter_search=TinyMCE">Plugineinstellungen von TinyMCE</a> angepasst werden!</td>
+  		    <td width="80%">Eventuell muss die deutsche Sprache noch in den <a href="index.php?option=com_plugins&view=plugins&filter_search=TinyMCE">Plugineinstellungen des TinyMCEs</a> angepasst werden!</td>
   	    </tr>
   	    <td width="100%" colspan="2"><hr /></td>
   	    <tr>

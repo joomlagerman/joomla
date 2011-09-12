@@ -58,6 +58,13 @@
     		<filename>de-DE.com_weblinks.ini</filename>
     		<filename>de-DE.com_wrapper.ini</filename>
     		<filename>de-DE.files_joomla.sys.ini</filename>
+    		<filename>de-DE.ini</filename>
+    		<filename>de-DE.lib_joomla.ini</filename>
+    		<filename>de-DE.lib_joomla.sys.ini</filename>
+		    <filename>de-DE.lib_phpmailer.sys.ini</filename>
+		    <filename>de-DE.lib_phputf8.sys.ini</filename>
+		    <filename>de-DE.lib_simplepie.sys.ini</filename>
+		    <filename>de-DE.localise.php</filename>
     		<filename>de-DE.mod_articles_archive.ini</filename>
     		<filename>de-DE.mod_articles_archive.sys.ini</filename>
     		<filename>de-DE.mod_articles_categories.ini</filename>
@@ -104,16 +111,14 @@
     		<filename>de-DE.mod_whosonline.sys.ini</filename>
     		<filename>de-DE.mod_wrapper.ini</filename>
     		<filename>de-DE.mod_wrapper.sys.ini</filename>
+    		<filename>de-DE.pkg_joomla.sys.ini</filename>
     		<filename>de-DE.tpl_atomic.ini</filename>
     		<filename>de-DE.tpl_atomic.sys.ini</filename>
     		<filename>de-DE.tpl_beez_20.ini</filename>
     		<filename>de-DE.tpl_beez_20.sys.ini</filename>
     		<filename>de-DE.tpl_beez5.ini</filename>
     		<filename>de-DE.tpl_beez5.sys.ini</filename>
-    		<filename>de-DE.ini</filename>
         <filename file="meta">de-DE.xml</filename>
         <filename file="meta">install.xml</filename>
-        <filename>de-DE.localise.php</filename>
-        <filename>de-DE.lib_joomla.ini</filename>
     </files>
 </extension>

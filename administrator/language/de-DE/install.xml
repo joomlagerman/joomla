@@ -110,6 +110,8 @@
     		<filename>de-DE.mod_login.sys.ini</filename>
     		<filename>de-DE.mod_menu.ini</filename>
     		<filename>de-DE.mod_menu.sys.ini</filename>
+    		<filename>de-DE.mod_multilangstatus.ini</filename>
+		    <filename>de-DE.mod_multilangstatus.sys.ini</filename>
     		<filename>de-DE.mod_popular.ini</filename>
     		<filename>de-DE.mod_popular.sys.ini</filename>
     		<filename>de-DE.mod_quickicon.ini</filename>

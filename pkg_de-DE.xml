@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- $Id$ -->
-<extension type="package" version="1.6">
+<extension type="package" version="1.7">
     <name>German Language Pack</name>
     <packagename>de-DE</packagename>
-    <version>1.7.0v1</version>
+    <version>1.7.0.1</version>
+    <creationDate></creationDate>
+    <author></author>
+    <authorEmail></authorEmail>
+    <authorUrl></authorUrl>
     <url></url>
     <packager></packager>
     <packagerurl></packagerurl>

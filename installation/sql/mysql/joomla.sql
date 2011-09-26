@@ -883,7 +883,8 @@ CREATE TABLE  `#__update_sites` (
 
 INSERT INTO `#__update_sites` VALUES
 (1, 'Joomla Core', 'collection', 'http://update.joomla.org/core/list.xml', 1),
-(2, 'Joomla Extension Directory', 'collection', 'http://update.joomla.org/jed/list.xml', 1);
+(2, 'Joomla Extension Directory', 'collection', 'http://update.joomla.org/jed/list.xml', 1),
+(3, 'J!German Language Updates', 'collection', 'http://update.jgerman.de/translationlist.xml', 1);
 
 CREATE TABLE `#__update_sites_extensions` (
   `update_site_id` INT DEFAULT 0,
@@ -893,7 +894,9 @@ CREATE TABLE `#__update_sites_extensions` (
 
 INSERT INTO `#__update_sites_extensions` VALUES
 (1, 700),
-(2, 700);
+(2, 700),
+(3, 604),
+(3, 605);
 
 
 CREATE TABLE  `#__update_categories` (

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Id$ -->
 <localise version="1.7" client="installation" >
-	<forceLang>de-DE</forceLang>
-	<helpurl></helpurl>
-	<debug>0</debug>
-	<sampledata>sample_data_de.sql</sampledata>
-	<params/>
+    <forceLang>de-DE</forceLang>
+    <helpurl></helpurl>
+    <debug>0</debug>
+    <sampledata>sample_data_de.sql</sampledata>
+    <params/>
 </localise>

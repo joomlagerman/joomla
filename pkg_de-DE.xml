@@ -3,11 +3,11 @@
 <extension type="package" version="1.7">
     <name>German Language Pack</name>
     <packagename>de-DE</packagename>
-    <version>1.7.0.1</version>
-    <creationDate></creationDate>
-    <author></author>
-    <authorEmail></authorEmail>
-    <authorUrl></authorUrl>
+    <version>1.7.1.1</version>
+    <creationDate>26.09.2011</creationDate>
+    <author>J!German</author>
+    <authorEmail>team@jgerman.de</authorEmail>
+    <authorUrl>www.jgerman.de</authorUrl>
     <url></url>
     <packager></packager>
     <packagerurl></packagerurl>
@@ -45,9 +45,13 @@
           </td>
   	    </tr>
       </table>
-    </div>]]></description>
+    </div>]]>
+    </description>
     <files>
         <file type="language" client="site" id="de-DE">site_de-DE.zip</file>
         <file type="language" client="administrator" id="de-DE">admin_de-DE.zip</file>
     </files>
+    <updateservers>
+        <server type="collection" priority="1" name="J!German Language Updates">http://update.jgerman.de/translationlist.xml</server>
+    </updateservers>
 </extension>

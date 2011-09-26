@@ -2,21 +2,21 @@
 <!-- $Id$ -->
 <metafile version="1.7" client="site" method="upgrade">
     <tag>de-DE</tag>
-  	<name>German (Germany-Switzerland-Austria)</name>
-  	<description>German Administrator Language Package for Joomla! 1.7.0. Translation version: 1.7.0v1</description>
-  	<version>1.7.0.1</version>
-  	<creationDate>19.07.2011</creationDate>
-  	<author>J!German</author>
-  	<authorEmail>team@jgerman.de</authorEmail>
-  	<authorUrl>www.jgerman.de</authorUrl>
-  	<copyright>Copyright (C) 2005 - 2011 Open Source Matters &amp; J!German. All rights reserved.</copyright>
-  	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-  	<metadata>
+    <name>German (Germany-Switzerland-Austria)</name>
+    <description>German Administrator Language Package for Joomla! 1.7.1. Translation version: 1.7.1v1</description>
+    <version>1.7.1v1</version>
+    <creationDate>26.09.2011</creationDate>
+    <author>J!German</author>
+    <authorEmail>team@jgerman.de</authorEmail>
+    <authorUrl>www.jgerman.de</authorUrl>
+    <copyright>Copyright (C) 2005 - 2011 Open Source Matters &amp; J!German. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <metadata>
         <name>German (DE-CH-AT)</name>
         <tag>de-DE</tag>
         <rtl>0</rtl>
         <locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, de, german, german-de, de, deu, germany</locale>
         <firstDay>1</firstDay>
     </metadata>
-  	<params />
+    <params />
 </metafile>

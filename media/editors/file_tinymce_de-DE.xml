@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- $Id$ -->
-<extension type="file" version="1.6" method="upgrade">
+<extension type="file" version="1.7" method="upgrade">
     <name>TinyMCE de-DE</name>
     <author>J!German</author>
     <authorEmail>team@jgerman.de</authorEmail>
     <authorUrl>http://www.jgerman.de</authorUrl>
     <copyright>Copyright (C) 2008 - 2011 J!German. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-    <version>1.7.2</version>
-    <creationDate>26.09.2011</creationDate>
+    <version>1.7.3</version>
+    <creationDate>--.--.2011</creationDate>
     <description><![CDATA[
     <div align="center">
       <table border="0" width="90%">
@@ -26,7 +26,7 @@
   	    </tr>
   	    <tr>
   		    <td width="20%"><u><strong>&Uuml;bersetzungsversion:</strong></u></td>
-  		    <td width="80%">1.7v2</td>
+  		    <td width="80%">1.7v3</td>
   	    </tr>
   	    <tr>
   		    <td width="20%"><u><strong>Hinweis:</strong></u></td>

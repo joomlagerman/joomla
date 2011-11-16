@@ -167,7 +167,9 @@ col:"Spalte",
 cell:"Zelle"
 },
 autosave:{
-unload_msg:"Ihre \u00C4nderungen werden verloren gehen, wenn Sie die Seite verlassen!"
+unload_msg:"Ihre \u00C4nderungen werden verloren gehen, wenn Sie die Seite verlassen!",
+restore_content:"Automatisch gespeicherten Stand wiederherstellen",
+warning_message:"Wenn der automatisch gespeicherte Stand wiederhergestellt wird, geht der aktuelle Inhalt des Editors verlohren!\n\nSicher, den Stand jetzt wiederherzustellen?"
 },
 fullscreen:{
 desc:"Vollbildschirm"

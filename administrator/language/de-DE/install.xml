@@ -161,6 +161,10 @@
         <filename>de-DE.plg_editors-xtd_readmore.sys.ini</filename>
         <filename>de-DE.plg_extension_joomla.ini</filename>
         <filename>de-DE.plg_extension_joomla.sys.ini</filename>
+        <filename>de-DE.plg_quickicon_extensionupdate.ini</filename>
+        <filename>de-DE.plg_quickicon_extensionupdate.sys.ini</filename>
+        <filename>de-DE.plg_quickicon_joomlaupdate.ini</filename>
+        <filename>de-DE.plg_quickicon_joomlaupdate.sys.ini</filename>
         <filename>de-DE.plg_search_categories.ini</filename>
         <filename>de-DE.plg_search_categories.sys.ini</filename>
         <filename>de-DE.plg_search_contacts.ini</filename>
@@ -175,6 +179,8 @@
         <filename>de-DE.plg_system_cache.sys.ini</filename>
         <filename>de-DE.plg_system_debug.ini</filename>
         <filename>de-DE.plg_system_debug.sys.ini</filename>
+        <filename>de-DE.plg_system_languagecode.ini</filename>
+        <filename>de-DE.plg_system_languagecode.sys.ini</filename>
         <filename>de-DE.plg_system_languagefilter.ini</filename>
         <filename>de-DE.plg_system_languagefilter.sys.ini</filename>
         <filename>de-DE.plg_system_log.ini</filename>

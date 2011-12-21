@@ -131,6 +131,8 @@
         <filename>de-DE.plg_authentication_joomla.sys.ini</filename>
         <filename>de-DE.plg_authentication_ldap.ini</filename>
         <filename>de-DE.plg_authentication_ldap.sys.ini</filename>
+        <filename>de-DE.plg_captcha_recaptcha.ini</filename>
+        <filename>de-DE.plg_captcha_recaptcha.sys.ini</filename>
         <filename>de-DE.plg_content_emailcloak.ini</filename>
         <filename>de-DE.plg_content_emailcloak.sys.ini</filename>
         <filename>de-DE.plg_content_geshi.ini</filename>

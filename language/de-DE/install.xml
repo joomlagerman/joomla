@@ -50,6 +50,7 @@
         <filename>index.html</filename>
         <filename>de-DE.com_contact.ini</filename>
         <filename>de-DE.com_content.ini</filename>
+        <filename>de-DE.com_finder.ini</filename>
         <filename>de-DE.com_mailto.ini</filename>
         <filename>de-DE.com_media.ini</filename>
         <filename>de-DE.com_messages.ini</filename>
@@ -59,6 +60,7 @@
         <filename>de-DE.com_weblinks.ini</filename>
         <filename>de-DE.com_wrapper.ini</filename>
         <filename>de-DE.files_joomla.sys.ini</filename>
+        <filename>de-DE.finder_cli.ini</filename>
         <filename>de-DE.ini</filename>
         <filename>de-DE.lib_joomla.ini</filename>
         <filename>de-DE.lib_joomla.sys.ini</filename>
@@ -86,6 +88,8 @@
         <filename>de-DE.mod_custom.sys.ini</filename>
         <filename>de-DE.mod_feed.ini</filename>
         <filename>de-DE.mod_feed.sys.ini</filename>
+        <filename>de-DE.mod_finder.ini</filename>
+        <filename>de-DE.mod_finder.sys.ini</filename>
         <filename>de-DE.mod_footer.ini</filename>
         <filename>de-DE.mod_footer.sys.ini</filename>
         <filename>de-DE.mod_languages.ini</filename>

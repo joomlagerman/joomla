@@ -66,6 +66,8 @@
         <filename>de-DE.com_content.sys.ini</filename>
         <filename>de-DE.com_cpanel.ini</filename>
         <filename>de-DE.com_cpanel.sys.ini</filename>
+        <filename>de-DE.com_finder.ini</filename>
+        <filename>de-DE.com_finder.sys.ini</filename>
         <filename>de-DE.com_installer.ini</filename>
         <filename>de-DE.com_installer.sys.ini</filename>
         <filename>de-DE.com_languages.ini</filename>
@@ -135,6 +137,8 @@
         <filename>de-DE.plg_captcha_recaptcha.sys.ini</filename>
         <filename>de-DE.plg_content_emailcloak.ini</filename>
         <filename>de-DE.plg_content_emailcloak.sys.ini</filename>
+        <filename>de-DE.plg_content_finder.ini</filename>
+        <filename>de-DE.plg_content_finder.sys.ini</filename>
         <filename>de-DE.plg_content_geshi.ini</filename>
         <filename>de-DE.plg_content_geshi.sys.ini</filename>
         <filename>de-DE.plg_content_joomla.ini</filename>
@@ -163,6 +167,16 @@
         <filename>de-DE.plg_editors-xtd_readmore.sys.ini</filename>
         <filename>de-DE.plg_extension_joomla.ini</filename>
         <filename>de-DE.plg_extension_joomla.sys.ini</filename>
+        <filename>de-DE.plg_finder_categories.ini</filename>
+        <filename>de-DE.plg_finder_categories.sys.ini</filename>
+        <filename>de-DE.plg_finder_contacts.ini</filename>
+        <filename>de-DE.plg_finder_contacts.sys.ini</filename>
+        <filename>de-DE.plg_finder_content.ini</filename>
+        <filename>de-DE.plg_finder_content.sys.ini</filename>
+        <filename>de-DE.plg_finder_newsfeeds.ini</filename>
+        <filename>de-DE.plg_finder_newsfeeds.sys.ini</filename>
+        <filename>de-DE.plg_finder_weblinks.ini</filename>
+        <filename>de-DE.plg_finder_weblinks.sys.ini</filename>
         <filename>de-DE.plg_quickicon_extensionupdate.ini</filename>
         <filename>de-DE.plg_quickicon_extensionupdate.sys.ini</filename>
         <filename>de-DE.plg_quickicon_joomlaupdate.ini</filename>
@@ -181,6 +195,8 @@
         <filename>de-DE.plg_system_cache.sys.ini</filename>
         <filename>de-DE.plg_system_debug.ini</filename>
         <filename>de-DE.plg_system_debug.sys.ini</filename>
+        <filename>de-DE.plg_system_highlight.ini</filename>
+        <filename>de-DE.plg_system_highlight.sys.ini</filename>
         <filename>de-DE.plg_system_languagecode.ini</filename>
         <filename>de-DE.plg_system_languagecode.sys.ini</filename>
         <filename>de-DE.plg_system_languagefilter.ini</filename>

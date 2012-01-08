@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-!-- $Id$ -->
+<!-- $Id$ -->
 <extension type="package" version="2.5">
     <name>German Language Pack</name>
     <packagename>de-DE</packagename>
     <version>2.5.0.1</version>
-    <creationDate>--.--.2011</creationDate>
+    <creationDate>--.--.2012</creationDate>
     <author>J!German</author>
     <authorEmail>team@jgerman.de</authorEmail>
     <authorUrl>www.jgerman.de</authorUrl>

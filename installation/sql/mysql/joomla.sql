@@ -1542,7 +1542,7 @@ CREATE TABLE IF NOT EXISTS `#__usergroups` (
 
 INSERT INTO `#__usergroups` (`id` ,`parent_id` ,`lft` ,`rgt` ,`title`)
 VALUES
-(1, 0, 1, 20, 'Ãƒâ€“ffentlich'),
+(1, 0, 1, 20, 'Öffentlich'),
 	(2, 1, 6, 17, 'Registriert'),
 		(3, 2, 7, 14, 'Autor'),
 			(4, 3, 8, 11, 'Editor'),
@@ -1677,7 +1677,7 @@ CREATE TABLE IF NOT EXISTS `#__viewlevels` (
 #
 
 INSERT INTO `#__viewlevels` (`id`, `title`, `ordering`, `rules`) VALUES
-(1, 'Ãƒâ€“ffentlich', 0, '[1]'),
+(1, 'Öffentlich', 0, '[1]'),
 (2, 'Registriert', 1, '[6,2,8]'),
 (3, 'Spezial', 2, '[6,3,8]');
 

@@ -3,8 +3,8 @@
 <extension type="package" version="2.5" method="upgrade">
     <name>German Language Pack</name>
     <packagename>de-DE</packagename>
-    <version>2.5.1.1</version>
-    <creationDate>02.02.2012</creationDate>
+    <version>2.5.1.2</version>
+    <creationDate>29.02.2012</creationDate>
     <author>J!German</author>
     <authorEmail>team@jgerman.de</authorEmail>
     <authorUrl>www.jgerman.de</authorUrl>
@@ -32,7 +32,7 @@
   	    </tr>
   	    <tr>
   		    <td width="22%"><u><strong>&Uuml;bersetzungsversion:</strong></u></td>
-  		    <td width="80%">2.5.1v1</td>
+  		    <td width="80%">2.5.1v2</td>
   	    </tr>
   	    <td width="100%" colspan="2"><hr /></td>
   	    <tr>

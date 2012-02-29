@@ -537,7 +537,7 @@ INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `folder`
 (601, 'English (United Kingdom)', 'language', 'en-GB', '', 1, 1, 1, 1, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (602, 'German (DE-CH-AT)', 'language', 'de-DE', '', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (603, 'German (DE-CH-AT)', 'language', 'de-DE', '', 1, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(604, 'German Language Pack', 'package', 'pkg_de-DE', '', 0, 1, 1, 0, '{"legacy":false,"name":"German Language Pack","type":"package","creationDate":"02.02.2012","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"www.jgerman.de","version":"2.5.1.1"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(604, 'German Language Pack', 'package', 'pkg_de-DE', '', 0, 1, 1, 0, '{"legacy":false,"name":"German Language Pack","type":"package","creationDate":"29.02.2012","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"www.jgerman.de","version":"2.5.1.2"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (605, 'TinyMCE de-DE', 'file', 'file_tinymce_de-DE', '', 0, 1, 0, 0, '{"legacy":false,"name":"TinyMCE de-DE","type":"file","creationDate":"24.01.2012","author":"J!German","copyright":"Copyright (C) 2008 - 2012 J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"2.5.1"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
 
 INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
@@ -1106,13 +1106,11 @@ CREATE TABLE `#__languages` (
   `metadesc` text NOT NULL,
   `sitename` varchar(1024) NOT NULL default '',
   `published` int(11) NOT NULL default '0',
-  `access` integer unsigned NOT NULL DEFAULT '0',
   `ordering` int(11) NOT NULL default '0',
   PRIMARY KEY  (`lang_id`),
   UNIQUE `idx_sef` (`sef`),
   UNIQUE `idx_image` (`image`),
   UNIQUE `idx_langcode` (`lang_code`),
-  KEY `idx_access` (`access`),
   INDEX `idx_ordering` (`ordering`)
 )  DEFAULT CHARSET=utf8;
 

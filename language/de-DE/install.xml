@@ -3,7 +3,7 @@
 <extension version="2.5" client="site" type="language" method="upgrade">
     <name>German (DE-CH-AT)</name>
     <tag>de-DE</tag>
-    <version>2.5.4v1</version>
+    <version>2.5.4.1</version>
     <creationDate>02.04.2012</creationDate>
     <author>J!German</author>
     <authorEmail>team@jgerman.de</authorEmail>

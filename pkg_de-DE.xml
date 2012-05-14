@@ -49,9 +49,11 @@
     </description>
     <files>
         <file type="language" client="site" id="de-DE">site_de-DE.zip</file>
+        <file type="file" client="site" id="file_tinymce_de-DE">de-DE_TinyMCE_2.5v1.zip</file>
         <file type="language" client="administrator" id="de-DE">admin_de-DE.zip</file>
     </files>
     <updateservers>
-        <server type="collection" priority="1" name="J!German Language Updates">http://update.jgerman.de/translationlist.xml</server>
+        <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist.xml</server>
+        <server type="collection" priority="2" name="J!German Language Updates">http://update.jgerman.de/translationlist.xml</server>
     </updateservers>
 </extension>

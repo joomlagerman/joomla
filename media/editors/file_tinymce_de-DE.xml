@@ -66,7 +66,4 @@
             <filename>tinymce/jscripts/tiny_mce/themes/simple/langs/de.js</filename>
         </files>
     </fileset>
-    <updateservers>
-        <server type="collection" priority="1" name="J!German Language Updates">http://update.jgerman.de/translationlist.xml</server>
-    </updateservers>
 </extension>

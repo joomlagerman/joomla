@@ -3,48 +3,77 @@
 <extension type="package" version="2.5" method="upgrade">
     <name>German Language Pack</name>
     <packagename>de-DE</packagename>
-    <version>2.5.4.1</version>
-    <creationDate>02.04.2012</creationDate>
+    <version>2.5.5.1</version>
+    <creationDate>--.--.2012</creationDate>
     <author>J!German</author>
     <authorEmail>team@jgerman.de</authorEmail>
-    <authorUrl>www.jgerman.de</authorUrl>
+    <authorUrl>http://www.jgerman.de</authorUrl>
     <url></url>
     <packager></packager>
     <packagerurl></packagerurl>
     <description><![CDATA[
-    <div align="center">
-      <table border="0" width="90%">
-  	    <tr>
-  		    <td width="100%" colspan="2">
-  		      <div align="center">
-  		        <h3>Deutsche Übersetzung für Joomla! 2.5 von J!German</h3>
-  		      </div>
-  		      <hr />
-  		    </td>
-  	    </tr>
-  	    <tr>
-  		    <td width="22%"><u><strong>Bereiche:</strong></u></td>
-  		    <td width="80%">Administrator (Backend) und Website (Frontend)</td>
-  	    </tr>
-  	    <tr>
-  		    <td width="22%"><u><strong>Joomla!-Version:</strong></u></td>
-  		    <td width="80%">2.5.4</td>
-  	    </tr>
-  	    <tr>
-  		    <td width="22%"><u><strong>&Uuml;bersetzungsversion:</strong></u></td>
-  		    <td width="80%">2.5.4v1</td>
-  	    </tr>
-  	    <td width="100%" colspan="2"><hr /></td>
-  	    <tr>
-  		    <td width="22%"><u><strong>J!German-Website:</strong></u></td>
-  		    <td width="80%"><a href="http://www.jgerman.de" target="_blank">http://www.jgerman.de</a></td>
-  	    </tr>
-  	    <tr>
-  		    <td width="100%" colspan="2">
-  		      <strong><font color="#008000">Bitte überprüfen Sie regelmäßig unsere Projektseite, ob Sie noch die aktuelle Übersetzungsversion einsetzen.</font></strong>
+    <div style="text-align: center;">
+      <h2>Deutsches „Full“-Sprachpaket für Joomla! 2.5.5 von <a title="J!German" href="http://www.jgerman.de" target="_blank">J!German</a></h2>
+      <h3><span style="color: #008000;">Übersetzungsversion: 2.5.5v1</span></h3>
+      <hr />
+      <table rules="all" frame="border" style="width: 90%; border-color: #000000; border-width: 1px; border-style: solid;" align="center" border="1">
+      <colgroup> <col width="30%" /> <col width="60" /> </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <ul>
+              <li>Frontend (Website)-Übersetzung</li>
+            </ul>
           </td>
-  	    </tr>
+          <td rowspan="2">
+            <ul>
+              <li>
+                <span style="text-decoration: underline;">Neuinstallation:</span>
+                <br />
+                Legen Sie die deutsche Sprache unter <a title="Language Manager" href="index.php?option=com_languages" target="_blank">„Extensions“ → „Language Manager“</a> als Standardsprache („Default“), sowohl für die Website („Installed - Site“) als auch für die Administration („Installed - Administrator“), fest.
+              </li>
+              <br />
+              <li>
+                <span style="text-decoration: underline;">Aktualisierung:</span>
+                <br />
+                Es sind keine weiteren Schritte erforderlich.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Backend (Administrator)-Übersetzung</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Editor (TinyMCE)-Übersetzung</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>
+                <span style="text-decoration: underline;">Neuinstallation:</span>
+                <br />
+                Aktivieren Sie in den <a title="TinyMCE in der Pluginverwaltung" href="index.php?option=com_plugins&amp;view=plugins&amp;filter_search=TinyMCE" target="_blank">TinyMCE-Plugineinstellungen</a> die automatische Sprachauswahl auf „Ja“ („Basisoptionen“ → „Autom. Sprachauswahl“).
+              </li>
+              <br />
+              <li>
+                <span style="text-decoration: underline;">Aktualisierung:</span>
+                <br />
+                Es sind keine weiteren Schritte erforderlich.
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
       </table>
+      <br />
+      <span style="text-decoration: underline;">Hinweis:</span> Dieses Paket unterstützt die Joomla! eigene <a title="Joomla!-Aktualisierungsfunktion" href="index.php?option=com_installer&amp;view=update" target="_blank">Aktualisierungsfunktion</a>!
     </div>]]>
     </description>
     <files>

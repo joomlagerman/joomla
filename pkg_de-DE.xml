@@ -63,9 +63,9 @@
               </li>
               <br />
               <li>
-                <span style="text-decoration: underline;">Aktualisierung:</span>
+                <span style="text-decoration: underline;">Aktualisierung (nur wenn vor dieser Installation ein TinyMCE-Sprachpaket installiert war):</span>
                 <br />
-                Es sind keine weiteren Schritte erforderlich.
+                Deinstallieren Sie das alte TinyMCE-Sprachpaket über „Erweiterungen“ → „Erweiterungen“ → „Verwalten“ → „TinyMCE de-DE“. Danach installieren Sie dieses Paket erneut.<br />Damit sorgen Sie dafür, dass der alte Aktualisierungsserver für das einzelne TinyMCE-Sprachpaket aus Joomla! gelöscht wird und so bei einer Aktualisierungsanfrage nicht unnötig geprüft wird.
               </li>
             </ul>
           </td>

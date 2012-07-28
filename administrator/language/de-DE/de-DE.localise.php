@@ -1,8 +1,10 @@
 <?php
 /**
- * @version		$Id: de-DE.localise.php 267 2010-12-27 06:16:55Z sisko1990 $
- * @copyright	Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
- * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ * @version		 $Id: de-DE.localise.php 267 2010-12-27 06:16:55Z sisko1990 $
+ * @package    Joomla.Language
+ *
+ * @copyright  Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('_JEXEC') or die;
@@ -10,10 +12,11 @@ defined('_JEXEC') or die;
 /**
  * de-DE localise class
  *
- * @package		Joomla.Site
- * @since		1.6
+ * @package  Joomla.Language
+ * @since    1.6
  */
-abstract class de_DELocalise {
+abstract class de_DELocalise
+{
 	/**
 	 * Returns the potential suffixes for a specific number of items
 	 *

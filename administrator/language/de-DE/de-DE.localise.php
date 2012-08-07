@@ -24,12 +24,13 @@ abstract class de_DELocalise
 	 * @return	array  An array of potential suffixes.
 	 * @since	1.6
 	 */
-	public static function getPluralSuffixes($count) {
+	public static function getPluralSuffixes($count)
+	{
 		if ($count == 0) {
-			$return =  array('0');
+			$return = array('0');
 		}
 		elseif($count == 1) {
-			$return =  array('1');
+			$return = array('1');
 		}
 		else {
 			$return = array('MORE');
@@ -44,7 +45,8 @@ abstract class de_DELocalise
 	 *
 	 * @source http://solariz.de/649/deutsche-stopwords.htm
 	 */
-	public static function getIgnoredSearchWords() {
+	public static function getIgnoredSearchWords()
+  {
 		$search_ignore = array();
     $search_ignore[] = "ab";
     $search_ignore[] = "bei";
@@ -1050,7 +1052,8 @@ abstract class de_DELocalise
 	 * @return	integer  The lower length limit of search words.
 	 * @since	1.6
 	 */
-	public static function getLowerLimitSearchWord() {
+	public static function getLowerLimitSearchWord()
+  {
 		return 3;
 	}
 	/**
@@ -1059,7 +1062,8 @@ abstract class de_DELocalise
 	 * @return	integer  The upper length limit of search words.
 	 * @since	1.6
 	 */
-	public static function getUpperLimitSearchWord() {
+	public static function getUpperLimitSearchWord()
+  {
 		return 20;
 	}
 	/**
@@ -1068,7 +1072,8 @@ abstract class de_DELocalise
 	 * @return	integer  The number of chars to display when searching.
 	 * @since	1.6
 	 */
-	public static function getSearchDisplayedCharactersNumber() {
+	public static function getSearchDisplayedCharactersNumber()
+  {
 		return 200;
 	}
 }

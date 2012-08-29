@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Id$ -->
-<metafile version="2.5" client="site" method="upgrade">
+<metafile version="3.0" client="site" method="upgrade">
     <tag>de-DE</tag>
     <name>German (Germany-Switzerland-Austria)</name>
     <version>3.0.0.1</version>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- $Id$ -->
-<extension version="2.5" client="site" type="language" method="upgrade">
+<extension type="language" version="3.0" client="site" method="upgrade">
     <name>German (DE-CH-AT)</name>
     <tag>de-DE</tag>
     <version>3.0.0.1</version>

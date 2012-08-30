@@ -271,7 +271,7 @@ INSERT IGNORE INTO `#__categories` (`id`, `asset_id`, `parent_id`, `lft`, `rgt`,
 -- Update rgt value of root category row
 --
 SET @max_rgt = (SELECT MAX(rgt)+1 FROM `#__categories` WHERE `id` <> 1);
-UPDATE IGNORE `#__categories` SET rgt = @max_rgt WHERE id = 1;
+UPDATE `#__categories` SET rgt = @max_rgt WHERE id = 1;
 
 --
 -- Dumping data for table `#__contact_details`

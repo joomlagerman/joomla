@@ -539,8 +539,8 @@ INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `folder`
 (601, 'English (United Kingdom)', 'language', 'en-GB', '', 1, 1, 1, 1, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (602, 'German (DE-CH-AT)', 'language', 'de-DE', '', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (603, 'German (DE-CH-AT)', 'language', 'de-DE', '', 1, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(604, 'German Language Pack', 'package', 'pkg_de-DE', '', 0, 1, 1, 0, '{"legacy":false,"name":"German Language Pack","type":"package","creationDate":"20.06.2012","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"2.5.6.1"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(605, 'TinyMCE de-DE', 'file', 'file_tinymce_de-DE', '', 0, 1, 0, 0, '{"legacy":false,"name":"TinyMCE de-DE","type":"file","creationDate":"20.06.2012","author":"J!German","copyright":"Copyright (C) 2008 - 2012 J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"2.5.6.1"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+(604, 'German Language Pack', 'package', 'pkg_de-DE', '', 0, 1, 1, 0, '{"legacy":false,"name":"German Language Pack","type":"package","creationDate":"13.09.2012","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"2.5.7.1"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(605, 'TinyMCE de-DE', 'file', 'file_tinymce_de-DE', '', 0, 1, 0, 0, '{"legacy":false,"name":"TinyMCE de-DE","type":"file","creationDate":"13.09.2012","author":"J!German","copyright":"Copyright (C) 2008 - 2012 J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"2.5.7.1"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
 
 INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
 (700, 'Joomla! CMS', 'file', 'joomla', '', 0, 1, 1, 1, '{"legacy":false,"name":"files_joomla","type":"file","creationDate":"September 2012","author":"Joomla!","copyright":"(C) 2005 - 2012 Open Source Matters. All rights reserved","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"2.5.7","description":"FILES_JOOMLA_XML_DESCRIPTION","group":""}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
@@ -1480,6 +1480,7 @@ CREATE TABLE `#__update_sites_extensions` (
 INSERT INTO `#__update_sites_extensions` VALUES
 (1, 700),
 (2, 700),
+(3, 600),
 (3, 604),
 (4, 604);
 

@@ -1752,33 +1752,26 @@ CREATE TABLE IF NOT EXISTS `#__weblinks` (
 --
 -- Table `#__extensions`
 --
-UPDATE IGNORE `#__extensions` SET `params` = '{"administrator":"de-DE","site":"de-DE"}' WHERE `extension_id` = 11;
+UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, 'en-GB', 'de-DE') WHERE `extension_id` = 11;
+UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, '"mode":"1"', '"mode":"2"') WHERE `extension_id` = 412;
+UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, '"lang_mode":"0"', '"lang_mode":"1"') WHERE `extension_id` = 412;
 
-INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
-(602, 'German (DE-CH-AT)', 'language', 'de-DE', '', 0, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(603, 'German (DE-CH-AT)', 'language', 'de-DE', '', 1, 1, 1, 0, '', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(604, 'German Language Pack', 'package', 'pkg_de-DE', '', 0, 1, 1, 0, '{"legacy":false,"name":"German Language Pack","type":"package","creationDate":"--.--.2012","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.0.1.1"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(605, 'TinyMCE de-DE', 'file', 'file_tinymce_de-DE', '', 0, 1, 0, 0, '{"legacy":false,"name":"TinyMCE de-DE","type":"file","creationDate":"--.--.2012","author":"J!German","copyright":"Copyright (C) 2008 - 2012 J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.0.1.1"}', '', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `client_id`, `access`) VALUES
+(602, 'German (DE-CH-AT)', 'language', 'de-DE', 0, 1),
+(603, 'German (DE-CH-AT)', 'language', 'de-DE', 1, 1),
+(604, 'German Language Pack', 'package', 'pkg_de-DE', 0, 1),
+(605, 'TinyMCE de-DE', 'file', 'file_tinymce_de-DE', 0, 0);
 
 --
 -- Table `#__languages`
 --
-INSERT INTO `#__languages` (`lang_id`, `lang_code`, `title`, `title_native`, `sef`, `image`, `description`, `metakey`, `metadesc`, `published`, `ordering`)
-VALUES
-(2, 'de-DE', 'German (DE-CH-AT)', 'Deutsch', 'de', 'de', '', '', '', 1, 2);
-
---
--- Table `#__update_sites`
---
-INSERT INTO `#__update_sites` VALUES
-(4, 'J!German Language Updates', 'collection', 'http://update.jgerman.de/translationlist.xml', 1, 0);
+INSERT INTO `#__languages` (`lang_id`, `lang_code`, `title`, `title_native`, `sef`, `image`, `published`, `ordering`) VALUES
+(2, 'de-DE', 'German (DE-CH-AT)', 'Deutsch', 'de', 'de', 1, 2);
 
 --
 -- Table `#__update_sites_extensions`
 --
-INSERT INTO `#__update_sites_extensions` VALUES
-(4, 604),
-(5, 604);
+INSERT INTO `#__update_sites_extensions` VALUES (3, 604);
 
 --
 -- Table `#__usergroups`

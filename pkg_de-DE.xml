@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- $Id$ -->
 <extension type="package" version="3.0" method="upgrade">
     <name>German Language Pack</name>
     <packagename>de-DE</packagename>

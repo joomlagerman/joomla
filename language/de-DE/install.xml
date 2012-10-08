@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- $Id$ -->
 <extension type="language" version="3.0" client="site" method="upgrade">
     <name>German (DE-CH-AT)</name>
     <tag>de-DE</tag>

@@ -1,6 +1,5 @@
 <?php
 /**
- * @version		$Id: de-DE.localise.php 267 2010-12-27 06:16:55Z sisko1990 $
  * @copyright	Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  */

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <extension type="file" version="3.0" method="upgrade">
     <name>TinyMCE de-DE</name>
-    <version>3.0.2.1</version>
-    <creationDate>08.11.2012</creationDate>
+    <version>3.0.2.2</version>
+    <creationDate>19.11.2012</creationDate>
     <author>J!German</author>
     <authorEmail>team@jgerman.de</authorEmail>
     <authorUrl>http://www.jgerman.de</authorUrl>

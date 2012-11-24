@@ -1,7 +1,7 @@
 # Set behaviour for all files, in case developers don't have core.autocrlf set.
 * text=auto
 
-# Test
+# Test 1
 # Explicitly declare text files we want to always be normalized and converted to native line endings on checkout.
 *.txt text
 *.ini text

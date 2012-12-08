@@ -1767,6 +1767,23 @@ INSERT INTO `#__languages` (`lang_id`, `lang_code`, `title`, `title_native`, `se
 (2, 'de-DE', 'German (DE-CH-AT)', 'Deutsch', 'de', 'de', 1, 2);
 
 --
+-- Table `#__modules`
+-- Client: 1 (Backend)
+--
+UPDATE IGNORE `#__modules` SET `title` = 'Anmeldung' WHERE `module` = 'mod_login';
+UPDATE IGNORE `#__modules` SET `title` = 'Beliebteste Beiträge' WHERE `module` = 'mod_popular';
+UPDATE IGNORE `#__modules` SET `title` = 'Zuletzt hinzugefügte Beiträge' WHERE `module` = 'mod_latest';
+UPDATE IGNORE `#__modules` SET `title` = 'Werkzeugleiste' WHERE `module` = 'mod_toolbar';
+UPDATE IGNORE `#__modules` SET `title` = 'Schnellstartsymbole' WHERE `module` = 'mod_quickicon';
+UPDATE IGNORE `#__modules` SET `title` = 'Angemeldete Benutzer' WHERE `module` = 'mod_logged';
+UPDATE IGNORE `#__modules` SET `title` = 'Administrationsmenü' WHERE `module` = 'mod_menu';
+UPDATE IGNORE `#__modules` SET `title` = 'Administrationsuntermenü' WHERE `module` = 'mod_submenu';
+UPDATE IGNORE `#__modules` SET `title` = 'Benutzerstatus' WHERE `module` = 'mod_status';
+UPDATE IGNORE `#__modules` SET `title` = 'Titel' WHERE `module` = 'mod_title';
+UPDATE IGNORE `#__modules` SET `title` = 'Mehrsprachenstatus' WHERE `module` = 'mod_multilangstatus';
+UPDATE IGNORE `#__modules` SET `title` = 'Joomla!-Versionsinformationen' WHERE `module` = 'mod_version';
+
+--
 -- Table `#__update_sites_extensions`
 --
 INSERT INTO `#__update_sites_extensions` VALUES (3, 604);

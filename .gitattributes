@@ -1,7 +1,6 @@
 # Set behaviour for all files, in case developers don't have core.autocrlf set.
 * text=auto
 
-# Test
 # Explicitly declare text files we want to always be normalized and converted to native line endings on checkout.
 *.txt eol=lf
 *.ini eol=lf

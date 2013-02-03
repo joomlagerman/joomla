@@ -28,7 +28,7 @@ abstract class de_DELocalise
 		if ($count == 0) {
 			$return = array('0');
 		}
-		elseif($count == 1) {
+		elseif ($count == 1) {
 			$return = array('1');
 		}
 		else {

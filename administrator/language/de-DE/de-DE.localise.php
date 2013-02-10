@@ -14,7 +14,7 @@ defined('_JEXEC') or die;
  * @package  Joomla.Language
  * @since    1.6
  */
-abstract class de_DELocalise
+abstract class De_DELocalise
 {
 	/**
 	 * Returns the potential suffixes for a specific number of items

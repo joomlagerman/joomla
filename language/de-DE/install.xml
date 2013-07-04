@@ -24,13 +24,14 @@
         <filename>de-DE.com_messages.ini</filename>
         <filename>de-DE.com_newsfeeds.ini</filename>
         <filename>de-DE.com_search.ini</filename>
-		<filename>de-DE.com_tags.ini</filename>
+		    <filename>de-DE.com_tags.ini</filename>
         <filename>de-DE.com_users.ini</filename>
         <filename>de-DE.com_weblinks.ini</filename>
         <filename>de-DE.com_wrapper.ini</filename>
         <filename>de-DE.files_joomla.sys.ini</filename>
         <filename>de-DE.finder_cli.ini</filename>
         <filename>de-DE.ini</filename>
+        <filename>de-DE.lib_idna_convert.sys.ini</filename>
         <filename>de-DE.lib_joomla.ini</filename>
         <filename>de-DE.lib_joomla.sys.ini</filename>
         <filename>de-DE.lib_phpmailer.sys.ini</filename>
@@ -77,10 +78,10 @@
         <filename>de-DE.mod_stats.sys.ini</filename>
         <filename>de-DE.mod_syndicate.ini</filename>
         <filename>de-DE.mod_syndicate.sys.ini</filename>
-		<filename>de-DE.mod_tags_popular.ini</filename>
-		<filename>de-DE.mod_tags_popular.sys.ini</filename>
-		<filename>de-DE.mod_tags_similar.ini</filename>
-		<filename>de-DE.mod_tags_similar.sys.ini</filename>
+		    <filename>de-DE.mod_tags_popular.ini</filename>
+		    <filename>de-DE.mod_tags_popular.sys.ini</filename>
+		    <filename>de-DE.mod_tags_similar.ini</filename>
+		    <filename>de-DE.mod_tags_similar.sys.ini</filename>
         <filename>de-DE.mod_users_latest.ini</filename>
         <filename>de-DE.mod_users_latest.sys.ini</filename>
         <filename>de-DE.mod_weblinks.ini</filename>

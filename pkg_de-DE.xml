@@ -77,7 +77,6 @@
     </description>
     <files>
         <file type="language" client="site" id="de-DE">site_de-DE.zip</file>
-        <file type="file" client="site" id="file_tinymce_de-DE">tinymce_de-DE.zip</file>
         <file type="language" client="administrator" id="de-DE">admin_de-DE.zip</file>
     </files>
     <updateservers>

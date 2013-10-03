@@ -61,6 +61,8 @@
         <filename>de-DE.com_newsfeeds.sys.ini</filename>
         <filename>de-DE.com_plugins.ini</filename>
         <filename>de-DE.com_plugins.sys.ini</filename>
+        <filename>de-DE.com_postinstall.ini</filename>
+        <filename>de-DE.com_postinstall.sys.ini</filename>
         <filename>de-DE.com_redirect.ini</filename>
         <filename>de-DE.com_redirect.sys.ini</filename>
         <filename>de-DE.com_search.ini</filename>
@@ -107,6 +109,8 @@
         <filename>de-DE.mod_toolbar.sys.ini</filename>
         <filename>de-DE.mod_version.ini</filename>
         <filename>de-DE.mod_version.sys.ini</filename>
+        <filename>de-DE.plg_authentication_cookie.ini</filename>
+        <filename>de-DE.plg_authentication_cookie.sys.ini</filename>
         <filename>de-DE.plg_authentication_gmail.ini</filename>
         <filename>de-DE.plg_authentication_gmail.sys.ini</filename>
         <filename>de-DE.plg_authentication_joomla.ini</filename>

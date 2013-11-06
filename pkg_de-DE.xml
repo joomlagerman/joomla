@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<extension type="package" version="3.0" method="upgrade">
+<extension type="package" version="3.2" method="upgrade">
     <name>German Language Pack</name>
     <packagename>de-DE</packagename>
     <version>3.2.0.1</version>
-    <creationDate>--.11.2013</creationDate>
+    <creationDate>06.11.2013</creationDate>
     <author>J!German</author>
     <authorEmail>team@jgerman.de</authorEmail>
     <authorUrl>http://www.jgerman.de</authorUrl>
@@ -44,28 +44,6 @@
           <td>
             <ul>
               <li>Backend (Administrator)-Übersetzung</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <ul>
-              <li>Editor (TinyMCE)-Übersetzung</li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li>
-                <span style="text-decoration: underline;">Neuinstallation:</span>
-                <br />
-                Aktivieren Sie in den <a title="TinyMCE in der Pluginverwaltung" href="index.php?option=com_plugins&amp;view=plugins&amp;filter_search=TinyMCE" target="_blank">TinyMCE-Plugineinstellungen</a> die automatische Sprachauswahl auf „Ja“ („Basisoptionen“ → „Autom. Sprachauswahl“).
-              </li>
-              <br />
-              <li>
-                <span style="text-decoration: underline;">Aktualisierung (nur wenn vor dieser Installation ein <strong>separates</strong> TinyMCE-Sprachpaket installiert war):</span>
-                <br />
-                Deinstallieren Sie das alte TinyMCE-Sprachpaket über „Erweiterungen“ → „Erweiterungen“ → „Verwalten“ → „TinyMCE de-DE“. Danach installieren Sie dieses Paket erneut.<br />Damit sorgen Sie dafür, dass der alte Aktualisierungsserver für das einzelne TinyMCE-Sprachpaket aus Joomla! gelöscht wird und so bei einer Aktualisierungsanfrage nicht unnötig geprüft wird.
-              </li>
             </ul>
           </td>
         </tr>

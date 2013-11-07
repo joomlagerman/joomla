@@ -2,8 +2,8 @@
 <extension type="package" version="3.2" method="upgrade">
     <name>German Language Pack</name>
     <packagename>de-DE</packagename>
-    <version>3.2.0.1</version>
-    <creationDate>06.11.2013</creationDate>
+    <version>3.2.0.2</version>
+    <creationDate>07.11.2013</creationDate>
     <author>J!German</author>
     <authorEmail>team@jgerman.de</authorEmail>
     <authorUrl>http://www.jgerman.de</authorUrl>
@@ -13,7 +13,7 @@
     <description><![CDATA[
     <div style="text-align: center;">
       <h2>Deutsches „Full“-Sprachpaket für Joomla! 3.2.0 von <a title="J!German" href="http://www.jgerman.de" target="_blank">J!German</a></h2>
-      <h3><span style="color: #008000;">Übersetzungsversion: 3.2.0v1</span></h3>
+      <h3><span style="color: #008000;">Übersetzungsversion: 3.2.0v2</span></h3>
       <hr />
       <table rules="all" frame="border" style="width: 90%; border-color: #000000; border-width: 1px; border-style: solid;" align="center" border="1">
       <colgroup> <col width="30%" /> <col width="60" /> </colgroup>

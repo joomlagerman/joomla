@@ -119,6 +119,8 @@
         <filename>de-DE.plg_authentication_ldap.sys.ini</filename>
         <filename>de-DE.plg_captcha_recaptcha.ini</filename>
         <filename>de-DE.plg_captcha_recaptcha.sys.ini</filename>
+        <filename>de-DE.plg_content_contact.ini</filename>
+        <filename>de-DE.plg_content_contact.sys.ini</filename>
         <filename>de-DE.plg_content_emailcloak.ini</filename>
         <filename>de-DE.plg_content_emailcloak.sys.ini</filename>
         <filename>de-DE.plg_content_finder.ini</filename>

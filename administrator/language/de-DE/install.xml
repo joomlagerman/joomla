@@ -59,6 +59,8 @@
         <filename>de-DE.com_modules.sys.ini</filename>
         <filename>de-DE.com_newsfeeds.ini</filename>
         <filename>de-DE.com_newsfeeds.sys.ini</filename>
+        <filename>de-DE.plg_search_tags.ini</filename>
+        <filename>de-DE.plg_search_tags.sys.ini</filename>
         <filename>de-DE.com_plugins.ini</filename>
         <filename>de-DE.com_plugins.sys.ini</filename>
         <filename>de-DE.com_postinstall.ini</filename>

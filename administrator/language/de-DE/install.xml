@@ -149,6 +149,8 @@
         <filename>de-DE.plg_finder_newsfeeds.sys.ini</filename>
         <filename>de-DE.plg_finder_weblinks.ini</filename>
         <filename>de-DE.plg_finder_weblinks.sys.ini</filename>
+        <filename>de-DE.plg_quickicon_eosnotify.ini</filename>
+        <filename>de-DE.plg_quickicon_eosnotify.sys.ini</filename>
         <filename>de-DE.plg_quickicon_extensionupdate.ini</filename>
         <filename>de-DE.plg_quickicon_extensionupdate.sys.ini</filename>
         <filename>de-DE.plg_quickicon_joomlaupdate.ini</filename>

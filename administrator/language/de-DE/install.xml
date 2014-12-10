@@ -117,6 +117,8 @@
         <filename>de-DE.plg_authentication_joomla.sys.ini</filename>
         <filename>de-DE.plg_authentication_ldap.ini</filename>
         <filename>de-DE.plg_authentication_ldap.sys.ini</filename>
+        <filename>de-DE.plg_captcha_nocaptcha.ini</filename>
+		<filename>de-DE.plg_captcha_nocaptcha.sys.ini</filename>
         <filename>de-DE.plg_captcha_recaptcha.ini</filename>
         <filename>de-DE.plg_captcha_recaptcha.sys.ini</filename>
         <filename>de-DE.plg_content_contact.ini</filename>

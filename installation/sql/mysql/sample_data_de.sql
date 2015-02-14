@@ -37,13 +37,11 @@ INSERT IGNORE INTO `#__assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`
 (22, 1, 95, 96, 1, 'com_search', 'com_search', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
 (23, 1, 97, 98, 1, 'com_templates', 'com_templates', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (24, 1, 99, 102, 1, 'com_users', 'com_users', '{"core.admin":{"7":1},"core.manage":[],"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
-(25, 1, 103, 106, 1, 'com_weblinks', 'com_weblinks', '{"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":[],"core.edit":{"4":1},"core.edit.state":{"5":1},"core.edit.own":[]}'),
 (26, 1, 107, 108, 1, 'com_wrapper', 'com_wrapper', '{}'),
 (27, 8, 18, 21, 2, 'com_content.category.2', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
 (28, 3, 4, 5, 2, 'com_banners.category.3', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (29, 7, 14, 15, 2, 'com_contact.category.4', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
 (30, 19, 88, 89, 2, 'com_newsfeeds.category.5', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
-(31, 25, 104, 105, 2, 'com_weblinks.category.6', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[],"core.edit.own":[]}'),
 (32, 24, 100, 101, 1, 'com_users.category.7', 'Uncategorised', '{"core.create":[],"core.delete":[],"core.edit":[],"core.edit.state":[]}'),
 (33, 1, 109, 110, 1, 'com_finder', 'com_finder', '{"core.admin":{"7":1},"core.manage":{"6":1}}'),
 (34, 1, 111, 112, 1, 'com_joomlaupdate', 'com_joomlaupdate', '{"core.admin":[],"core.manage":[],"core.delete":[],"core.edit.state":[]}'),
@@ -100,9 +98,6 @@ INSERT IGNORE INTO `#__menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`
 (15, 'menu', 'com_newsfeeds_categories', 'Categories', '', 'News Feeds/Categories', 'index.php?option=com_categories&extension=com_newsfeeds', 'component', 0, 13, 2, 6, 0, '0000-00-00 00:00:00', 0, 0, 'class:newsfeeds-cat', 0, '', 38, 39, 0, '*', 1),
 (16, 'menu', 'com_redirect', 'Redirect', '', 'Redirect', 'index.php?option=com_redirect', 'component', 0, 1, 1, 24, 0, '0000-00-00 00:00:00', 0, 0, 'class:redirect', 0, '', 41, 42, 0, '*', 1),
 (17, 'menu', 'com_search', 'Basic Search', '', 'Basic Search', 'index.php?option=com_search', 'component', 0, 1, 1, 19, 0, '0000-00-00 00:00:00', 0, 0, 'class:search', 0, '', 43, 44, 0, '*', 1),
-(18, 'menu', 'com_weblinks', 'Weblinks', '', 'Weblinks', 'index.php?option=com_weblinks', 'component', 0, 1, 1, 21, 0, '0000-00-00 00:00:00', 0, 0, 'class:weblinks', 0, '', 45, 50, 0, '*', 1),
-(19, 'menu', 'com_weblinks_links', 'Links', '', 'Weblinks/Links', 'index.php?option=com_weblinks', 'component', 0, 18, 2, 21, 0, '0000-00-00 00:00:00', 0, 0, 'class:weblinks', 0, '', 46, 47, 0, '*', 1),
-(20, 'menu', 'com_weblinks_categories', 'Categories', '', 'Weblinks/Categories', 'index.php?option=com_categories&extension=com_weblinks', 'component', 0, 18, 2, 6, 0, '0000-00-00 00:00:00', 0, 0, 'class:weblinks-cat', 0, '', 48, 49, 0, '*', 1),
 (21, 'menu', 'com_finder', 'Smart Search', '', 'Smart Search', 'index.php?option=com_finder', 'component', 0, 1, 1, 27, 0, '0000-00-00 00:00:00', 0, 0, 'class:finder', 0, '', 51, 52, 0, '*', 1),
 (22, 'menu', 'com_joomlaupdate', 'Joomla! Update', '', 'Joomla! Update', 'index.php?option=com_joomlaupdate', 'component', 1, 1, 1, 32, 0, '0000-00-00 00:00:00', 0, 0, 'class:joomlaupdate', 0, '', 53, 54, 0, '*', 1),
 (23, 'main', 'com_tags', 'Tags', '', 'Tags', 'index.php?option=com_tags', 'component', 0, 1, 1, 29, 0, '0000-00-00 00:00:00', 0, 1, 'class:tags', 0, '', 55, 56, 0, '', 1),
@@ -111,7 +106,6 @@ INSERT IGNORE INTO `#__menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`
 (102, 'usermenu', 'Your Profile', 'your-profile', '', 'your-profile', 'index.php?option=com_users&view=profile&layout=edit', 'component', 1, 1, 1, 25, 0, '0000-00-00 00:00:00', 0, 2, '', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"","show_page_heading":0,"page_heading":"","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0}', 11, 12, 0, '*', 0),
 (103, 'usermenu', 'Site Administrator', '2013-11-16-23-26-41', '', '2013-11-16-23-26-41', 'administrator', 'url', 1, 1, 1, 0, 0, '0000-00-00 00:00:00', 0, 6, '', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1}', 17, 18, 0, '*', 0),
 (104, 'usermenu', 'Submit an Article', 'submit-an-article', '', 'submit-an-article', 'index.php?option=com_content&view=form&layout=edit', 'component', 1, 1, 1, 22, 0, '0000-00-00 00:00:00', 0, 3, '', 0, '{"enable_category":"0","catid":"2","menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"","show_page_heading":0,"page_heading":"","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0}', 13, 14, 0, '*', 0),
-(105, 'usermenu', 'Submit a Weblink', 'submit-a-weblink', '', 'submit-a-weblink', 'index.php?option=com_weblinks&view=form&layout=edit', 'component', 1, 1, 1, 21, 0, '0000-00-00 00:00:00', 0, 3, '', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"","show_page_heading":0,"page_heading":"","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0}', 15, 16, 0, '*', 0),
 (106, 'usermenu', 'Template Settings', 'template-settings', '', 'template-settings', 'index.php?option=com_config&view=templates&controller=config.display.templates', 'component', 1, 1, 1, 23, 0, '0000-00-00 00:00:00', 0, 6, '', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"","show_page_heading":0,"page_heading":"","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0}', 19, 20, 0, '*', 0),
 (107, 'usermenu', 'Site Settings', 'site-settings', '', 'site-settings', 'index.php?option=com_config&view=config&controller=config.display.config', 'component', 1, 1, 1, 23, 0, '0000-00-00 00:00:00', 0, 6, '', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"","show_page_heading":0,"page_heading":"","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0}', 21, 22, 0, '*', 0);
 
@@ -293,7 +287,6 @@ UPDATE IGNORE `#__categories` SET `path` = 'beispielbeitraege', `title` = 'Beisp
 UPDATE IGNORE `#__categories` SET `path` = 'beispiel-banner', `title` = 'Beispiel-Banner', `alias` = 'beispiel-banner' WHERE `id` = 15;
 UPDATE IGNORE `#__categories` SET `path` = 'beispielkontakte', `title` = 'Beispielkontakte', `alias` = 'beispielkontakte' WHERE `id` = 16;
 UPDATE IGNORE `#__categories` SET `path` = 'beispiel-newsfeeds', `title` = 'Beispiel-Newsfeeds', `alias` = 'beispiel-newsfeeds' WHERE `id` = 17;
-UPDATE IGNORE `#__categories` SET `path` = 'beispiel-weblinks', `title` = 'Beispiel-Weblinks', `alias` = 'beispiel-weblinks' WHERE `id` = 18;
 UPDATE IGNORE `#__categories` SET `path` = 'beispielbeitraege/joomla' WHERE `id` = 19;
 UPDATE IGNORE `#__categories` SET `path` = 'beispielbeitraege/joomla/erweiterungen', `title` = 'Erweiterungen', `alias` = 'erweiterungen', `description` = '<p>Die Basisinstallation von Joomla! 1.6 stellt alle notwendigen Werkzeuge (Erweiterungen) zur Erstellung einer einfachen Website zur Verfügung.  Es stehen im Netz tausende von Erweiterungen zur Verfügung, die es  ermöglichen, Webseiten jedes beliebigen Typs zu erstellen. Es gibt 5  verschiedene Erweiterungstypen: Komponenten, Module, Templates, Sprachen  und Plugins. Das umfangreichste Angebot an Erweiterungen jeden Typs  findet man im <a href="http://extensions.joomla.org/">Joomla! Extensions Directory (engl.)</a>.</p>' WHERE `id` = 20;
 UPDATE IGNORE `#__categories` SET `path` = 'beispielbeitraege/joomla/erweiterungen/komponenten', `title` = 'Komponenten', `alias` = 'komponenten', `description` = '<p><img class="image-left" src="administrator/templates/bluestork/images/header/icon-48-component.png" border="0" alt="Komponenten" align="left" />Komponenten sind umfangreiche Erweiterungen, die den Hauptinhalt einer Website erzeugen. Jede Komponente hat eine oder mehrere „Views“, die das Aussehen des Inhalts auf der Website bestimmen. In der Joomla!-Administration (Backend) finden sich weitere Erweiterungen, wie Menüs, Weiterleitungen und die Erweiterungsverwaltung (Menü: Erweiterungen).</p>' WHERE `id` = 21;
@@ -307,9 +300,6 @@ UPDATE IGNORE `#__categories` SET `path` = 'beispielbeitraege/parkseite/park-blo
 UPDATE IGNORE `#__categories` SET `path` = 'beispielbeitraege/parkseite/fotogalerie', `title` = 'Fotogalerie', `alias` = 'fotogalerie', `description` = '<p><img src="images/sampledata/parks/banner_cradle.jpg" border="0" /></p>\r\n<p>Dies sind meine Fotos von meinen besuchten Parks (Ich habe diese Fotos nicht selbst gemacht, sie sind alle von <a href="http://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons (engl.)</a>).</p>\r\n<p><em>Es zeigt, wie man eine einfache Fotogalerie mit Beiträgen mit „com_content“ erstellen kann. </em></p>\r\n<p><em>In jedem Beitrag wurde ein Thumbnail vor dem „Weiterlesen“-Block eingefügt und ein größeres Foto nach diesem Block.<br /></em></p>' WHERE `id` = 28;
 UPDATE IGNORE `#__categories` SET `path` = 'beispielbeitraege/obstshop', `title` = 'Obstshop', `alias` = 'obstshop' WHERE `id` = 29;
 UPDATE IGNORE `#__categories` SET `path` = 'beispielbeitraege/obst-shop/erzeuger', `title` = 'Erzeuger', `alias` = 'erzeuger', `description` = '<p>Wir suchen im ganzen Land nach den besten Obstbauern.</p>\r\n<p><em>Man könnte jedem Lieferanten eine Seite anbieten, die er selbst gestalten kann. Um das zu testen müsste man einen neuen Benutzer in der Gruppe „Lieferanten“ anlegen. Darüber hinaus wäre eine Seite in der Kategorie „Erzeuger“ anzulegen und den vorgenannten Benutzer zum Autor dieser Seite zu machen. Dieser Benutzer hat dann die Möglichkeit diese Seite zu bearbeiten.</em></p>\r\n<p><em>Dies veranschaulicht die Funktion „Bearbeiten“.</em></p>' WHERE `id` = 30;
-UPDATE IGNORE `#__categories` SET `path` = 'beispiel-weblinks/park-links', `title` = 'Park-Links', `alias` = 'park-links', `description` = '<p>Hier finden Sie Links zu meinen Lieblingsparks in Australien.</p>\r\n<p><em>Die Komponente „Weblinks“ stellt ein einfaches Werkzeug zur Verwaltung externer Links zur Verfügung. Sie werden einheitlich formatiert und kategorisiert. Weblinks können auch im Frontend angelegt bzw. gepflegt werden, vorausgesetzt man ist berechtigt und angemeldet.</em></p>' WHERE `id` = 31;
-UPDATE IGNORE `#__categories` SET `path` = 'beispiel-weblinks/joomla-spezifische-links', `title` = 'Joomla! spezifische Links', `alias` = 'joomla-spezifische-links', `description` = '<p> </p>\r\n<div style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 76%; background-color: #ffffff; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: 1.3em; color: #333333;">\r\n<p>Eine Auswahl an Links die sich mit dem Joomla!-Projekt beschäftigen.</p>\r\n</div>' WHERE `id` = 32;
-UPDATE IGNORE `#__categories` SET `path` = 'beispiel-weblinks/joomla-spezifische-links/andere-resourcen', `title` = 'Andere Resourcen', `alias` = 'andere-resourcen' WHERE `id` = 33;
 UPDATE IGNORE `#__categories` SET `path` = 'beispielkontakte/parkseiten', `title` = 'Parkseiten', `alias` = 'parkseiten' WHERE `id` = 34;
 UPDATE IGNORE `#__categories` SET `path` = 'beispielkontakte/shopseiten', `title` = 'Shopseiten', `alias` = 'shopseiten' WHERE `id` = 35;
 UPDATE IGNORE `#__categories` SET `path` = 'beispielkontakte/shopseiten/personal', `title` = 'Personal', `alias` = 'personal', `description` = '<p>Wenn Sie Fragen haben oder Unterstützunge brauchen,wenden Sie sich vertauensvoll an unsere Mitarbeiter.</p>' WHERE `id` = 36;
@@ -419,8 +409,6 @@ UPDATE IGNORE `#__content` SET `title` = 'Upgrader', `alias` = 'upgrader', `intr
 UPDATE IGNORE `#__content` SET `title` = 'Benutzer', `alias` = 'benutzer-plugins', `introtext` = '<p>Standardmäßig aktiviert:</p>\r\n<ul>\r\n<li>Joomla!</li>\r\n</ul>\r\n<p>Zwei neue Plugins stehen in Joomla! 1.6 zur Verfügung, sind aber standardmäßig deaktiviert:</p>\r\n<ul>\r\n<li>Kontakterstellung<br />Für jeden neu angelegten Benutzer wird ein verlinkter Kontakt-Datensatz erstellt.</li>\r\n<li>Profile<br />Dieses Profilplugin erlaubt es, neue Datenfelder für die Benutzerregistrierung und deren angezeigte Profile anzulegen. Es ist als Beispiel dafür gedacht, wie man eigene Profile vielleicht erweitern möchte.</li>\r\n</ul>' WHERE `id` = 51;
 UPDATE IGNORE `#__content` SET `title` = 'Benutzer', `alias` = 'benutzer', `introtext` = '<p>Mit Hilfe der Benutzerfunktion können sich Besucher auf der Website an- und abmelden, ihr Passwort und andere Benutzerinformationen ändern  und vergessene Passwörter wiederherstellen. Im Administrationsbereich findet man  im Menü „Benutzer“ die Möglichkeiten Benutzer und Benutzergruppen  anzulegen, zu sperren und zu verwalten, sowie Benutzerrechte zu vergeben. <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help16:Users_User_Manager">Hilfe(engl.)</a></p>\r\n<p>Bitte beachten, dass einige der Benutzeransichten nicht angezeigt werden, wenn der betreffende Benutzer nicht angemeldet ist.</p>' WHERE `id` = 52;
 UPDATE IGNORE `#__content` SET `title` = 'Joomla! nutzen', `alias` = 'joomla-nutzen', `introtext` = '<p>Mit Joomla! lässt sich jede Art von Website erstellen, angefangen mit einer einfachen persönlichen Homepage über eine Site mit einem komplexen E-Commerce Angebot bis hin zu einem sozialen Netzwerk mit Millionen von Besuchern.</p>\r\n<p>Dieser Teil der Joomla!-Beispieldaten bietet eine kurze Einführung in das Konzept und das Vorlagenmaterial um zu zeigen, wie Joomla! arbeitet.</p>\r\n<p><em>Falls die Beispieldaten nicht mehr benötigt werden, kann man im Backend (Administrator) entweder die Kategorie </em>„Beispieldaten“<em> einfach mit dem Status </em>„gesperrt“<em> versehen oder aber jeden einzelnen Beitrag und alle Kategorien löschen.</em></p>' WHERE `id` = 53;
-UPDATE IGNORE `#__content` SET `title` = 'Weblinks', `alias` = 'weblinks', `introtext` = '<p>Weblinks („com_weblinks“) ist eine Joomla!-Komponente, mit deren Hilfe man externe Links strukturiert organisieren und auf optisch ansprechende, einheitliche und informative Art und Weise anzeigen kann. <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help16:Components_Weblinks_Links">Hilfe (engl.)</a></p>' WHERE `id` = 54;
-UPDATE IGNORE `#__content` SET `title` = 'Modul „Weblinks“', `alias` = 'modul-weblinks', `introtext` = '<p>Dieses Modul zeigt eine Liste der Weblinks aus einer bestimmten Kategorie an. <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help16:Extensions_Module_Manager_Weblinks" title="Weblinks Module">Hilfe(engl.)</a></p>\r\n<p>{loadposition weblinksload}</p>' WHERE `id` = 55;
 UPDATE IGNORE `#__content` SET `title` = 'Wer ist online?', `alias` = 'wer-ist-online', `introtext` = '<p>Das Modul „Wer ist online?“ zeigt, unterteilt nach registrierten (angemeldeten) und nicht registrierten Besuchern, an, wer zur Zeit auf der eigenen Website online ist. <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help16:Extensions_Module_Manager_Who_Online" title="Who''s Online">Hilfe (engl.)</a></p>\r\n<p>{loadposition whosonlineload}</p>' WHERE `id` = 56;
 UPDATE IGNORE `#__content` SET `fulltext` = '\r\n<p><img src="images/sampledata/parks/animals/800px_wobbegong.jpg" border="0" style="vertical-align: middle; border: 0;" /></p>\r\n<p>Quelle: http://en.wikipedia.org/wiki/File:Wobbegong.jpg</p>\r\n<p>Autor: Richard Ling</p>\r\n<p>Lizenz: GNU Free Documentation License v 1.2 oder neuer</p>' WHERE `id` = 57;
 UPDATE IGNORE `#__content` SET `title` = 'Wundervolle Wassermelonen', `alias` = 'wundervolle-wassermelonen', `introtext` = '<p>Wassermelonen sind ein wundervolles und gesundes Vergnügen. Wir bauen die süßesten Wassermelonen der Welt an. Wir haben die größte Anbauflächen für Wassermelonen in unserem Land.</p>' WHERE `id` = 58;
@@ -459,14 +447,10 @@ UPDATE IGNORE `#__menu` SET `title` = 'Anmeldung', `alias` = 'shop-anmeldung' WH
 UPDATE IGNORE `#__menu` SET `title` = 'Administrator', `alias` = 'site-administrator' WHERE `id` = 448;
 UPDATE IGNORE `#__menu` SET `title` = 'Sitemap', `alias` = 'sitemap' WHERE `id` = 294;
 UPDATE IGNORE `#__menu` SET `title` = 'Startseite Parks', `alias` = 'startseite-parks' WHERE `id` = 243;
-UPDATE IGNORE `#__menu` SET `title` = 'Weblink einreichen', `alias` = 'weblink-einreichen' WHERE `id` = 450;
 UPDATE IGNORE `#__menu` SET `title` = 'Wegbeschreibung', `alias` = 'wegbeschreibung' WHERE `id` = 433;
 UPDATE IGNORE `#__menu` SET `title` = 'Willkommen', `alias` = 'willkommen' WHERE `id` = 429;
 UPDATE IGNORE `#__menu` SET `title` = 'Landschaften', `alias` = 'landschaften' WHERE `id` = 400;
 UPDATE IGNORE `#__menu` SET `title` = 'Tiere', `alias` = 'tiere' WHERE `id` = 399;
-UPDATE IGNORE `#__menu` SET `title` = 'Weblink einreichen', `alias` = 'weblink-einreichen' WHERE `id` = 249;
-UPDATE IGNORE `#__menu` SET `title` = 'Weblinks innerhalb einer Kategorie', `alias` = 'weblinks-innerhalb-einer-kategorie' WHERE `id` = 274;
-UPDATE IGNORE `#__menu` SET `title` = 'Weblinkskategorien', `alias` = 'weblinkskategorien' WHERE `id` = 227;
 UPDATE IGNORE `#__menu` SET `title` = 'Archivierte Beiträge', `alias` = 'archivierte-beitraege' WHERE `id` = 256;
 UPDATE IGNORE `#__menu` SET `title` = 'Beitrag erstellen', `alias` = 'beitrag-erstellen' WHERE `id` = 263;
 UPDATE IGNORE `#__menu` SET `title` = 'Beitragskategorien', `alias` = 'beitragskategorien' WHERE `id` = 272;
@@ -483,7 +467,6 @@ UPDATE IGNORE `#__menu` SET `title` = 'Inhalt', `alias` = 'inhalt' WHERE `id` = 
 UPDATE IGNORE `#__menu` SET `title` = 'Kontakte', `alias` = 'kontakte' WHERE `id` = 270;
 UPDATE IGNORE `#__menu` SET `title` = 'Newsfeeds', `alias` = 'newsfeeds' WHERE `id` = 267;
 UPDATE IGNORE `#__menu` SET `title` = 'Suchen', `alias` = 'suchen' WHERE `id` = 276;
-UPDATE IGNORE `#__menu` SET `title` = 'Weblinks', `alias` = 'weblinks' WHERE `id` = 265;
 UPDATE IGNORE `#__menu` SET `title` = 'Einzelkontakt', `alias` = 'einzelkontakt' WHERE `id` = 229;
 UPDATE IGNORE `#__menu` SET `title` = 'Hauptkontakte', `alias` = 'hauptkontakte' WHERE `id` = 452;
 UPDATE IGNORE `#__menu` SET `title` = 'Kontakte innerhalb einer Kategorie', `alias` = 'kontakte-innerhalb-einer-kategorie' WHERE `id` = 275;
@@ -515,7 +498,6 @@ UPDATE IGNORE `#__menu` SET `title` = 'Inhalt', `alias` = 'inhalt' WHERE `id` = 
 UPDATE IGNORE `#__menu` SET `title` = 'Suchen', `alias` = 'suchen' WHERE `id` = 322;
 UPDATE IGNORE `#__menu` SET `title` = 'Beiträge', `alias` = 'beitraege' WHERE `id` = 290;
 UPDATE IGNORE `#__menu` SET `title` = 'Kontakte', `alias` = 'kontakte' WHERE `id` = 439;
-UPDATE IGNORE `#__menu` SET `title` = 'Weblinks', `alias` = 'weblinks' WHERE `id` = 438;
 UPDATE IGNORE `#__menu` SET `title` = 'Archiv', `alias` = 'archiv' WHERE `id` = 325;
 UPDATE IGNORE `#__menu` SET `title` = 'Beitragskategorie', `alias` = 'beitragskategorie' WHERE `id` = 459;
 UPDATE IGNORE `#__menu` SET `title` = 'Kategorien der Beiträge', `alias` = 'kategorien-der-beitraege' WHERE `id` = 443;
@@ -530,7 +512,6 @@ UPDATE IGNORE `#__menu` SET `title` = 'Banner', `alias` = 'banner' WHERE `id` = 
 UPDATE IGNORE `#__menu` SET `title` = 'Eigener HTML-Code', `alias` = 'eigener-html-code' WHERE `id` = 418;
 UPDATE IGNORE `#__menu` SET `title` = 'Feedanzeige', `alias` = 'feedanzeige' WHERE `id` = 410;
 UPDATE IGNORE `#__menu` SET `title` = 'Fußzeile', `alias` = 'fusszeile' WHERE `id` = 324;
-UPDATE IGNORE `#__menu` SET `title` = 'Weblinks', `alias` = 'weblinks' WHERE `id` = 417;
 UPDATE IGNORE `#__menu` SET `title` = 'Zufällig ausgewählte Bilder', `alias` = 'zufaellig-ausgewaehlte-bilder' WHERE `id` = 307;
 UPDATE IGNORE `#__menu` SET `title` = 'Sprachauswahl', `alias` = 'sprachauswahl' WHERE `id` = 447;
 UPDATE IGNORE `#__menu` SET `title` = 'Statistiken', `alias` = 'statistiken' WHERE `id` = 304;
@@ -624,11 +605,3 @@ UPDATE IGNORE `#__usergroups` SET `title` = 'Shoplieferanten (Beispiel)' WHERE `
 -- UPDATE IGNORE table `#__viewlevels`
 --
 UPDATE IGNORE `#__viewlevels` SET `title` = 'Eigene Zugriffsebene (Beispiel)' WHERE `id` = 4;
-
---
--- UPDATE IGNORE table `#__weblinks`
---
-UPDATE IGNORE `#__weblinks` SET `description` = '<p>Die Programmiersprache mit der Joomla! entwickelt wurde.</p>' WHERE `id` = 2;
-UPDATE IGNORE `#__weblinks` SET `description` = '<p>Das Datenbanksystem, dass Joomla! nutzt.</p>' WHERE `id` = 3;
-UPDATE IGNORE `#__weblinks` SET `title` = 'Baw Baw National Park', `alias` = 'baw-baw-national-park', `description` = '<p>Der Baw Baw National Park ist Teil des Australischen Alpen-Nationalparksystems. Besonderheiten: die Subalpine Vegetation, herrliche Aussichten und viele Gelegenheiten für zum Skilaufen, Wandern und anderen Freizeitaktivitäten.</p>' WHERE `id` = 7;
-UPDATE IGNORE `#__weblinks` SET `title` = 'Kakadu', `alias` = 'kakadu', `description` = '<p>Kakadu ist bekannt durch sein kulturelles Erbe als auch wegen seiner natürlichen Besonderheiten. Für beides wurde es in die kurze Liste des Unesco Weltkulturerbes aufgenommen. Dort sind eine große Zahl von Felsbildern und Höhlenmalereien zu finden.</p>' WHERE `id` = 8;

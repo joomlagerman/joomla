@@ -6,13 +6,11 @@
 -- Table `#__extensions`
 --
 UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, 'en-GB', 'de-DE') WHERE `extension_id` = 11;
-UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, '"mode":"1"', '"mode":"2"') WHERE `extension_id` = 412;
-UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, '"lang_mode":"0"', '"lang_mode":"1"') WHERE `extension_id` = 412;
 
-INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `client_id`, `access`) VALUES
-(602, 'German (DE-CH-AT)', 'language', 'de-DE', 0, 1),
-(603, 'German (DE-CH-AT)', 'language', 'de-DE', 1, 1),
-(604, 'German Language Pack', 'package', 'pkg_de-DE', 0, 1);
+INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `client_id`, `access`, `manifest_cache`) VALUES
+(602, 'German (DE-CH-AT)', 'language', 'de-DE', 0, 1, '{"name":"German (Germany-Switzerland-Austria)","type":"language","creationDate":"01.10.2014","author":"J!German","copyright":"Copyright (C) 2005 - 2015 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.3.6.1"},"group":""'),
+(603, 'German (DE-CH-AT)', 'language', 'de-DE', 1, 1, '{"name":"German (Germany-Switzerland-Austria)","type":"language","creationDate":"01.10.2014","author":"J!German","copyright":"Copyright (C) 2005 - 2015 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.3.6.1"},"group":""'),
+(604, 'German Language Pack', 'package', 'pkg_de-DE', 0, 1, '{"name":"German Language Pack","type":"package","creationDate":"01.10.2014","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.3.6.1","group":"","filename":"pkg_de-DE"}');
 
 --
 -- Table `#__languages`

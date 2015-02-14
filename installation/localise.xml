@@ -3,6 +3,6 @@
 	<forceLang>de-DE</forceLang>
 	<helpurl></helpurl>
 	<debug>0</debug>
-	<sampledata>sample_data.sql</sampledata>
+	<sampledata></sampledata>
 	<params/>
 </localise>

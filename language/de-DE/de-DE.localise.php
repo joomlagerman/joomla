@@ -18,7 +18,7 @@ abstract class De_DELocalise
 	/**
 	 * Returns the potential suffixes for a specific number of items
 	 *
-	 * @param  int $count  The number of items.
+	 * @param  int  $count  The number of items.
 	 *
 	 * @return  array  An array of potential suffixes.
 	 *
@@ -30,7 +30,7 @@ abstract class De_DELocalise
 		{
 			$return = array('0');
 		}
-		elseif($count == 1)
+		elseif ($count == 1)
 		{
 			$return = array('1');
 		}
@@ -49,11 +49,11 @@ abstract class De_DELocalise
 	 *
 	 * @since   1.6
 	 *
-	 * @source http://solariz.de/649/deutsche-stopwords.htm
+	 * @link  http://solariz.de/649/deutsche-stopwords.htm
 	 */
 	public static function getIgnoredSearchWords()
 	{
-		$search_ignore = array();
+		$search_ignore   = array();
 		$search_ignore[] = "ab";
 		$search_ignore[] = "bei";
 		$search_ignore[] = "da";

@@ -47,7 +47,7 @@ abstract class De_DELocalise
 	 *
 	 * @since   1.6
 	 *
-	 * @source http://solariz.de/649/deutsche-stopwords.htm
+	 * @link    http://solariz.de/649/deutsche-stopwords.htm
 	 */
 	public static function getIgnoredSearchWords()
 	{

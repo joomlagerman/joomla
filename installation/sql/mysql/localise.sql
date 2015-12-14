@@ -8,9 +8,9 @@
 UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, 'en-GB', 'de-DE') WHERE `extension_id` = 11;
 
 INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `client_id`, `access`, `manifest_cache`) VALUES
-(602, 'German (DE-CH-AT)', 'language', 'de-DE', 0, 1, '{"name":"German (Germany-Switzerland-Austria)","type":"language","creationDate":"22.10.2015","author":"J!German","copyright":"Copyright (C) 2005 - 2015 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.4.5.1","group":""}'),
-(603, 'German (DE-CH-AT)', 'language', 'de-DE', 1, 1, '{"name":"German (Germany-Switzerland-Austria)","type":"language","creationDate":"22.10.2015","author":"J!German","copyright":"Copyright (C) 2005 - 2015 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.4.5.1","group":""}'),
-(604, 'German Language Pack', 'package', 'pkg_de-DE', 0, 1, '{"name":"German Language Pack","type":"package","creationDate":"22.10.2015","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.4.5.1","group":"","filename":"pkg_de-DE"}');
+(602, 'German (DE-CH-AT)', 'language', 'de-DE', 0, 1, '{"name":"German (Germany-Switzerland-Austria)","type":"language","creationDate":"14.12.2015","author":"J!German","copyright":"Copyright (C) 2005 - 2015 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.4.6.1","group":""}'),
+(603, 'German (DE-CH-AT)', 'language', 'de-DE', 1, 1, '{"name":"German (Germany-Switzerland-Austria)","type":"language","creationDate":"14.12.2015","author":"J!German","copyright":"Copyright (C) 2005 - 2015 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.4.6.1","group":""}'),
+(604, 'German Language Pack', 'package', 'pkg_de-DE', 0, 1, '{"name":"German Language Pack","type":"package","creationDate":"14.12.2015","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.4.6.1","group":"","filename":"pkg_de-DE"}');
 
 --
 -- Table `#__languages`

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <extension type="package" version="3.3" method="upgrade">
-    <name>German Language Pack</name>
+    <name>German (Germany) Language Pack</name>
     <packagename>de-DE</packagename>
     <version>3.5.1.1</version>
     <creationDate>06.04.2016</creationDate>

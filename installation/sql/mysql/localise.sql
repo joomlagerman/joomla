@@ -15,8 +15,8 @@ INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `client_
 --
 -- Table `#__languages`
 --
-INSERT INTO `#__languages` (`lang_id`, `lang_code`, `title`, `title_native`, `sef`, `image`, `published`, `ordering`) VALUES
-(2, 'de-DE', 'German (DE-CH-AT)', 'Deutsch', 'de', 'de', 1, 2);
+INSERT INTO `#__languages` (`lang_id`, `lang_code`, `title`, `title_native`, `sef`, `image`, `published`, `access`, `ordering`) VALUES
+(2, 'de-DE', 'German (DE)', 'Deutsch (Deutschland)', 'de', 'de', 1, 1, 2);
 
 --
 -- Table `#__update_sites_extensions`

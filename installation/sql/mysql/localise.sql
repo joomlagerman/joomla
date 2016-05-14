@@ -8,15 +8,19 @@
 UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, 'en-GB', 'de-DE') WHERE `extension_id` = 11;
 
 INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `client_id`, `access`, `manifest_cache`) VALUES
-(602, 'German (DE)', 'language', 'de-DE', 0, 1, '{"name":"German (Germany)","type":"language","creationDate":"06.04.2016","author":"J!German","copyright":"Copyright (C) 2005 - 2016 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.5.1.1","group":""}'),
-(603, 'German (DE)', 'language', 'de-DE', 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"06.04.2016","author":"J!German","copyright":"Copyright (C) 2005 - 2016 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.5.1.1","group":""}'),
-(604, 'German Language Pack', 'package', 'pkg_de-DE', 0, 1, '{"name":"German Language Pack","type":"package","creationDate":"06.04.2016","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.5.1.1","group":"","filename":"pkg_de-DE"}');
+(602, 'German (DE)', 'language', 'de-DE', 0, 1, '{"name":"German (Germany)","type":"language","creationDate":"00.00.2016","author":"J!German","copyright":"Copyright (C) 2005 - 2016 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.6.0.1","group":""}'),
+(603, 'German (DE)', 'language', 'de-DE', 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"00.00.2016","author":"J!German","copyright":"Copyright (C) 2005 - 2016 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.6.0.1","group":""}'),
+(604, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', 0, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"00.00.2016","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.6.0.1","group":"","filename":"pkg_de-DE"}');
 
 --
 -- Table `#__languages`
 --
 INSERT INTO `#__languages` (`lang_id`, `lang_code`, `title`, `title_native`, `sef`, `image`, `published`, `access`, `ordering`) VALUES
 (2, 'de-DE', 'German (DE)', 'Deutsch (Deutschland)', 'de', 'de', 1, 1, 2);
+(3, 'de-CH', 'German (CH)', 'Deutsch (Schweiz)', 'ch', 'ch', 1, 0, 3);
+(4, 'de-AT', 'German (AT)', 'Deutsch (Österreich)', 'at', 'at', 1, 0, 4);
+(5, 'de-LI', 'German (LI)', 'Deutsch (Lichtenstein)', 'li', 'de', 1, 0, 5);
+(6, 'de-LU', 'German (LU)', 'Deutsch (Luxemburg)', 'lu', 'de', 1, 0, 6);
 
 --
 -- Table `#__update_sites_extensions`

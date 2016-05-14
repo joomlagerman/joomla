@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <extension version="3.3" type="language" client="administrator" method="upgrade">
-    <name>German (DE-CH-AT)</name>
+    <name>German (DE)</name>
     <tag>de-DE</tag>
     <version>3.5.1.1</version>
     <creationDate>06.04.2016</creationDate>

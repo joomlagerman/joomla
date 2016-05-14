@@ -18,7 +18,7 @@
         <name>German (DE)</name>
         <tag>de-DE</tag>
         <rtl>0</rtl>
-        <locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, de, german, german-de, de, deu, germany</locale>
+        <locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>
         <firstDay>1</firstDay>
         <weekEnd>0,6</weekEnd>
     </metadata>

@@ -16,10 +16,10 @@ INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `client_
 -- Table `#__languages`
 --
 INSERT INTO `#__languages` (`lang_id`, `lang_code`, `title`, `title_native`, `sef`, `image`, `published`, `access`, `ordering`) VALUES
-(2, 'de-DE', 'German (DE)', 'Deutsch (Deutschland)', 'de', 'de', 1, 1, 2);
-(3, 'de-CH', 'German (CH)', 'Deutsch (Schweiz)', 'ch', 'ch', 1, 0, 3);
-(4, 'de-AT', 'German (AT)', 'Deutsch (Österreich)', 'at', 'at', 1, 0, 4);
-(5, 'de-LI', 'German (LI)', 'Deutsch (Lichtenstein)', 'li', 'de', 1, 0, 5);
+(2, 'de-DE', 'German (DE)', 'Deutsch (Deutschland)', 'de', 'de', 1, 1, 2),
+(3, 'de-CH', 'German (CH)', 'Deutsch (Schweiz)', 'ch', 'ch', 1, 0, 3),
+(4, 'de-AT', 'German (AT)', 'Deutsch (Österreich)', 'at', 'at', 1, 0, 4),
+(5, 'de-LI', 'German (LI)', 'Deutsch (Lichtenstein)', 'li', 'de', 1, 0, 5),
 (6, 'de-LU', 'German (LU)', 'Deutsch (Luxemburg)', 'lu', 'de', 1, 0, 6);
 
 --

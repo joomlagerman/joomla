@@ -19,8 +19,8 @@ INSERT INTO `#__languages` (`lang_id`, `lang_code`, `title`, `title_native`, `se
 (2, 'de-DE', 'German (DE)', 'Deutsch (Deutschland)', 'de', 'de', 1, 1, 2),
 (3, 'de-CH', 'German (CH)', 'Deutsch (Schweiz)', 'ch', 'ch', 1, 0, 3),
 (4, 'de-AT', 'German (AT)', 'Deutsch (Österreich)', 'at', 'at', 1, 0, 4),
-(5, 'de-LI', 'German (LI)', 'Deutsch (Lichtenstein)', 'li', 'de', 1, 0, 5),
-(6, 'de-LU', 'German (LU)', 'Deutsch (Luxemburg)', 'lu', 'de', 1, 0, 6);
+(5, 'de-LI', 'German (LI)', 'Deutsch (Lichtenstein)', 'li', 'li', 1, 0, 5),
+(6, 'de-LU', 'German (LU)', 'Deutsch (Luxemburg)', 'lu', 'lu', 1, 0, 6);
 
 --
 -- Table `#__update_sites_extensions`

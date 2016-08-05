@@ -8,9 +8,9 @@
 UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, 'en-GB', 'de-DE') WHERE `extension_id` = 11;
 
 INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `client_id`, `access`, `manifest_cache`) VALUES
-(602, 'German (DE)', 'language', 'de-DE', 0, 1, '{"name":"German (Germany)","type":"language","creationDate":"13.07.2016","author":"J!German","copyright":"Copyright (C) 2005 - 2016 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.6.0.1","group":""}'),
-(603, 'German (DE)', 'language', 'de-DE', 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"13.07.2016","author":"J!German","copyright":"Copyright (C) 2005 - 2016 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.6.0.1","group":""}'),
-(604, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', 0, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"13.07.2016","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.6.0.1","group":"","filename":"pkg_de-DE"}');
+(602, 'German (DE)', 'language', 'de-DE', 0, 1, '{"name":"German (Germany)","type":"language","creationDate":"05.08.2016","author":"J!German","copyright":"Copyright (C) 2005 - 2016 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.6.2.1","group":""}'),
+(603, 'German (DE)', 'language', 'de-DE', 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"05.08.2016","author":"J!German","copyright":"Copyright (C) 2005 - 2016 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.6.2.1","group":""}'),
+(604, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', 0, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"05.08.2016","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.6.2.1","group":"","filename":"pkg_de-DE"}');
 
 --
 -- Table `#__languages`

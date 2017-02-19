@@ -176,6 +176,12 @@
         <filename>de-DE.plg_fields_imagelist.sys.ini</filename>
         <filename>de-DE.plg_fields_integer.ini</filename>
         <filename>de-DE.plg_fields_integer.sys.ini</filename>
+        <filename>de-DE.plg_fields_list.ini</filename>
+        <filename>de-DE.plg_fields_list.sys.ini</filename>
+        <filename>de-DE.plg_fields_media.ini</filename>
+        <filename>de-DE.plg_fields_media.sys.ini</filename>
+        <filename>de-DE.plg_fields_radio.ini</filename>
+        <filename>de-DE.plg_fields_radio.sys.ini</filename>
         <filename>de-DE.plg_finder_categories.ini</filename>
         <filename>de-DE.plg_finder_categories.sys.ini</filename>
         <filename>de-DE.plg_finder_contacts.ini</filename>

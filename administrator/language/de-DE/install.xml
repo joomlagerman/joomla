@@ -126,6 +126,8 @@
         <filename>de-DE.plg_content_contact.sys.ini</filename>
         <filename>de-DE.plg_content_emailcloak.ini</filename>
         <filename>de-DE.plg_content_emailcloak.sys.ini</filename>
+        <filename>de-DE.plg_content_fields.ini</filename>
+        <filename>de-DE.plg_content_fields.sys.ini</filename>
         <filename>de-DE.plg_content_finder.ini</filename>
         <filename>de-DE.plg_content_finder.sys.ini</filename>
         <filename>de-DE.plg_content_geshi.ini</filename>

@@ -19,6 +19,8 @@
         <filename>de-DE.com_admin.sys.ini</filename>
         <filename>de-DE.com_ajax.ini</filename>
         <filename>de-DE.com_ajax.sys.ini</filename>
+        <filename>de-DE.com_associations.ini</filename>
+        <filename>de-DE.com_associations.sys.ini</filename>
         <filename>de-DE.com_banners.ini</filename>
         <filename>de-DE.com_banners.sys.ini</filename>
         <filename>de-DE.com_cache.ini</filename>
@@ -37,6 +39,8 @@
         <filename>de-DE.com_contenthistory.sys.ini</filename>
         <filename>de-DE.com_cpanel.ini</filename>
         <filename>de-DE.com_cpanel.sys.ini</filename>
+        <filename>de-DE.com_fields.ini</filename>
+        <filename>de-DE.com_fields.sys.ini</filename>
         <filename>de-DE.com_finder.ini</filename>
         <filename>de-DE.com_finder.sys.ini</filename>
         <filename>de-DE.com_installer.ini</filename>
@@ -122,6 +126,8 @@
         <filename>de-DE.plg_content_contact.sys.ini</filename>
         <filename>de-DE.plg_content_emailcloak.ini</filename>
         <filename>de-DE.plg_content_emailcloak.sys.ini</filename>
+        <filename>de-DE.plg_content_fields.ini</filename>
+        <filename>de-DE.plg_content_fields.sys.ini</filename>
         <filename>de-DE.plg_content_finder.ini</filename>
         <filename>de-DE.plg_content_finder.sys.ini</filename>
         <filename>de-DE.plg_content_geshi.ini</filename>
@@ -144,6 +150,8 @@
         <filename>de-DE.plg_editors_tinymce.sys.ini</filename>
         <filename>de-DE.plg_editors-xtd_article.ini</filename>
         <filename>de-DE.plg_editors-xtd_article.sys.ini</filename>
+        <filename>de-DE.plg_editors-xtd_contact.ini</filename>
+        <filename>de-DE.plg_editors-xtd_contact.sys.ini</filename>
         <filename>de-DE.plg_editors-xtd_image.ini</filename>
         <filename>de-DE.plg_editors-xtd_image.sys.ini</filename>
         <filename>de-DE.plg_editors-xtd_module.ini</filename>
@@ -154,6 +162,28 @@
         <filename>de-DE.plg_editors-xtd_readmore.sys.ini</filename>
         <filename>de-DE.plg_extension_joomla.ini</filename>
         <filename>de-DE.plg_extension_joomla.sys.ini</filename>
+        <filename>de-DE.plg_fields_calendar.ini</filename>
+        <filename>de-DE.plg_fields_calendar.sys.ini</filename>
+        <filename>de-DE.plg_fields_checkboxes.ini</filename>
+        <filename>de-DE.plg_fields_checkboxes.sys.ini</filename>
+        <filename>de-DE.plg_fields_color.ini</filename>
+        <filename>de-DE.plg_fields_color.sys.ini</filename>
+        <filename>de-DE.plg_fields_editor.ini</filename>
+        <filename>de-DE.plg_fields_editor.sys.ini</filename>
+        <filename>de-DE.plg_fields_gallery.ini</filename>
+        <filename>de-DE.plg_fields_gallery.sys.ini</filename>
+        <filename>de-DE.plg_fields_image.ini</filename>
+        <filename>de-DE.plg_fields_image.sys.ini</filename>
+        <filename>de-DE.plg_fields_imagelist.ini</filename>
+        <filename>de-DE.plg_fields_imagelist.sys.ini</filename>
+        <filename>de-DE.plg_fields_integer.ini</filename>
+        <filename>de-DE.plg_fields_integer.sys.ini</filename>
+        <filename>de-DE.plg_fields_list.ini</filename>
+        <filename>de-DE.plg_fields_list.sys.ini</filename>
+        <filename>de-DE.plg_fields_media.ini</filename>
+        <filename>de-DE.plg_fields_media.sys.ini</filename>
+        <filename>de-DE.plg_fields_radio.ini</filename>
+        <filename>de-DE.plg_fields_radio.sys.ini</filename>
         <filename>de-DE.plg_finder_categories.ini</filename>
         <filename>de-DE.plg_finder_categories.sys.ini</filename>
         <filename>de-DE.plg_finder_contacts.ini</filename>

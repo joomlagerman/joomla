@@ -53,6 +53,7 @@
       <span style="text-decoration: underline;">Hinweis:</span> Dieses Paket unterstützt die Joomla! eigene <a title="Joomla!-Aktualisierungsfunktion" href="index.php?option=com_installer&amp;view=update" target="_blank">Aktualisierungsfunktion</a>!
     </div>]]>
     </description>
+    <blockChildUninstall>true</blockChildUninstall>
     <files>
         <file type="language" client="site" id="de-DE">site_de-DE.zip</file>
         <file type="language" client="administrator" id="de-DE">admin_de-DE.zip</file>

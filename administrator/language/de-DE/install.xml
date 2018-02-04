@@ -7,7 +7,7 @@
 	<author>J!German</author>
 	<authorEmail>team@jgerman.de</authorEmail>
 	<authorUrl>https://www.jgerman.de</authorUrl>
-	<copyright>Copyright (C) 2008 - 2017 J!German. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2008 - 2018 J!German. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<description><![CDATA[
 	<img style="margin: 5px; vertical-align: middle;" alt="German (Deutsch)" src="data:;base64,R0lGODlhEgAMAJEAAP/OAAAAAN0AAAAAACH5BAAAAAAALAAAAAASAAwAAAIXjI+py+2vhJy02ouz3hb4D4biSJbmKRYAOw==" height="12" width="18" />Deutsche Backend (Administrator)-Übersetzung für Joomla! 3.8.4
@@ -245,7 +245,7 @@
 		<filename>de-DE.plg_system_debug.ini</filename>
 		<filename>de-DE.plg_system_debug.sys.ini</filename>
 		<filename>de-DE.plg_system_fields.ini</filename>
-		<filename>de-DE.plg_system_fields.sys.ini</filename> 
+		<filename>de-DE.plg_system_fields.sys.ini</filename>
 		<filename>de-DE.plg_system_highlight.ini</filename>
 		<filename>de-DE.plg_system_highlight.sys.ini</filename>
 		<filename>de-DE.plg_system_languagecode.ini</filename>

@@ -264,6 +264,8 @@
 		<filename>de-DE.plg_system_remember.sys.ini</filename>
 		<filename>de-DE.plg_system_sef.ini</filename>
 		<filename>de-DE.plg_system_sef.sys.ini</filename>
+		<filename>de-DE.plg_system_sessiongc.ini</filename>
+		<filename>de-DE.plg_system_sessiongc.sys.ini</filename>
 		<filename>de-DE.plg_system_stats.ini</filename>
 		<filename>de-DE.plg_system_stats.sys.ini</filename>
 		<filename>de-DE.plg_system_updatenotification.ini</filename>

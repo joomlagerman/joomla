@@ -8,6 +8,7 @@ The J!German translation team provides German translation for Joomla!.
 ## INSTALLATION WITHIN JOOMLA BACKEND
 
 Please go to the language section and search for german. All available translations will be there.
+*(Note: Alpha and Beta versions can not be installed via the Joomla backend. Please download and install as an extension.)*
 
 ## DOWNLOAD READY PACKAGES
 

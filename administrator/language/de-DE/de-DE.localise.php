@@ -2,7 +2,7 @@
 /**
  * @package    Joomla.Language
  *
- * @copyright  Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
+ * @copyright  Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -30,14 +30,13 @@ abstract class De_DELocalise
 		{
 			return array('0');
 		}
-		elseif ($count == 1)
+
+		if ($count == 1)
 		{
 			return array('1');
 		}
-		else
-		{
-			return array('MORE');
-		}
+
+		return array('MORE');
 	}
 
 	/**
@@ -47,7 +46,7 @@ abstract class De_DELocalise
 	 *
 	 * @since   1.6
 	 *
-	 * @source http://solariz.de/649/deutsche-stopwords.htm
+	 * @link    https://solariz.de/649/deutsche-stopwords.htm
 	 */
 	public static function getIgnoredSearchWords()
 	{

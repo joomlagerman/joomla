@@ -1,0 +1,16 @@
+# IDE & System Related Files #
+.buildpath
+.project
+.settings
+.DS_Store
+.idea
+.vscode
+
+# OSX #
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows #
+Thumbs.db
+Desktop.ini

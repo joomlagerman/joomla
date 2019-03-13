@@ -45,7 +45,6 @@ UPDATE IGNORE `#__viewlevels` SET `title` = 'Spezial' WHERE `id` = 3;
 UPDATE IGNORE `#__viewlevels` SET `title` = 'Gast' WHERE `id` = 5;
 UPDATE IGNORE `#__viewlevels` SET `title` = 'Super Benutzer' WHERE `id` = 6;
 
-
 --
 -- Table `#__modules`
 --

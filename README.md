@@ -13,3 +13,6 @@ Please go to the language section and search for german. All available translati
 ## DOWNLOAD READY PACKAGES
 
 Our packages can be downloaded from [releases](https://github.com/joomlagerman/joomla/releases) or from our project website: https://www.jgerman.de
+
+### LICENCE
+GNU GENERAL PUBLIC LICENSE V2. Please see [License File](LICENSE) for more information.

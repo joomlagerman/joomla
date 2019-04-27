@@ -1,16 +1,16 @@
-### Wie kann der Fehler nachgestellt werden
+### Was soll verbessert / korrigiert werden
 
 
 
-### Das erwartete Ergebnis
+### Wo wird der Sprachstring angezeigt (Frontend/Backend)
 
 
 
-### Das aktuelle Ergebnis
+### Was wäre eine bessere Übersetzung / Bezeichnung
 
 
 
-### System Information
+### Joomla Version & Version der deutschen Sprachdatei
 
 
 

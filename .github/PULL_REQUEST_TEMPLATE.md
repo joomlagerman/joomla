@@ -4,22 +4,6 @@ Pull Request für Issue # .
 
 
 
-### Wie kann der Fehler nachgestellt werden
-
-
-
-### Das erwartete Ergebnis
-
-
-
-### Das aktuelle Ergebnis
-
-
-
-### System Information
-
-
-
-### Zusätzlichen Informationen
+### Wo wird der Sprachstring angezeigt / Wie kann getestet werden
 
 

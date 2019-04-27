@@ -2,7 +2,7 @@
 
 
 
-### Wo wird der Sprachstring angezeigt
+### Wo wird der Sprachstring angezeigt (Frontend/Backend)
 
 
 

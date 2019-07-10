@@ -2,8 +2,8 @@
 <extension type="package" version="3.9" method="upgrade">
 	<name>German (Germany) Language Pack</name>
 	<packagename>de-DE</packagename>
-	<version>3.9.9.1</version>
-	<creationDate>09.07.2019</creationDate>
+	<version>3.9.10.1</version>
+	<creationDate>10.07.2019</creationDate>
 	<author>J!German</author>
 	<authorEmail>team@jgerman.de</authorEmail>
 	<authorUrl>https://www.jgerman.de</authorUrl>
@@ -14,8 +14,8 @@
 	<packagerurl />
 	<description><![CDATA[
 	<div style="text-align: center;">
-        <h2>Deutsches „Full“-Sprachpaket für Joomla! 3.9.9 von <a title="J!German" href="https://www.jgerman.de" target="_blank">J!German</a></h2>
-        <h3><span style="color: #008000;">Übersetzungsversion: 3.9.9.1</span></h3>
+        <h2>Deutsches „Full“-Sprachpaket für Joomla! 3.9.10 von <a title="J!German" href="https://www.jgerman.de" target="_blank">J!German</a></h2>
+        <h3><span style="color: #008000;">Übersetzungsversion: 3.9.10.1</span></h3>
         <hr />
         <table rules="all" frame="border" style="width: 90%; border-color: #000000; border-width: 1px; border-style: solid;" align="center" border="1">
         <colgroup> <col width="30%" /> <col width="60" /> </colgroup>

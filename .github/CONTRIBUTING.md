@@ -7,5 +7,5 @@
 
 1. [Code of conduct](../CODE_OF_CONDUCT.md)
 2. Getting started
-  - with [git and github](https://guides.github.com/activities/hello-world/)
-  - with especially with this repository
+   1. with [git and github](https://guides.github.com/activities/hello-world/)
+   2. especially with this repository

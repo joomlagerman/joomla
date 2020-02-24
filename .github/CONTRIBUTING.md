@@ -4,5 +4,5 @@
 
 ### Table of contents
 
-1. [Code of conduct](CODE_OF_CONDUCT.md)
+1. [Code of conduct](../CODE_OF_CONDUCT.md)
 2. Getting startet

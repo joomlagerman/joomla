@@ -16,7 +16,7 @@ Our packages can be downloaded from [releases](https://github.com/joomlagerman/j
 
 ## HELP
 
-Please read our [contributing guidelines](.github/CONTRIBUTING) and start with an question/issue first.
+Please read our [contributing guidelines](.github/CONTRIBUTING.md) and start with an question/issue first.
 
 ### LICENCE
 GNU GENERAL PUBLIC LICENSE V2. Please see [License File](LICENSE) for more information.

@@ -34,7 +34,8 @@ where `this-is-you` is your GitHub username. Here you're copying the contents of
 
 ### Create or take an issue
 
-Go to [Issues](https://github.com/joomlagerman/joomla/issues) and create a new issue or take one open issue to write an PR.
+Go to [Issues](https://github.com/joomlagerman/joomla/issues) and create a new issue or take one open issue to write an PR.  
+Normally no PR without a previous issue. We have the *issue-first principle*.
 
 ### Create a branch
 

@@ -5,8 +5,7 @@
 
 Our [Code of conduct](../CODE_OF_CONDUCT.md). Please read carefully.
 
-Getting started with [git and github](https://guides.github.com/activities/hello-world/) 
-If you don't have git on your machine, [install it]( https://help.github.com/articles/set-up-git/).
+Getting started with [git and github](https://guides.github.com/activities/hello-world/). If you don't have git on your machine, [install it]( https://help.github.com/articles/set-up-git/).
 #### *If you're not comfortable with command line, [here are tutorials using GUI tools.]( #tutorials-using-other-tools )*
 
 ## Working with this repository

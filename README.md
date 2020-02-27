@@ -14,5 +14,9 @@ Please go to the language section and search for german. All available translati
 
 Our packages can be downloaded from [releases](https://github.com/joomlagerman/joomla/releases) or from our project website: https://www.jgerman.de
 
+## HELP
+
+Please read our [contributing guidelines](.github/CONTRIBUTING.md) and start with an question/issue first.
+
 ### LICENCE
 GNU GENERAL PUBLIC LICENSE V2. Please see [License File](LICENSE) for more information.

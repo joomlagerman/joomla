@@ -16,7 +16,7 @@
 	]]></description>
 	<files>
 		<folder>/</folder>
-		<filename file="meta">de-DE.xml</filename>
+		<filename file="meta">langmetadata.xml</filename>
 		<filename file="meta">install.xml</filename>
 	</files>
 </extension>

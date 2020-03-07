@@ -1,7 +1,7 @@
 # repo: https://github.com/kentaro-m/auto-assign-action
 
 addReviewers: true
-addAssignees: false
+addAssignees: author
 numberOfReviewers: 1
 useReviewGroups: true
 

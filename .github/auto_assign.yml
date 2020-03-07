@@ -19,11 +19,11 @@ useReviewGroups: true
 # A list of reviewers, split into different groups, to be added to pull requests (GitHub user name)
 reviewGroups:
   groupA:
-    - reviewer
+    - tecpromotion
+    - zero-24
 
-#   groupB:
-#     - reviewerC
-#     - reviewerD
+  groupB:
+    - coolwebcreations
   
 # Set to true to add assignees from different groups to pull requests
 useAssigneeGroups: false

@@ -19,8 +19,7 @@ useReviewGroups: true
 # A list of reviewers, split into different groups, to be added to pull requests (GitHub user name)
 reviewGroups:
   groupA:
-    - tecpromotion
-    - zero-24
+    - reviewer
 
 #   groupB:
 #     - reviewerC

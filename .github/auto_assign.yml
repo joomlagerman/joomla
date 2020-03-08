@@ -7,6 +7,6 @@ useReviewGroups: true
 
 reviewGroups:
   groupA:
-    - joomlagergerman/reviewer
+    - joomlagerman/reviewer
 
 useAssigneeGroups: false

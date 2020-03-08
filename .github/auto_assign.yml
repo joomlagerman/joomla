@@ -1,0 +1,12 @@
+# repo: https://github.com/kentaro-m/auto-assign-action
+
+addReviewers: true
+addAssignees: author
+numberOfReviewers: 1
+useReviewGroups: true
+
+reviewGroups:
+  groupA:
+    - joomlagergerman/reviewer
+
+useAssigneeGroups: false

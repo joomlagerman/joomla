@@ -7,6 +7,8 @@ useReviewGroups: true
 
 reviewGroups:
   groupA:
-    - joomlagerman/reviewer
+    - tecpromotion
+    - zero-24
+    - coolwebcreations
 
 useAssigneeGroups: false

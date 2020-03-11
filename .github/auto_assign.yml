@@ -2,8 +2,10 @@
 
 addReviewers: true
 reviewers:
-    - joomlagerman/reviewer
+    - tecpromotion
+    - zero-24
+    - coolwebcreations
 
-numberOfReviewers: 1
+numberOfReviewers: 0
 useAssigneeGroups: false
 addAssignees: author

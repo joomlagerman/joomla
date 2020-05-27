@@ -33,10 +33,10 @@ abstract class De_DELocalise
 
 		if ($count == 1)
 		{
-			return array('1');
+			return array('ONE', '1');
 		}
 
-		return array('MORE');
+		return array('OTHER', 'MORE');
 	}
 
 	/**

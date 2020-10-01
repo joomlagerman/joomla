@@ -35,7 +35,7 @@
                 </li>
                 <br />
                 <li>
-                  <span style="text-decoration: underline;">Aktualisierung:</span>
+                  <span style="text-decoration: underline;">Update:</span>
                   <br />
                   Es sind keine weiteren Schritte erforderlich.
                 </li>
@@ -52,7 +52,7 @@
         </tbody>
         </table>
         <br />
-        <span style="text-decoration: underline;">Hinweis:</span> Dieses Paket unterstützt die Joomla! eigene <a title="Joomla!-Aktualisierungsfunktion" href="index.php?option=com_installer&amp;view=update" target="_blank">Aktualisierungsfunktion</a>!
+        <span style="text-decoration: underline;">Hinweis:</span> Dieses Paket unterstützt die Joomla! eigene <a title="Joomla-Update-Funktion" href="index.php?option=com_installer&amp;view=update" target="_blank">Update-Funktion</a>!
       </div>]]>
 	</description>
 	<blockChildUninstall>true</blockChildUninstall>

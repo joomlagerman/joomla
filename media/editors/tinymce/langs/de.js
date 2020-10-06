@@ -43,7 +43,7 @@ tinymce.addI18n('de',{
 "Heading 3": "\u00dcberschrift 3",
 "Decrease indent": "Einzug verkleinern",
 "Header 4": "\u00dcberschrift 4",
-"Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.": "Einf\u00fcgen ist nun im einfachen Textmodus. Inhalte werden ab jetzt als unformatierter Text eingef\u00fcgt, bis Sie diese Einstellung wieder ausschalten!",
+"Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.": "Einf\u00fcgen ist nun im einfachen Textmodus. Inhalte werden ab jetzt als unformatierter Text eingef\u00fcgt, bis Sie diese Einstellung wieder ausschalten.",
 "Underline": "Unterstrichen",
 "Cancel": "Abbrechen",
 "Justify": "Blocksatz",

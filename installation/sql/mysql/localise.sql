@@ -7,20 +7,20 @@
 --
 UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, 'en-GB', 'de-DE') WHERE `extension_id` = 11;
 
-INSERT INTO `#__extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `client_id`, `enabled`, `access`, `manifest_cache`) VALUES
-(602, 604, 'German (DE)', 'language', 'de-DE', 0, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"20.04.2019","author":"J!German","copyright":"Copyright (C) 2005 - 2019 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.0.0-alpha1.1","group":""}'),
-(603, 604, 'German (DE)', 'language', 'de-DE', 1, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"20.04.2019","author":"J!German","copyright":"Copyright (C) 2005 - 2019 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.0.0-alpha1.1","group":""}'),
-(604, 0, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', 0, 1, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"20.04.2019","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.0.0-alpha1.1","group":"","filename":"pkg_de-DE"}');
+INSERT INTO `#__extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `manifest_cache`, `params`, `custom_data`) VALUES
+(602, 604, 'German (DE)', 'language', 'de-DE', '', 0, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"17.10.2020","author":"J!German","copyright":"Copyright (C) 2005 - 2019 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.0.0-beta2.1","group":""}' ,'' ,''),
+(603, 604, 'German (DE)', 'language', 'de-DE', '', 1, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"17.10.2020","author":"J!German","copyright":"Copyright (C) 2005 - 2019 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.0.0-beta2.1","group":""}' ,'' ,''),
+(604, 0, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', '', 0, 1, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"17.10.2020","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.0.0-beta2.1","group":"","filename":"pkg_de-DE"}' ,'' ,'');
 
 --
 -- Table `#__languages`
 --
-INSERT INTO `#__languages` (`lang_id`, `lang_code`, `title`, `title_native`, `sef`, `image`, `published`, `access`, `ordering`) VALUES
-(2, 'de-DE', 'German (DE)', 'Deutsch (Deutschland)', 'de', 'de_de', 1, 1, 2),
-(3, 'de-CH', 'German (CH)', 'Deutsch (Schweiz)', 'ch', 'de_ch', 0, 1, 3),
-(4, 'de-AT', 'German (AT)', 'Deutsch (Österreich)', 'at', 'de_at', 0, 1, 4),
-(5, 'de-LI', 'German (LI)', 'Deutsch (Lichtenstein)', 'li', 'de_li', 0, 1, 5),
-(6, 'de-LU', 'German (LU)', 'Deutsch (Luxemburg)', 'lu', 'de_lu', 0, 1, 6);
+INSERT INTO `#__languages` (`lang_id`, `lang_code`, `title`, `title_native`, `sef`, `image`, `description`, `metadesc`, `published`, `access`, `ordering`) VALUES
+(2, 'de-DE', 'German (DE)', 'Deutsch (Deutschland)', 'de', 'de_de', '', '', 1, 1, 2),
+(3, 'de-CH', 'German (CH)', 'Deutsch (Schweiz)', 'ch', 'de_ch', '', '', 0, 1, 3),
+(4, 'de-AT', 'German (AT)', 'Deutsch (Österreich)', 'at', 'de_at', '', '', 0, 1, 4),
+(5, 'de-LI', 'German (LI)', 'Deutsch (Lichtenstein)', 'li', 'de_li', '', '', 0, 1, 5),
+(6, 'de-LU', 'German (LU)', 'Deutsch (Luxemburg)', 'lu', 'de_lu', '', '', 0, 1, 6);
 
 --
 -- Table `#__update_sites_extensions`

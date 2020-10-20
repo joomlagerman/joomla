@@ -65,4 +65,4 @@ UPDATE IGNORE `#__modules` SET `title` = 'Mehrsprachenstatus' WHERE `id` = 79;
 UPDATE IGNORE `#__modules` SET `title` = 'Joomla Version' WHERE `id` = 86;
 UPDATE IGNORE `#__modules` SET `title` = 'Beispieldaten' WHERE `id` = 87;
 UPDATE IGNORE `#__modules` SET `title` = 'Letzte Aktionen' WHERE `id` = 88;
-UPDATE IGNORE `#__modules` SET `title` = 'Datenschutz Kontrollzentrum' WHERE `id` = 89;
+UPDATE IGNORE `#__modules` SET `title` = 'Datenschutz Dashboard' WHERE `id` = 89;

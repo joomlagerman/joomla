@@ -222,7 +222,7 @@ tinymce.addI18n('de',{
 "Insert": "Einf\u00fcgen",
 "File": "Datei",
 "Edit": "Bearbeiten",
-"Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help": "Rich-Text- Area. Dr\u00fccken Sie ALT-F9 f\u00fcr das Men\u00fc. Dr\u00fccken Sie ALT-F10 f\u00fcr Symbolleiste. Dr\u00fccken Sie ALT-0 f\u00fcr Hilfe",
+"Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help": "Rich-Text- Area. Dr\u00fccken Sie ALT-F9 f\u00fcr das Men\u00fc. Dr\u00fccken Sie ALT-F10 f\u00fcr Werkzeugleiste. Dr\u00fccken Sie ALT-0 f\u00fcr Hilfe",
 "Tools": "Werkzeuge",
 "View": "Ansicht",
 "Table": "Tabelle",

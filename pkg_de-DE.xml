@@ -17,12 +17,12 @@
         <h2>Deutsches Sprachpaket für Joomla! 3.9.24 von <a title="J!German" href="https://www.jgerman.de" target="_blank">J!German</a></h2>
         <h3><span style="color: #008000;">Übersetzungsversion: 3.9.24.1</span></h3>
         <hr />
-        <table rules="all" frame="border" style="width: 90%; border-color: #000000; border-width: 1px; border-style: solid;" align="center" border="1">
+        <table class="table table-bordered" style="width: 90%;" align="center">
         <colgroup> <col width="30%" /> <col width="60" /> </colgroup>
         <tbody>
           <tr>
             <td>
-              <ul>
+              <ul class="unstyled">
                 <li>Frontend (Website)-Übersetzung</li>
               </ul>
             </td>
@@ -44,7 +44,7 @@
           </tr>
           <tr>
             <td>
-              <ul>
+              <ul class="unstyled">
                 <li>Backend (Administrator)-Übersetzung</li>
               </ul>
             </td>

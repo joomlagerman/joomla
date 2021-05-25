@@ -8,9 +8,9 @@
 UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, 'en-GB', 'de-DE') WHERE `extension_id` = 11;
 
 INSERT INTO `#__extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `client_id`, `enabled`, `access`, `manifest_cache`) VALUES
-(602, 604, 'German (DE)', 'language', 'de-DE', 0, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"26.04.2021","author":"J!German","copyright":"(C) 2008 - 2021 J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.9.26.2","group":""}'),
-(603, 604, 'German (DE)', 'language', 'de-DE', 1, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"26.04.2021","author":"J!German","copyright":"(C) 2008 - 2021 J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.9.26.2","group":""}'),
-(604, 0, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', 0, 1, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"26.04.2021","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.9.26.2","group":"","filename":"pkg_de-DE"}');
+(602, 604, 'German (DE)', 'language', 'de-DE', 0, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"25.05.2021","author":"J!German","copyright":"(C) 2008 - 2021 J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.9.27.1","group":""}'),
+(603, 604, 'German (DE)', 'language', 'de-DE', 1, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"25.05.2021","author":"J!German","copyright":"(C) 2008 - 2021 J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.9.27.1","group":""}'),
+(604, 0, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', 0, 1, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"25.05.2021","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"3.9.27.1","group":"","filename":"pkg_de-DE"}');
 
 --
 -- Table `#__languages`

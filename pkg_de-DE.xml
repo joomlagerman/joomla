@@ -28,6 +28,6 @@
 		<file type="language" client="administrator" id="de-DE">admin_de-DE.zip</file>
 	</files>
 	<updateservers>
-		<server type="collection" priority="1" name="Accredited Joomla! Translations">https://update.joomla.org/language/translationlist_3.xml</server>
+		<server type="collection" priority="1" name="Accredited Joomla! Translations">https://update.joomla.org/language/translationlist_4.xml</server>
 	</updateservers>
 </extension>

@@ -2,8 +2,8 @@
 <extension version="3.9" type="language" client="site" method="upgrade">
 	<name>German (DE)</name>
 	<tag>de-DE</tag>
-	<version>3.10.0.1-alpha6.1</version>
-	<creationDate>01.06.2021</creationDate>
+	<version>3.10.0.1-alpha7.1</version>
+	<creationDate>15.06.2021</creationDate>
 	<author>J!German</author>
 	<authorEmail>team@jgerman.de</authorEmail>
 	<authorUrl>https://www.jgerman.de</authorUrl>

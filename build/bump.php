@@ -9,7 +9,6 @@
  * - php build/bump.php -v 4.0.0 -l 1
  *
  * @package    Joomla.Language
- *
  * @copyright  (C) 2021 J!German <https://www.jgerman.de>
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */

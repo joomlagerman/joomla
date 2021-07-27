@@ -20,6 +20,9 @@
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
+// This script is largly based on the Joomla CMS build Script
+// https://github.com/joomla/joomla-cms/blob/4.0-dev/build/build.php
+
 const PHP_TAB = "\t";
 
 $time = time();

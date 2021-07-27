@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="package" version="3.9" method="upgrade">
+<extension type="package" version="4.0" method="upgrade">
 	<name>German (Germany) Language Pack</name>
 	<packagename>de-DE</packagename>
 	<version>4.0.0-rc4.1</version>
@@ -23,6 +23,7 @@
 	]]>
 	</description>
 	<blockChildUninstall>true</blockChildUninstall>
+	<scriptfile>script.php</scriptfile>
 	<files>
 		<file type="language" client="site" id="de-DE">site_de-DE.zip</file>
 		<file type="language" client="administrator" id="de-DE">admin_de-DE.zip</file>

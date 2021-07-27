@@ -131,13 +131,13 @@ foreach (['de-DE', 'de-AT', 'de-CH', 'de-LI', 'de-LU'] as $languageCode)
 
 		if ($folder === 'full')
 		{
-			system('cp "' . $fullpath . '/pkg_de-DE.xml" "' . $tmpLanguagePathFolder . '/pkg_' . $languageCode . '.xml' . '"');
+			system('cp ' . $fullpath . '/pkg_de-DE.xml ' . $tmpLanguagePathFolder . '/pkg_' . $languageCode . '.xml');
 			applyTranslationChanges($languageCode, $folder, $tmpLanguagePathFolder);
 		}
 
 		if ($folder === 'admin')
 		{
-			system('cp -r "' . $fullpath . '/administrator/language/de-DE/"* "' . $tmpLanguagePathFolder . '"');
+			system('cp -r ' . $fullpath . '/administrator/language/de-DE/* ' . $tmpLanguagePathFolder);
 			applyTranslationChanges($languageCode, $folder, $tmpLanguagePathFolder);
 			chdir($tmpLanguagePathFolder);
 			system('zip -r ' . $tmpLanguagePath . '/full/admin_' . $languageCode . '.zip * > /dev/null');
@@ -145,7 +145,7 @@ foreach (['de-DE', 'de-AT', 'de-CH', 'de-LI', 'de-LU'] as $languageCode)
 
 		if ($folder === 'site')
 		{
-			system('cp -r "' . $fullpath . '/language/de-DE/"* "' . $tmpLanguagePathFolder . '"');
+			system('cp -r ' . $fullpath . '/language/de-DE/* ' . $tmpLanguagePathFolder);
 			applyTranslationChanges($languageCode, $folder, $tmpLanguagePathFolder);
 			chdir($tmpLanguagePathFolder);
 			system('zip -r ' . $tmpLanguagePath . '/full/site_' . $languageCode . '.zip * > /dev/null');
@@ -153,7 +153,7 @@ foreach (['de-DE', 'de-AT', 'de-CH', 'de-LI', 'de-LU'] as $languageCode)
 
 		if ($folder === 'api')
 		{
-			system('cp -r "' . $fullpath . '/api/language/de-DE/"* "' . $tmpLanguagePathFolder . '"');
+			system('cp -r ' . $fullpath . '/api/language/de-DE/* ' . $tmpLanguagePathFolder);
 			applyTranslationChanges($languageCode, $folder, $tmpLanguagePathFolder);
 			chdir($tmpLanguagePathFolder);
 			system('zip -r ' . $tmpLanguagePath . '/full/api_' . $languageCode . '.zip * > /dev/null');

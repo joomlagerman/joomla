@@ -10,10 +10,17 @@
  * Make sure your default umask is 022 to create archives with correct permissions.
  *
  * Steps:
- * 1. Tag new release in the local git repository (for example, "git tag 2.5.1")
- * 2. Set the $version and $release variables for the new version.
- * 3. Run from CLI as: 'php build.php" from build directory.
- * 4. Check the archives in the tmp directory.
+ * 1. Run the bump script
+ * 2. Commit the version changes
+ * 3. Tag new release in the local git repository (for example, "git tag -s 4.0.0v1")
+ * 3. Run from CLI as: 'php buid/build.php --lpackage"
+ * 4. Check the the tmp directory.
+ *
+ * Examples:
+ * - php build/build.php --lpackage --v
+ * - php build/build.php --crowdin --v
+ * - php build/build.php --install --v
+ * - php build/build.php --fullurl "https://github.com/joomla/joomla-cms/releases/download/4.0.0-rc5/Joomla_4.0.0-rc5-Release_Candidate-Full_Package.zip" --v
  *
  * @package    Joomla.Language
  * @copyright  (C) 2021 J!German <https://www.jgerman.de>
@@ -44,10 +51,14 @@ $tmp      = $here . '/tmp';
 $fullpath = $tmp . '/' . $time;
 
 // Parse input options
-$options = getopt('', ['help', 'remote::']);
+$options = getopt('', ['help', 'fullurl:', 'install', 'lpackages', 'v', 'crowdin']);
 
-$remote       = $options['remote'] ?? false;
-$showHelp     = isset($options['help']);
+$showHelp         = isset($options['help']);
+$fullReleaseUrl   = $options['fullurl'] ?? false;
+$install          = isset($options['install']);
+$languagePackages = isset($options['lpackages']);
+$verbose          = isset($options['v']);
+$crowdin          = isset($options['crowdin']);
 
 if ($showHelp)
 {
@@ -55,22 +66,19 @@ if ($showHelp)
 	exit;
 }
 
-// If not given a remote, assume we are looking for the latest local tag
-if (!$remote)
-{
-	chdir($repo);
-	$tagVersion = system($systemGit . ' describe --tags `' . $systemGit . ' rev-list --tags --max-count=1`', $tagVersion);
-	$remote = 'tags/' . $tagVersion;
-	chdir($here);
-}
+// Looking for the latest local tag
+chdir($repo);
+$tagVersion = system($systemGit . ' describe --tags `' . $systemGit . ' rev-list --tags --max-count=1`', $tagVersion);
+$remote = 'tags/' . $tagVersion;
+chdir($here);
 
-echo "Start build for remote $remote.\n";
-echo "Delete old release folder.\n";
+message('Start build for remote '. $remote, $verbose);
+message('Delete old release folder.', $verbose);
 system('rm -rf ' . $tmp);
 mkdir($tmp);
 mkdir($fullpath);
 
-echo "Copy the files from the git repository.\n";
+message('Copy the files from the git repository.', $verbose);
 chdir($repo);
 system($systemGit . ' archive ' . $remote . ' | tar -x -C ' . $fullpath);
 chdir($fullpath);
@@ -85,7 +93,13 @@ $release     = $languagePackAndPatchVersion[0];
 $fullVersion = $versionParts[0] . '.' . $versionParts[1] . '.' . $versionParts[2];
 
 chdir($tmp);
-system('mkdir packages');
+
+// We only need this when we are building packages
+if ($fullReleaseUrl || $languagePackages)
+{
+	system('mkdir packages');
+}
+
 
 /*
  * Here we set the files/folders which should not be packaged at any time
@@ -106,83 +120,224 @@ $doNotPackage = array(
 );
 
 // Delete the files and folders we exclude from the packages (tests, docs, build, etc.).
-echo "Delete folders not included in packages.\n";
+message('Delete folders not included in packages.', $verbose);
 
 foreach ($doNotPackage as $removeFile)
 {
 	system('rm -rf ' . $time . '/' . $removeFile);
 }
 
-echo "Prepare packages.\n";
+message('Prepare packages.', $verbose);
 
-system('mkdir tmp_packages');
-chdir('tmp_packages');
-
-foreach (['de-DE', 'de-AT', 'de-CH', 'de-LI', 'de-LU'] as $languageCode)
+if ($languagePackages || $crowdin)
 {
-	system('mkdir ' . $languageCode);
-	chdir($languageCode);
+	system('mkdir tmp_packages');
+	chdir('tmp_packages');
 
-	echo "Build package: $languageCode.\n";
-
-	foreach (['full', 'admin', 'site', 'api'] as $folder)
+	foreach (['de-DE', 'de-AT', 'de-CH', 'de-LI', 'de-LU'] as $languageCode)
 	{
-		$tmpLanguagePath = $tmp . '/tmp_packages/' . $languageCode;
-		$tmpLanguagePathFolder = $tmp . '/tmp_packages/' . $languageCode . '/' . $folder;
-		
-		system('mkdir ' . $tmpLanguagePathFolder);
+		system('mkdir ' . $languageCode);
+		chdir($languageCode);
 
-		if ($folder === 'full')
+		message('Build package: ' . $languageCode, $verbose);
+
+		foreach (['full', 'admin', 'site', 'api'] as $folder)
 		{
-			system('cp ' . $fullpath . '/pkg_de-DE.xml ' . $tmpLanguagePathFolder . '/pkg_' . $languageCode . '.xml');
-			applyTranslationChanges($languageCode, $folder, $tmpLanguagePathFolder);
+			$tmpLanguagePath = $tmp . '/tmp_packages/' . $languageCode;
+			$tmpLanguagePathFolder = $tmp . '/tmp_packages/' . $languageCode . '/' . $folder;
+			
+			system('mkdir ' . $tmpLanguagePathFolder);
+
+			if ($folder === 'full')
+			{
+				system('cp ' . $fullpath . '/pkg_de-DE.xml ' . $tmpLanguagePathFolder . '/pkg_' . $languageCode . '.xml');
+				applyTranslationChanges($languageCode, $folder, $tmpLanguagePathFolder);
+			}
+
+			if ($folder === 'admin')
+			{
+				system('cp -r ' . $fullpath . '/administrator/language/de-DE/* ' . $tmpLanguagePathFolder);
+				applyTranslationChanges($languageCode, $folder, $tmpLanguagePathFolder);
+				chdir($tmpLanguagePathFolder);
+
+				if ($languagePackages)
+				{
+					system('zip -r ' . $tmpLanguagePath . '/full/admin_' . $languageCode . '.zip * > /dev/null');
+				}
+			}
+
+			if ($folder === 'site')
+			{
+				system('cp -r ' . $fullpath . '/language/de-DE/* ' . $tmpLanguagePathFolder);
+				applyTranslationChanges($languageCode, $folder, $tmpLanguagePathFolder);
+				chdir($tmpLanguagePathFolder);
+
+				if ($languagePackages)
+				{
+					system('zip -r ' . $tmpLanguagePath . '/full/site_' . $languageCode . '.zip * > /dev/null');
+				}
+			}
+
+			if ($folder === 'api')
+			{
+				system('cp -r ' . $fullpath . '/api/language/de-DE/* ' . $tmpLanguagePathFolder);
+				applyTranslationChanges($languageCode, $folder, $tmpLanguagePathFolder);
+				chdir($tmpLanguagePathFolder);
+
+				if ($languagePackages)
+				{
+					system('zip -r ' . $tmpLanguagePath . '/full/api_' . $languageCode . '.zip * > /dev/null');
+				}
+			}
+
+			chdir('..');
 		}
 
-		if ($folder === 'admin')
+		if ($languagePackages)
 		{
-			system('cp -r ' . $fullpath . '/administrator/language/de-DE/* ' . $tmpLanguagePathFolder);
-			applyTranslationChanges($languageCode, $folder, $tmpLanguagePathFolder);
-			chdir($tmpLanguagePathFolder);
-			system('zip -r ' . $tmpLanguagePath . '/full/admin_' . $languageCode . '.zip * > /dev/null');
-		}
+			// Build zip package
+			chdir($tmpLanguagePath . '/full');
 
-		if ($folder === 'site')
-		{
-			system('cp -r ' . $fullpath . '/language/de-DE/* ' . $tmpLanguagePathFolder);
-			applyTranslationChanges($languageCode, $folder, $tmpLanguagePathFolder);
-			chdir($tmpLanguagePathFolder);
-			system('zip -r ' . $tmpLanguagePath . '/full/site_' . $languageCode . '.zip * > /dev/null');
-		}
+			system('zip -r ' . $tmpLanguagePath . '/full/full_' . $languageCode . '.zip * > /dev/null');
+			system('cp ' . $tmpLanguagePath . '/full/full_' . $languageCode . '.zip ' . $tmp . '/packages/' . $languageCode . '_joomla_lang_full_' . $fullVersion . '.zip');
 
-		if ($folder === 'api')
-		{
-			system('cp -r ' . $fullpath . '/api/language/de-DE/* ' . $tmpLanguagePathFolder);
-			applyTranslationChanges($languageCode, $folder, $tmpLanguagePathFolder);
-			chdir($tmpLanguagePathFolder);
-			system('zip -r ' . $tmpLanguagePath . '/full/api_' . $languageCode . '.zip * > /dev/null');
+			chdir('..');
 		}
 
 		chdir('..');
 	}
-
-	// Build zip package
-	chdir($tmpLanguagePath . '/full');
-	system('zip -r ' . $tmpLanguagePath . '/full/full_' . $languageCode . '.zip * > /dev/null');
-	system('cp ' . $tmpLanguagePath . '/full/full_' . $languageCode . '.zip ' . $tmp . '/packages/' . $languageCode . '_joomla_lang_full_' . $fullVersion . '.zip');
-
-	chdir('../..');
 }
 
+// Build a full package when a full package url is passed.
+if ($fullReleaseUrl)
+{
+	message('Building german full package.', $verbose);
+
+	system('mkdir fullinstall');
+	chdir('fullinstall');
+
+	$filename = basename($fullReleaseUrl);
+
+	message('Download full package.', $verbose);
+
+	system("wget -q $fullReleaseUrl -O $filename");
+
+	message('Extract en-GB full package.', $verbose);
+	system("unzip $filename > '/dev/null'");
+
+	message('Remove full zip package.', $verbose);
+	system('rm ' . $filename);
+
+	message('Copy the german language stuff in.', $verbose);
+	system('cp -r ' . $fullpath . '/administrator .');
+	system('cp -r ' . $fullpath . '/api .');
+	system('cp -r ' . $fullpath . '/language .');
+	system('cp -r ' . $fullpath . '/installation .');
+	system('cp ' . $fullpath . '/pkg_de-DE.xml administrator/manifests/packages/pkg_de-DE.xml');
+
+	$zipFilename = str_replace('.zip', '_German.zip', $filename);
+	$targzFilename = str_replace('.zip', '_German.tar.gz', $filename);
+	$tarbz2Filename = str_replace('.zip', '_German.tar.bz2', $filename);
+
+	message('Build new full packages.', $verbose);
+
+	message('Build new full zip package.', $verbose);
+	system("zip -r $tmp/packages/$zipFilename * > /dev/null");
+	message('Build new full tar.gz package.', $verbose);
+	system("tar --group 0 --owner 0 -czf $tmp/packages/$targzFilename * > '/dev/null'");
+	message('Build new full tar.bz2 package.', $verbose);
+	system("tar --group 0 --owner 0 -cjf $tmp/packages/$tarbz2Filename * > '/dev/null'");
+
+	chdir('..');
+}
+
+if ($install || $crowdin)
+{
+	message('Build install files.', $verbose);
+	
+	chdir('..');
+	system('mkdir install');
+	chdir('install');
+
+	foreach (['de-DE', 'de-AT', 'de-CH', 'de-LI', 'de-LU'] as $languageCode)
+	{
+		message('Build install files: ' . $languageCode, $verbose);
+		system('mkdir ' . $languageCode);
+		chdir($languageCode);
+
+		$tmpInstallLanguagePath = $tmp . '/install/' . $languageCode;
+
+		system('cp -r ' . $fullpath . '/installation/language/de-DE/* ' . $tmpInstallLanguagePath);
+		applyTranslationChanges($languageCode, 'install', $tmpInstallLanguagePath);
+		chdir('..');
+	}
+
+	chdir('..');
+}
+
+if ($crowdin)
+{
+	message('Build crowdin folder', $verbose);
+	system('mkdir crowdin');
+	chdir('crowdin');
+
+	system('mkdir package');
+	chdir('package');
+
+	foreach (['de-DE', 'de-AT', 'de-CH', 'de-LI', 'de-LU'] as $languageCode)
+	{
+		message('Build crowdin language folder for: ' . $languageCode, $verbose);
+		system('mkdir ' . $languageCode);
+		chdir($languageCode);
+
+		$tmpLanguagePath = $tmp . '/tmp_packages/' . $languageCode;
+
+		system('mkdir -p administrator/language/' . $languageCode);
+		system('mkdir -p api/language/' . $languageCode);
+		system('mkdir -p language/' . $languageCode);
+
+		system('cp -r ' . $tmpLanguagePath . '/admin/* administrator/language/' . $languageCode . '/');
+		system('cp -r ' . $tmpLanguagePath . '/api/* api/language/' . $languageCode . '/');
+		system('cp -r ' . $tmpLanguagePath . '/site/* language/' . $languageCode . '/');
+		system('cp ' . $tmpLanguagePath . '/full/pkg_' . $languageCode . '.xml pkg_' . $languageCode . '.xml');
+		
+		chdir('..');
+	}
+
+	message('Build crowdin installation folder', $verbose);
+	chdir('..');
+	system('mkdir core');
+	chdir('core');
+	system('mkdir -p installation/language/');
+	system('cp -r ' . $tmp . '/install/* installation/language/');
+	chdir('..');
+}
+
+// Cleanup
 system('rm -rf ' . $tmp . '/tmp_packages/');
 
-echo "Build of version $fullVersion complete!\n";
+message('Build of version ' . $fullVersion . 'complete!', $verbose);
+
+function message(string $messagetext, $verbose)
+{
+	if ($verbose)
+	{
+		echo $messagetext . PHP_EOL;
+	}
+}
+
+//$options = getopt('', ['help', 'remote::', 'fullurl:', 'install', 'lpackages', 'v', 'crowdin']);
 
 function usage(string $command)
 {
 	echo PHP_EOL;
 	echo 'Usage: php ' . $command . ' [options]' . PHP_EOL;
 	echo PHP_TAB . '[options]:' . PHP_EOL;
-	echo PHP_TAB . PHP_TAB . '--remote=<remote>:' . PHP_TAB . 'The git remote reference to build from (ex: `tags/3.8.6`, `4.0-dev`), defaults to the most recent tag for the repository' . PHP_EOL;
+	echo PHP_TAB . PHP_TAB . '--fullurl "[URL]"' . PHP_TAB . 'The URL to the full en-GB package; When provided we also build a new full package' . PHP_EOL;
+	echo PHP_TAB . PHP_TAB . '--install' . PHP_TAB . PHP_TAB . 'Build the installation files' . PHP_EOL;
+	echo PHP_TAB . PHP_TAB . '--lpackages' . PHP_TAB . PHP_TAB . 'Build the language packages' . PHP_EOL;
+	echo PHP_TAB . PHP_TAB . '--v' . PHP_TAB . PHP_TAB . PHP_TAB . 'Show progress messages' . PHP_EOL;
+	echo PHP_TAB . PHP_TAB . '--crowdin' . PHP_TAB . PHP_TAB . 'Build the folder structure for crowdin updates' . PHP_EOL;
 	echo PHP_TAB . PHP_TAB . '--help:' . PHP_TAB . PHP_TAB . PHP_TAB . 'Show this help output' . PHP_EOL;
 	echo PHP_EOL;
 }
@@ -358,7 +513,41 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-LU.xml', 'de-DE', 'de-LU');
 		}
 	}
-	
+
+	if ($folder === 'install')
+	{
+		if ($languageCode === 'de-AT')
+		{
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Germany', 'Austria');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Deutschland', 'Österreich');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'de-DE', 'de-AT');
+			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Österreich');
+
+		}
+		if ($languageCode === 'de-CH')
+		{
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Germany', 'Switzerland');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Deutschland', 'Schweiz');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'de-DE', 'de-CH');
+			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Schweiz');
+			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'ß', 'ss');
+		}
+		if ($languageCode === 'de-LI')
+		{
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Germany', 'Lichtenstein');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Deutschland', 'Lichtenstein');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml',  'de-DE', 'de-LI');
+			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Lichtenstein');
+			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'ß', 'ss');
+		}
+		if ($languageCode === 'de-LU')
+		{
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Germany', 'Luxembourg');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Deutschland', 'Luxemburg');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'de-DE', 'de-LU');
+			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Luxemburg');
+		}
+	}	
 }
 
 function searchAndReplaceStringInAllFiles($pathToFolder, $search, $replace)

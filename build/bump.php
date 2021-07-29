@@ -152,6 +152,7 @@ $version = array(
 	'patch'      => $versionSubParts[2],
 	'extra'      => (!empty($versionParts[1]) ? $versionParts[1] : '') . (!empty($versionParts[2]) ? (!empty($versionParts[1]) ? '-' : '') . $versionParts[2] : ''),
 	'release'    => $versionSubParts[0] . '.' . $versionSubParts[1] . '.' . $versionSubParts[2] . 'v' . $languagePackVersion,
+	'full'       => $versionSubParts[0] . '.' . $versionSubParts[1] . '.' . $versionSubParts[2] . (!empty($versionParts[1]) ? '-' . $versionParts[1] : '') . (!empty($versionParts[2]) ? '-' . $versionParts[2] : '') . '.' . $languagePackVersion,
 	'dev_devel'  => $versionSubParts[2] . (!empty($versionParts[1]) ? '-' . $versionParts[1] : '') . (!empty($versionParts[2]) ? '-' . $versionParts[2] : ''),
 	'dev_status' => $dev_status,
 	'reldate'    => date('j-F-Y'),
@@ -165,7 +166,7 @@ echo PHP_EOL;
 echo 'Version data:' . PHP_EOL;
 echo '- Main:' . PHP_TAB . PHP_TAB . PHP_TAB . $version['main'] . PHP_EOL;
 echo '- Release:' . PHP_TAB . PHP_TAB . $version['release'] . PHP_EOL;
-echo '- Full:' . PHP_TAB . PHP_TAB . PHP_TAB . $version['main'] . '.' . $version['dev_devel'] . 'v' . $languagePackVersion .  PHP_EOL;
+echo '- Full:' . PHP_TAB . PHP_TAB . PHP_TAB . $version['full'] .  PHP_EOL;
 echo '- Dev Level:' . PHP_TAB . PHP_TAB . $version['dev_devel'] . PHP_EOL;
 echo '- Dev Status:' . PHP_TAB . PHP_TAB . $version['dev_status'] . PHP_EOL;
 echo '- Release date:' . PHP_TAB . PHP_TAB . $version['reldate'] . PHP_EOL;
@@ -183,7 +184,7 @@ foreach ($languageXmlFiles as $languageXmlFile)
 	if (file_exists($rootPath . $languageXmlFile))
 	{
 		$fileContents = file_get_contents($rootPath . $languageXmlFile);
-		$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['main'] . '.' . $version['dev_devel'] . '</version>', $fileContents);
+		$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['full'] . '</version>', $fileContents);
 		$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['credate'] . '</creationDate>', $fileContents);
 		file_put_contents($rootPath . $languageXmlFile, $fileContents);
 	}
@@ -193,7 +194,7 @@ foreach ($languageXmlFiles as $languageXmlFile)
 if (file_exists($rootPath . $languagePackXmlFile))
 {
 	$fileContents = file_get_contents($rootPath . $languagePackXmlFile);
-	$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['main'] . '.' . $version['dev_devel'] . '</version>', $fileContents);
+	$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['full'] . '</version>', $fileContents);
 	$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['credate'] . '</creationDate>', $fileContents);
 	file_put_contents($rootPath . $languagePackXmlFile, $fileContents);
 }

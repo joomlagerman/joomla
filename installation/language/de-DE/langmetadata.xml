@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<metafile client="installation">
+<metafile client="installation" version="4.0">
 	<name>German (Germany)</name>
 	<version>4.0.0.3</version>
 	<creationDate>6.08.2021</creationDate>
 	<author>J!German</author>
+	<authorEmail>team@jgerman.de</authorEmail>
+	<authorUrl>https://www.jgerman.de</authorUrl>
 	<copyright>(C) 2008 - 2021 J!German. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<files>

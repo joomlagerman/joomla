@@ -17,7 +17,7 @@
  * 4. Check the the tmp directory.
  *
  * Examples:
- * - php build/build.php --lpackage --v
+ * - php build/build.php --lpackages --v
  * - php build/build.php --crowdin --v
  * - php build/build.php --install --v
  * - php build/build.php --fullurl "https://github.com/joomla/joomla-cms/releases/download/4.0.0-rc5/Joomla_4.0.0-rc5-Release_Candidate-Full_Package.zip" --v

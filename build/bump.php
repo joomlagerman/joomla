@@ -43,6 +43,8 @@ $languageXmlFiles = array(
 
 $languagePackXmlFile = '/pkg_de-DE.xml';
 
+$languagePackSqlFile = '/installation/sql/mysql/localise.sql';
+
 /*
  * Change copyright date exclusions.
  * Some systems may try to scan the .git directory, exclude it.
@@ -158,7 +160,7 @@ $version = array(
 	'reldate'    => date('j-F-Y'),
 	'reltime'    => date('H:i'),
 	'reltz'      => 'GMT',
-	'credate'    => date('j.m.Y'),
+	'credate'    => date('d.m.Y'),
 );
 
 // Prints version information.
@@ -197,6 +199,15 @@ if (file_exists($rootPath . $languagePackXmlFile))
 	$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['full'] . '</version>', $fileContents);
 	$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['credate'] . '</creationDate>', $fileContents);
 	file_put_contents($rootPath . $languagePackXmlFile, $fileContents);
+}
+
+// Updates the version and creation date in localise.sql file.
+if (file_exists($rootPath . $languagePackSqlFile))
+{
+	$fileContents = file_get_contents($rootPath . $languagePackSqlFile);
+	$fileContents = preg_replace('#"version":"[^"]*"#', '"version":"' . $version['full'] . '"', $fileContents);
+	$fileContents = preg_replace('#"creationDate":"[^"]*"#', '"creationDate":"' . $version['credate'] . '"', $fileContents);
+	file_put_contents($rootPath . $languagePackSqlFile, $fileContents);
 }
 
 // Updates the copyright date in core files.

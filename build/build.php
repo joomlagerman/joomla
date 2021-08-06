@@ -499,24 +499,28 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-AT.xml', '<name>German (Germany) Language Pack</name>', '<name>German (Austria) Language Pack</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-AT.xml', 'de-DE', 'de-AT');
 			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'de-DE', 'de-AT');
+			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'Pkg_deDE', 'Pkg_deAT');
 		}
 		if ($languageCode === 'de-CH')
 		{
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-CH.xml', '<name>German (Germany) Language Pack</name>', '<name>German (Switzerland) Language Pack</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-CH.xml', 'de-DE', 'de-CH');
 			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'de-DE', 'de-CH');
+			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'Pkg_deDE', 'Pkg_deCH');
 		}
 		if ($languageCode === 'de-LI')
 		{
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-LI.xml', '<name>German (Germany) Language Pack</name>', '<name>German (Lichtenstein) Language Pack</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-LI.xml', 'de-DE', 'de-LI');
 			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'de-DE', 'de-LI');
+			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'Pkg_deDE', 'Pkg_deLI');
 		}
 		if ($languageCode === 'de-LU')
 		{
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-LU.xml', '<name>German (Germany) Language Pack</name>', '<name>German (Luxembourg) Language Pack</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-LU.xml', 'de-DE', 'de-LU');
 			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'de-DE', 'de-LU');
+			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'Pkg_deDE', 'Pkg_deLU');
 		}
 	}
 

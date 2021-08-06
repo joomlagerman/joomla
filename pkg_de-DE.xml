@@ -26,6 +26,7 @@
 	<files>
 		<file type="language" client="site" id="de-DE">site_de-DE.zip</file>
 		<file type="language" client="administrator" id="de-DE">admin_de-DE.zip</file>
+		<file type="language" client="api" id="de-DE">api_de-DE.zip</file>
 	</files>
 	<updateservers>
 		<server type="collection" priority="1" name="Accredited Joomla! Translations">https://update.joomla.org/language/translationlist_4.xml</server>

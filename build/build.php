@@ -316,7 +316,7 @@ if ($crowdin)
 // Cleanup
 system('rm -rf ' . $tmp . '/tmp_packages/');
 
-message('Build of version ' . $fullVersion . 'complete!', $verbose);
+message('The Build of version ' . $fullVersion . ' has been successfully completed!', $verbose);
 
 function message(string $messagetext, $verbose)
 {

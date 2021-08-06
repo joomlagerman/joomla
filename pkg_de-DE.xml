@@ -22,6 +22,7 @@
 	]]>
 	</description>
 	<blockChildUninstall>true</blockChildUninstall>
+	<scriptfile>script.php</scriptfile>
 	<files>
 		<file type="language" client="site" id="de-DE">site_de-DE.zip</file>
 		<file type="language" client="administrator" id="de-DE">admin_de-DE.zip</file>

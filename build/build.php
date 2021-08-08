@@ -364,6 +364,9 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			// localise.php
 			renameStringInFile($tmpLanguagePathLangCode . '/localise.php', 'de-DE', 'de-AT');
 			renameStringInFile($tmpLanguagePathLangCode . '/localise.php', 'De_DELocalise', 'De_ATLocalise');
+
+			// Replace Januar with Jänner for de-AT 
+			searchAndReplaceStringInAllFiles($tmpLanguagePathLangCode, 'Januar', 'Jänner');
 		}
 
 		if ($languageCode === 'de-CH')
@@ -387,6 +390,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/localise.php', 'de-DE', 'de-CH');
 			renameStringInFile($tmpLanguagePathLangCode . '/localise.php', 'De_DELocalise', 'De_CHLocalise');
 		}
+
 		if ($languageCode === 'de-LI')
 		{
 			// Das ß wird heute ausschließlich beim Schreiben in deutscher Sprache sowie im Niederdeutschen verwendet, allerdings nicht in der Schweiz und Liechtenstein.
@@ -408,6 +412,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/localise.php', 'de-DE', 'de-LI');
 			renameStringInFile($tmpLanguagePathLangCode . '/localise.php', 'De_DELocalise', 'De_LILocalise');
 		}
+
 		if ($languageCode === 'de-LU')
 		{
 			// langmetadata.xml
@@ -425,7 +430,6 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/localise.php', 'de-DE', 'de-LU');
 			renameStringInFile($tmpLanguagePathLangCode . '/localise.php', 'De_DELocalise', 'De_LULocalise');
 		}
-
 	}
 
 	if ($folder === 'api')
@@ -442,7 +446,11 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			// install.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (AT)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', 'de-DE', 'de-AT');
+
+			// Replace Januar with Jänner for de-AT 
+			searchAndReplaceStringInAllFiles($tmpLanguagePathLangCode, 'Januar', 'Jänner');
 		}
+
 		if ($languageCode === 'de-CH')
 		{
 			// Das ß wird heute ausschließlich beim Schreiben in deutscher Sprache sowie im Niederdeutschen verwendet, allerdings nicht in der Schweiz und Liechtenstein.
@@ -460,6 +468,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (CH)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', 'de-DE', 'de-CH');
 		}
+
 		if ($languageCode === 'de-LI')
 		{
 			// Das ß wird heute ausschließlich beim Schreiben in deutscher Sprache sowie im Niederdeutschen verwendet, allerdings nicht in der Schweiz und Liechtenstein.
@@ -477,6 +486,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (LI)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', 'de-DE', 'de-LI');
 		}
+
 		if ($languageCode === 'de-LU')
 		{
 			// langmetadata.xml
@@ -501,6 +511,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'de-DE', 'de-AT');
 			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'Pkg_deDE', 'Pkg_deAT');
 		}
+
 		if ($languageCode === 'de-CH')
 		{
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-CH.xml', '<name>German (Germany) Language Pack</name>', '<name>German (Switzerland) Language Pack</name>');
@@ -508,6 +519,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'de-DE', 'de-CH');
 			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'Pkg_deDE', 'Pkg_deCH');
 		}
+
 		if ($languageCode === 'de-LI')
 		{
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-LI.xml', '<name>German (Germany) Language Pack</name>', '<name>German (Lichtenstein) Language Pack</name>');
@@ -515,6 +527,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'de-DE', 'de-LI');
 			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'Pkg_deDE', 'Pkg_deLI');
 		}
+
 		if ($languageCode === 'de-LU')
 		{
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-LU.xml', '<name>German (Germany) Language Pack</name>', '<name>German (Luxembourg) Language Pack</name>');
@@ -532,8 +545,8 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Deutschland', 'Österreich');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'de-DE', 'de-AT');
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Österreich');
-
 		}
+
 		if ($languageCode === 'de-CH')
 		{
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Germany', 'Switzerland');
@@ -542,6 +555,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Schweiz');
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'ß', 'ss');
 		}
+
 		if ($languageCode === 'de-LI')
 		{
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Germany', 'Lichtenstein');
@@ -550,6 +564,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Lichtenstein');
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'ß', 'ss');
 		}
+
 		if ($languageCode === 'de-LU')
 		{
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Germany', 'Luxembourg');

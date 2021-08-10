@@ -9,9 +9,9 @@
 	<authorUrl>https://www.jgerman.de</authorUrl>
 	<copyright>(C) 2008 - 2021 J!German. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<url />
-	<packager />
-	<packagerurl />
+	<url>https://www.jgerman.de</url>
+	<packager>J!German</packager>
+	<packagerurl>https://www.jgerman.de</packagerurl>
 	<description><![CDATA[
 	<h2>Deutsches Sprachpaket für Joomla! 4.0 von <a title="J!German" href="https://www.jgerman.de" target="_blank" rel="noopener noreferrer">J!German</a></h2>
         <hr />

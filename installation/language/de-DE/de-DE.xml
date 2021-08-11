@@ -3,8 +3,8 @@
 	<name>German (Germany)</name>
 	<version>3.10.0.1-rc1</version>
 	<creationDate>28.07.2021</creationDate>
-	<author>J!German</author>
-	<copyright>(C) 2008 - 2021 J!German. All rights reserved.</copyright>
+	<author>Joomla! Project</author>
+	<copyright>(C) 2005 Open Source Matters, Inc.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<files>
 		<filename>de-DE.ini</filename>

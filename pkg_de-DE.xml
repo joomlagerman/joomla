@@ -2,8 +2,8 @@
 <extension type="package" version="3.9" method="upgrade">
 	<name>German (Germany) Language Pack</name>
 	<packagename>de-DE</packagename>
-	<version>3.10.0-rc2.1</version>
-	<creationDate>11.08.2021</creationDate>
+	<version>3.10.0-rc.2</version>
+	<creationDate>12.08.2021</creationDate>
 	<author>J!German</author>
 	<authorEmail>team@jgerman.de</authorEmail>
 	<authorUrl>https://www.jgerman.de</authorUrl>

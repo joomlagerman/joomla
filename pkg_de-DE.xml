@@ -2,16 +2,16 @@
 <extension type="package" version="4.0" method="upgrade">
 	<name>German (Germany) Language Pack</name>
 	<packagename>de-DE</packagename>
-	<version>4.0.0.1-rc5</version>
-	<creationDate>28.07.2021</creationDate>
+	<version>4.0.0-rc6.1</version>
+	<creationDate>11.08.2021</creationDate>
 	<author>J!German</author>
 	<authorEmail>team@jgerman.de</authorEmail>
 	<authorUrl>https://www.jgerman.de</authorUrl>
 	<copyright>(C) 2008 - 2021 J!German. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<url />
-	<packager />
-	<packagerurl />
+	<url>https://www.jgerman.de</url>
+	<packager>J!German</packager>
+	<packagerurl>https://www.jgerman.de</packagerurl>
 	<description><![CDATA[
 	<h2>Deutsches Sprachpaket für Joomla! 4.0 von <a title="J!German" href="https://www.jgerman.de" target="_blank" rel="noopener noreferrer">J!German</a></h2>
         <hr />

@@ -36,10 +36,11 @@ $languageXmlFiles = array(
 	'/administrator/language/de-DE/langmetadata.xml',
 	'/api/language/de-DE/install.xml',
 	'/api/language/de-DE/langmetadata.xml',
-	'/installation/language/de-DE/langmetadata.xml',
 	'/language/de-DE/install.xml',
 	'/language/de-DE/langmetadata.xml',
 );
+
+$installerXmlFile =	'/installation/language/de-DE/langmetadata.xml';
 
 $languagePackXmlFile = '/pkg_de-DE.xml';
 
@@ -190,6 +191,15 @@ foreach ($languageXmlFiles as $languageXmlFile)
 		$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['credate'] . '</creationDate>', $fileContents);
 		file_put_contents($rootPath . $languageXmlFile, $fileContents);
 	}
+}
+
+// Updates the version and creation date in language installer xml file.
+if (file_exists($rootPath . $installerXmlFile))
+{
+	$fileContents = file_get_contents($rootPath . $installerXmlFile);
+	$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['release'] . '</version>', $fileContents);
+	$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['credate'] . '</creationDate>', $fileContents);
+	file_put_contents($rootPath . $installerXmlFile, $fileContents);
 }
 
 // Updates the version and creation date in language package xml file.

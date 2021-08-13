@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="package" version="3.9" method="upgrade">
+<extension type="package" version="3.10" method="upgrade">
 	<name>German (Germany) Language Pack</name>
 	<packagename>de-DE</packagename>
 	<version>3.10.0-rc2.3</version>

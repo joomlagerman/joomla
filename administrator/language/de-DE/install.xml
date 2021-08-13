@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.9" type="language" client="administrator" method="upgrade">
+<extension version="3.10" type="language" client="administrator" method="upgrade">
 	<name>German (DE)</name>
 	<tag>de-DE</tag>
 	<version>3.10.0-rc2.3</version>

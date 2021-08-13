@@ -368,8 +368,9 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/localise.php', 'de-DE', 'de-AT');
 			renameStringInFile($tmpLanguagePathLangCode . '/localise.php', 'De_DELocalise', 'De_ATLocalise');
 
-			// Replace Januar with Jänner for de-AT
+			// Replace Januar with Jänner and Jan. with Jän. for de-AT
 			searchAndReplaceStringInAllFiles($tmpLanguagePathLangCode, 'Januar', 'Jänner');
+			searchAndReplaceStringInAllFiles($tmpLanguagePathLangCode, 'Jan.', 'Jän.');
 		}
 
 		if ($languageCode === 'de-CH')

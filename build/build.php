@@ -150,7 +150,7 @@ if ($languagePackages || $crowdin)
 		{
 			$tmpLanguagePath = $tmp . '/tmp_packages/' . $languageCode;
 			$tmpLanguagePathFolder = $tmp . '/tmp_packages/' . $languageCode . '/' . $folder;
-			
+
 			system('mkdir ' . $tmpLanguagePathFolder);
 
 			if ($folder === 'full')
@@ -250,9 +250,9 @@ if ($fullReleaseUrl)
 	message('Build new full zip package.', $verbose);
 	system("zip -r $tmp/packages/$zipFilename * > /dev/null");
 	message('Build new full tar.gz package.', $verbose);
-	system("tar --group 0 --owner 0 -czf $tmp/packages/$targzFilename * > '/dev/null'");
+	system("tar -czf $tmp/packages/$targzFilename * > '/dev/null'");
 	message('Build new full tar.bz2 package.', $verbose);
-	system("tar --group 0 --owner 0 -cjf $tmp/packages/$tarbz2Filename * > '/dev/null'");
+	system("tar -cjf $tmp/packages/$tarbz2Filename * > '/dev/null'");
 
 	chdir('..');
 }
@@ -260,7 +260,7 @@ if ($fullReleaseUrl)
 if ($install || $crowdin)
 {
 	message('Build install files.', $verbose);
-	
+
 	chdir('..');
 	system('mkdir install');
 	chdir('install');
@@ -307,7 +307,7 @@ if ($crowdin)
 		system('cp -r ' . $tmpLanguagePath . '/site/* language/' . $languageCode . '/');
 		system('cp ' . $tmpLanguagePath . '/full/pkg_' . $languageCode . '.xml pkg_' . $languageCode . '.xml');
 		system('cp ' . $tmpLanguagePath . '/full/script.php script.php');
-		
+
 		chdir('..');
 	}
 
@@ -359,7 +359,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (DE)</name>', '<name>German (AT)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Österreich)</nativeName>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_AT.utf8, de_AT.UTF-8, de_AT, deu_AT, german-at, at, austria, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');
-			
+
 			// install.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (AT)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', 'de-DE', 'de-AT');
@@ -368,7 +368,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/localise.php', 'de-DE', 'de-AT');
 			renameStringInFile($tmpLanguagePathLangCode . '/localise.php', 'De_DELocalise', 'De_ATLocalise');
 
-			// Replace Januar with Jänner for de-AT 
+			// Replace Januar with Jänner for de-AT
 			searchAndReplaceStringInAllFiles($tmpLanguagePathLangCode, 'Januar', 'Jänner');
 		}
 
@@ -377,14 +377,14 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			// Das ß wird heute ausschließlich beim Schreiben in deutscher Sprache sowie im Niederdeutschen verwendet, allerdings nicht in der Schweiz und Liechtenstein.
 			// https://de.wikipedia.org/wiki/%C3%9F
 			searchAndReplaceStringInAllFiles($tmpLanguagePathLangCode, 'ß', 'ss');
-			
+
 			// langmetadata.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<tag>de-DE</tag>', '<tag>de-CH</tag>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (Germany)</name>', '<name>German (Switzerland)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (DE)</name>', '<name>German (CH)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Schweiz)</nativeName>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_CH.utf8, de_CH.UTF-8, de_CH, deu_CH, german-ch, ch, switzerland, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');
-			
+
 			// install.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (CH)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', 'de-DE', 'de-CH');
@@ -406,7 +406,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (DE)</name>', '<name>German (LI)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Lichtenstein)</nativeName>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_LI.utf8, de_LI.UTF-8, de_LI, deu_LI, german-li, li, lichtenstein, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');
-			
+
 			// install.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (LI)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', 'de-DE', 'de-LI');
@@ -424,7 +424,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (DE)</name>', '<name>German (LU)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Luxemburg)</nativeName>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_LU.utf8, de_LU.UTF-8, de_LU, deu_LU, german-lu, lu, luxembourg, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');
-			
+
 			// install.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (LU)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', 'de-DE', 'de-LU');
@@ -445,12 +445,12 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (DE)</name>', '<name>German (AT)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Österreich)</nativeName>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_AT.utf8, de_AT.UTF-8, de_AT, deu_AT, german-at, at, austria, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');
-			
+
 			// install.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (AT)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', 'de-DE', 'de-AT');
 
-			// Replace Januar with Jänner for de-AT 
+			// Replace Januar with Jänner for de-AT
 			searchAndReplaceStringInAllFiles($tmpLanguagePathLangCode, 'Januar', 'Jänner');
 		}
 
@@ -459,14 +459,14 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			// Das ß wird heute ausschließlich beim Schreiben in deutscher Sprache sowie im Niederdeutschen verwendet, allerdings nicht in der Schweiz und Liechtenstein.
 			// https://de.wikipedia.org/wiki/%C3%9F
 			searchAndReplaceStringInAllFiles($tmpLanguagePathLangCode, 'ß', 'ss');
-			
+
 			// langmetadata.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<tag>de-DE</tag>', '<tag>de-CH</tag>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (Germany)</name>', '<name>German (Switzerland)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (DE)</name>', '<name>German (CH)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Schweiz)</nativeName>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_CH.utf8, de_CH.UTF-8, de_CH, deu_CH, german-ch, ch, switzerland, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');
-			
+
 			// install.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (CH)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', 'de-DE', 'de-CH');
@@ -484,7 +484,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (DE)</name>', '<name>German (LI)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Lichtenstein)</nativeName>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_LI.utf8, de_LI.UTF-8, de_LI, deu_LI, german-li, li, lichtenstein, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');
-			
+
 			// install.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (LI)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', 'de-DE', 'de-LI');
@@ -498,7 +498,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (DE)</name>', '<name>German (LU)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Luxemburg)</nativeName>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_LU.utf8, de_LU.UTF-8, de_LU, deu_LU, german-lu, lu, luxembourg, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');
-			
+
 			// install.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (LU)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', 'de-DE', 'de-LU');
@@ -575,7 +575,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'de-DE', 'de-LU');
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Luxemburg');
 		}
-	}	
+	}
 }
 
 function searchAndReplaceStringInAllFiles($pathToFolder, $search, $replace)

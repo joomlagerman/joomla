@@ -1,4 +1,4 @@
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/joomlagerman/joomla/3.10-dev?style=flat-square) ![GitHub commits since latest release (by date) for a branch](https://img.shields.io/github/commits-since/joomlagerman/joomla/latest/3.10-dev?style=flat-square) ![GitHub issues by-label](https://img.shields.io/github/issues/joomlagerman/joomla/Joomla!%203.x?style=flat-square) ![GitHub](https://img.shields.io/github/license/joomlagerman/joomla?style=flat-square)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/joomlagerman/joomla/3.10-dev?style=for-the-badge) ![GitHub commits since latest release (by date) for a branch](https://img.shields.io/github/commits-since/joomlagerman/joomla/latest/3.10-dev?style=for-the-badge) ![GitHub issues by-label](https://img.shields.io/github/issues/joomlagerman/joomla/Joomla!%203.x?style=for-the-badge) ![GitHub](https://img.shields.io/github/license/joomlagerman/joomla?style=for-the-badge)
 
 J!German: Joomla! Core Translation GIT
 ======================================

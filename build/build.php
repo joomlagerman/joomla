@@ -355,7 +355,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 		{
 			// langmetadata.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<tag>de-DE</tag>', '<tag>de-AT</tag>');
-			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (Germany)</name>', '<name>German (Germany)</name>" "<name>German (Austria)</name>');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (Germany)</name>', '<name>German (Austria)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (DE)</name>', '<name>German (AT)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Österreich)</nativeName>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_AT.utf8, de_AT.UTF-8, de_AT, deu_AT, german-at, at, austria, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');

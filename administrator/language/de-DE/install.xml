@@ -2,7 +2,7 @@
 <extension type="language" client="administrator" method="upgrade">
 	<name>German (DE)</name>
 	<tag>de-DE</tag>
-	<version>4.0.1.1</version>
+	<version>4.0.2.1</version>
 	<creationDate>24.08.2021</creationDate>
 	<author>J!German</author>
 	<authorEmail>team@jgerman.de</authorEmail>

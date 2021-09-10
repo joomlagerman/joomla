@@ -18,7 +18,7 @@
  * 1. Run the bump script
  * 2. Commit the version changes
  * 3. Tag new release in the local git repository (for example, "git tag -s 4.0.0v1")
- * 3. Run from CLI as: 'php buid/build.php --lpackage"
+ * 3. Run from CLI as: 'php buid/build.php --lpackages"
  * 4. Check the the tmp directory.
  *
  * Examples:

@@ -40,7 +40,7 @@ $languageXmlFiles = array(
 	'/language/de-DE/langmetadata.xml',
 );
 
-$installerXmlFile =	'/installation/language/de-DE/langmetadata.xml';
+$installerXmlFile = '/installation/language/de-DE/langmetadata.xml';
 
 $languagePackXmlFile = '/pkg_de-DE.xml';
 
@@ -149,33 +149,38 @@ else
 $versionSubParts = explode('.', $versionParts[0]);
 
 $version = array(
-	'main'       => $versionSubParts[0] . '.' . $versionSubParts[1],
-	'major'      => $versionSubParts[0],
-	'minor'      => $versionSubParts[1],
-	'patch'      => $versionSubParts[2],
-	'extra'      => (!empty($versionParts[1]) ? $versionParts[1] : '') . (!empty($versionParts[2]) ? (!empty($versionParts[1]) ? '-' : '') . $versionParts[2] : ''),
-	'release'    => $versionSubParts[0] . '.' . $versionSubParts[1] . '.' . $versionSubParts[2] . 'v' . $languagePackVersion,
-	'full'       => $versionSubParts[0] . '.' . $versionSubParts[1] . '.' . $versionSubParts[2] . (!empty($versionParts[1]) ? '-' . $versionParts[1] : '') . (!empty($versionParts[2]) ? '-' . $versionParts[2] : '') . '.' . $languagePackVersion,
-	'dev_devel'  => $versionSubParts[2] . (!empty($versionParts[1]) ? '-' . $versionParts[1] : '') . (!empty($versionParts[2]) ? '-' . $versionParts[2] : ''),
-	'dev_status' => $dev_status,
-	'reldate'    => date('j-F-Y'),
-	'reltime'    => date('H:i'),
-	'reltz'      => 'GMT',
-	'credate'    => date('d.m.Y'),
+	'main'            => $versionSubParts[0] . '.' . $versionSubParts[1],
+	'major'           => $versionSubParts[0],
+	'minor'           => $versionSubParts[1],
+	'patch'           => $versionSubParts[2],
+	'extra'           => (!empty($versionParts[1]) ? $versionParts[1] : '') . (!empty($versionParts[2]) ? (!empty($versionParts[1]) ? '-' : '') . $versionParts[2] : ''),
+	'release'         => $versionSubParts[0] . '.' . $versionSubParts[1] . '.' . $versionSubParts[2] . 'v' . $languagePackVersion,
+	'full'            => $versionSubParts[0] . '.' . $versionSubParts[1] . '.' . $versionSubParts[2] . (!empty($versionParts[1]) ? '-' . $versionParts[1] : '') . (!empty($versionParts[2]) ? '-' . $versionParts[2] : '') . '.' . $languagePackVersion,
+	'dev_devel'       => $versionSubParts[2] . (!empty($versionParts[1]) ? '-' . $versionParts[1] : '') . (!empty($versionParts[2]) ? '-' . $versionParts[2] : ''),
+	'dev_status'      => $dev_status,
+	'reldate'         => date('j-F-Y'),
+	'reltime'         => date('H:i'),
+	'reltz'           => 'GMT',
+	'credate'         => date('d.m.Y'),
+	'install_credate' => date('F Y'),
+	'install_version' => $versionSubParts[0] . '.' . $versionSubParts[1] . '.' . $versionSubParts[2],
 );
 
 // Prints version information.
 echo PHP_EOL;
 echo 'Version data:' . PHP_EOL;
-echo '- Main:' . PHP_TAB . PHP_TAB . PHP_TAB . $version['main'] . PHP_EOL;
-echo '- Release:' . PHP_TAB . PHP_TAB . $version['release'] . PHP_EOL;
-echo '- Full:' . PHP_TAB . PHP_TAB . PHP_TAB . $version['full'] .  PHP_EOL;
-echo '- Dev Level:' . PHP_TAB . PHP_TAB . $version['dev_devel'] . PHP_EOL;
-echo '- Dev Status:' . PHP_TAB . PHP_TAB . $version['dev_status'] . PHP_EOL;
-echo '- Release date:' . PHP_TAB . PHP_TAB . $version['reldate'] . PHP_EOL;
-echo '- Release time:' . PHP_TAB . PHP_TAB . $version['reltime'] . PHP_EOL;
-echo '- Release timezone:' . PHP_TAB . $version['reltz'] . PHP_EOL;
-echo '- Creation date:' . PHP_TAB . $version['credate'] . PHP_EOL;
+echo '- Main:' . PHP_TAB . PHP_TAB . PHP_TAB . PHP_TAB . $version['main'] . PHP_EOL;
+echo '- Release:' . PHP_TAB . PHP_TAB . PHP_TAB . $version['release'] . PHP_EOL;
+echo '- Full:' . PHP_TAB . PHP_TAB . PHP_TAB . PHP_TAB . $version['full'] .  PHP_EOL;
+echo '- Dev Level:' . PHP_TAB . PHP_TAB . PHP_TAB . $version['dev_devel'] . PHP_EOL;
+echo '- Dev Status:' . PHP_TAB . PHP_TAB . PHP_TAB . $version['dev_status'] . PHP_EOL;
+echo '- Release date:' . PHP_TAB . PHP_TAB . PHP_TAB . $version['reldate'] . PHP_EOL;
+echo '- Release time:' . PHP_TAB . PHP_TAB . PHP_TAB . $version['reltime'] . PHP_EOL;
+echo '- Release timezone:' . PHP_TAB . PHP_TAB . $version['reltz'] . PHP_EOL;
+echo '- Creation date:' . PHP_TAB . PHP_TAB . $version['credate'] . PHP_EOL;
+echo '- Installer: creation date:' . PHP_TAB . $version['install_credate'] . PHP_EOL;
+echo '- Installer: version:' . PHP_TAB . PHP_TAB . $version['install_version'] . PHP_EOL;
+
 
 echo PHP_EOL;
 
@@ -197,8 +202,8 @@ foreach ($languageXmlFiles as $languageXmlFile)
 if (file_exists($rootPath . $installerXmlFile))
 {
 	$fileContents = file_get_contents($rootPath . $installerXmlFile);
-	$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['release'] . '</version>', $fileContents);
-	$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['credate'] . '</creationDate>', $fileContents);
+	$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['install_version'] . '</version>', $fileContents);
+	$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['install_credate'] . '</creationDate>', $fileContents);
 	file_put_contents($rootPath . $installerXmlFile, $fileContents);
 }
 
@@ -265,18 +270,18 @@ foreach ($iterator as $file)
 			$fileContents = file_get_contents($filePath);
 
 			// Check if need to change the copyright date.
-			if (preg_match('#2005\s+-\s+[0-9]{4}\s+Open\s+Source\s+Matters#', $fileContents) && !preg_match('#2005\s+-\s+' . $year. '\s+Open\s+Source\s+Matters#', $fileContents))
+			if (preg_match('#2005\s+-\s+[0-9]{4}\s+Open\s+Source\s+Matters#', $fileContents) && !preg_match('#2005\s+-\s+' . $year . '\s+Open\s+Source\s+Matters#', $fileContents))
 			{
 				$changeCopyrightDate = true;
-				$fileContents = preg_replace('#2005\s+-\s+[0-9]{4}\s+Open\s+Source\s+Matters#', '2005 - ' . $year. ' Open Source Matters', $fileContents);
+				$fileContents = preg_replace('#2005\s+-\s+[0-9]{4}\s+Open\s+Source\s+Matters#', '2005 - ' . $year . ' Open Source Matters', $fileContents);
 				$changedFilesCopyrightDate++;
 			}
 
 			// Check if need to change the copyright date.
-			if (preg_match('#2008\s+-\s+[0-9]{4}\s+J\!German#', $fileContents) && !preg_match('#2008\s+-\s+' . $year. '\s+J\!German#', $fileContents))
+			if (preg_match('#2008\s+-\s+[0-9]{4}\s+J\!German#', $fileContents) && !preg_match('#2008\s+-\s+' . $year . '\s+J\!German#', $fileContents))
 			{
 				$changeCopyrightDate = true;
-				$fileContents = preg_replace('#2008\s+-\s+[0-9]{4}\s+J!German#', '2008 - ' . $year. ' J!German', $fileContents);
+				$fileContents = preg_replace('#2008\s+-\s+[0-9]{4}\s+J!German#', '2008 - ' . $year . ' J!German', $fileContents);
 				$changedFilesCopyrightDate++;
 			}
 

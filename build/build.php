@@ -28,7 +28,7 @@
  * - php build/build.php --fullurl "https://github.com/joomla/joomla-cms/releases/download/4.0.0-rc5/Joomla_4.0.0-rc5-Release_Candidate-Full_Package.zip" --v
  *
  * @package    Joomla.Language
- * @copyright  (C) 2021 J!German <https://www.jgerman.de>
+ * @copyright  (C) 2022 J!German <https://www.jgerman.de>
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 

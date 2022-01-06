@@ -2,12 +2,12 @@
 <extension type="package" version="4.0" method="upgrade">
 	<name>German (Germany) Language Pack</name>
 	<packagename>de-DE</packagename>
-	<version>4.0.4.1</version>
-	<creationDate>26.10.2021</creationDate>
+	<version>4.0.5.1</version>
+	<creationDate>14.12.2021</creationDate>
 	<author>J!German</author>
 	<authorEmail>team@jgerman.de</authorEmail>
 	<authorUrl>https://www.jgerman.de</authorUrl>
-	<copyright>(C) 2008 - 2021 J!German. All rights reserved.</copyright>
+	<copyright>(C) 2008 - 2022 J!German. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<url>https://www.jgerman.de</url>
 	<packager>J!German</packager>

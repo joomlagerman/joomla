@@ -17,7 +17,7 @@
  * Steps:
  * 1. Run the bump script
  * 2. Commit the version changes
- * 3. Tag new release in the local git repository (for example, "git tag -s 4.0.0v1")
+ * 3. Tag new release in the local git repository (for example, "git tag -s 4.1.0v1")
  * 3. Run from CLI as: 'php buid/build.php --lpackages"
  * 4. Check the the tmp directory.
  *
@@ -25,7 +25,7 @@
  * - php build/build.php --lpackages --v
  * - php build/build.php --crowdin --v
  * - php build/build.php --install --v
- * - php build/build.php --fullurl "https://github.com/joomla/joomla-cms/releases/download/4.0.0-rc5/Joomla_4.0.0-rc5-Release_Candidate-Full_Package.zip" --v
+ * - php build/build.php --fullurl "https://github.com/joomla/joomla-cms/releases/download/4.1.0-rc1/Joomla_4.1.0-rc1-Release_Candidate-Full_Package.zip" --v
  *
  * @package    Joomla.Language
  * @copyright  (C) 2022 J!German <https://www.jgerman.de>

@@ -6,7 +6,7 @@
  * Usage: php build/bump.php -v <version> -l <languagepackversion>
  *
  * Examples:
- * - php build/bump.php -v 4.0.0 -l 1
+ * - php build/bump.php -v 4.1.0 -l 1
  *
  * @package    Joomla.Language
  * @copyright  (C) 2022 J!German <https://www.jgerman.de>
@@ -22,7 +22,7 @@ function usage($command)
 	echo PHP_EOL;
 	echo 'Usage: php ' . $command . ' [options]' . PHP_EOL;
 	echo PHP_TAB . '[options]:' . PHP_EOL;
-	echo PHP_TAB . PHP_TAB . '-v <version>:' . PHP_TAB . 'Version (ex: 4.0.0, 4.0.0-rc1)' . PHP_EOL;
+	echo PHP_TAB . PHP_TAB . '-v <version>:' . PHP_TAB . 'Version (ex: 4.1.0, 4.1.0-rc1)' . PHP_EOL;
 	echo PHP_TAB . PHP_TAB . '-l <languagepackversion>:' . PHP_TAB . 'Languagepackversion (ex: 1, 2)' . PHP_EOL;
 	echo PHP_EOL;
 }

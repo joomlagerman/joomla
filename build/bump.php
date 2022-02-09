@@ -6,7 +6,7 @@
  * Usage: php build/bump.php -v <version> -l <languagepackversion>
  *
  * Examples:
- * - php build/bump.php -v 4.0.0 -l 1
+ * - php build/bump.php -v 4.1.0 -l 1
  *
  * @package    Joomla.Language
  * @copyright  (C) 2022 J!German <https://www.jgerman.de>
@@ -22,7 +22,7 @@ function usage($command)
 	echo PHP_EOL;
 	echo 'Usage: php ' . $command . ' [options]' . PHP_EOL;
 	echo PHP_TAB . '[options]:' . PHP_EOL;
-	echo PHP_TAB . PHP_TAB . '-v <version>:' . PHP_TAB . 'Version (ex: 4.0.0, 4.0.0-rc1)' . PHP_EOL;
+	echo PHP_TAB . PHP_TAB . '-v <version>:' . PHP_TAB . 'Version (ex: 4.1.0, 4.1.0-rc1)' . PHP_EOL;
 	echo PHP_TAB . PHP_TAB . '-l <languagepackversion>:' . PHP_TAB . 'Languagepackversion (ex: 1, 2)' . PHP_EOL;
 	echo PHP_EOL;
 }
@@ -161,7 +161,7 @@ $version = array(
 	'reldate'         => date('j-F-Y'),
 	'reltime'         => date('H:i'),
 	'reltz'           => 'GMT',
-	'credate'         => date('d.m.Y'),
+	'credate'         => date('Y-m-d'),
 	'install_credate' => date('F Y'),
 	'install_version' => $versionSubParts[0] . '.' . $versionSubParts[1] . '.' . $versionSubParts[2],
 );
@@ -213,6 +213,7 @@ if (file_exists($rootPath . $languagePackXmlFile))
 	$fileContents = file_get_contents($rootPath . $languagePackXmlFile);
 	$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['full'] . '</version>', $fileContents);
 	$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['credate'] . '</creationDate>', $fileContents);
+	$fileContents = preg_replace('#<h2>(.*)<\/h2>#', '<h2>Deutsches Sprachpaket (Version: ' . $version['full'] . ') für Joomla! 4.1 von <a title="J!German" href="https://www.jgerman.de" target="_blank" rel="noopener noreferrer">J!German</a></h2>', $fileContents);
 	file_put_contents($rootPath . $languagePackXmlFile, $fileContents);
 }
 

@@ -161,7 +161,7 @@ $version = array(
 	'reldate'         => date('j-F-Y'),
 	'reltime'         => date('H:i'),
 	'reltz'           => 'GMT',
-	'credate'         => date('d.m.Y'),
+	'credate'         => date('Y-m-d'),
 	'install_credate' => date('F Y'),
 	'install_version' => $versionSubParts[0] . '.' . $versionSubParts[1] . '.' . $versionSubParts[2],
 );
@@ -213,6 +213,7 @@ if (file_exists($rootPath . $languagePackXmlFile))
 	$fileContents = file_get_contents($rootPath . $languagePackXmlFile);
 	$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['full'] . '</version>', $fileContents);
 	$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['credate'] . '</creationDate>', $fileContents);
+	$fileContents = preg_replace('#<h2>(.*)<\/h2>#', '<h2>Deutsches Sprachpaket (Version: ' . $version['full'] . ') für Joomla! 4.1 von <a title="J!German" href="https://www.jgerman.de" target="_blank" rel="noopener noreferrer">J!German</a></h2>', $fileContents);
 	file_put_contents($rootPath . $languagePackXmlFile, $fileContents);
 }
 

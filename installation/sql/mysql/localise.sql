@@ -8,9 +8,9 @@
 UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, 'en-GB', 'de-DE') WHERE `extension_id` = 11;
 
 INSERT INTO `#__extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `manifest_cache`, `params`, `custom_data`) VALUES
-(602, 604, 'German (DE)', 'language', 'de-DE', '', 0, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"31.01.2022","author":"J!German","copyright":"Copyright (C) 2005 - 2022 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.1.0-rc2.1","group":""}' ,'' ,''),
-(603, 604, 'German (DE)', 'language', 'de-DE', '', 1, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"31.01.2022","author":"J!German","copyright":"Copyright (C) 2005 - 2022 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.1.0-rc2.1","group":""}' ,'' ,''),
-(604, 0, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', '', 0, 1, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"31.01.2022","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.1.0-rc2.1","group":"","filename":"pkg_de-DE"}' ,'' ,'');
+(602, 604, 'German (DE)', 'language', 'de-DE', '', 0, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2022-02-15","author":"J!German","copyright":"Copyright (C) 2005 - 2022 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.1.0.1","group":""}' ,'' ,''),
+(603, 604, 'German (DE)', 'language', 'de-DE', '', 1, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2022-02-15","author":"J!German","copyright":"Copyright (C) 2005 - 2022 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.1.0.1","group":""}' ,'' ,''),
+(604, 0, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', '', 0, 1, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"2022-02-15","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.1.0.1","group":"","filename":"pkg_de-DE"}' ,'' ,'');
 
 --
 -- Table `#__languages`

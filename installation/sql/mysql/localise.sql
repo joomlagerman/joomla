@@ -53,7 +53,7 @@ UPDATE IGNORE `#__modules` SET `title` = 'Anmeldung' WHERE `id` = 2;
 UPDATE IGNORE `#__modules` SET `title` = 'Beliebte Beiträge' WHERE `id` = 3;
 UPDATE IGNORE `#__modules` SET `title` = 'Kürzlich hinzugefügte Beiträge' WHERE `id` = 4;
 UPDATE IGNORE `#__modules` SET `title` = 'Symbolleiste' WHERE `id` = 8;
-UPDATE IGNORE `#__modules` SET `title` = 'Schnellzugriff' WHERE `id` = 9;
+UPDATE IGNORE `#__modules` SET `title` = 'Benachrichtigungen' WHERE `id` = 9;
 UPDATE IGNORE `#__modules` SET `title` = 'Angemeldete Benutzer' WHERE `id` = 10;
 UPDATE IGNORE `#__modules` SET `title` = 'Admin Menü' WHERE `id` = 12;
 UPDATE IGNORE `#__modules` SET `title` = 'Admin Submenü' WHERE `id` = 13;

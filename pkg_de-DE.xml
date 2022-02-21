@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="package" version="4.0" method="upgrade">
+<extension type="package" method="upgrade">
 	<name>German (Germany) Language Pack</name>
 	<packagename>de-DE</packagename>
 	<version>4.1.0.2</version>
@@ -14,11 +14,11 @@
 	<packagerurl>https://www.jgerman.de</packagerurl>
 	<description><![CDATA[
 	<h2>Deutsches Sprachpaket (Version: 4.1.0.2) für Joomla! 4.1 von <a title="J!German" href="https://www.jgerman.de" target="_blank" rel="noopener noreferrer">J!German</a></h2>
-        <hr />
-        <p><span style="text-decoration: underline;">Neuinstallation:</span><br />Die deutsche Sprache kann unter <a title="Language(s)" href="index.php?option=com_languages" target="_blank">„Extensions“ → „Language(s)“</a> als Standardsprache (Default), sowohl für die Website „Installed (Site)“ als auch für die Administration „Installed (Administrator)“, festgelegt werden.</p>
-        <p><span style="text-decoration: underline;">Aktualisierung:</span><br />Es sind keine weiteren Schritte erforderlich.</p>
+	<hr />
+	<p><span style="text-decoration: underline;">Neuinstallation:</span><br />Die deutsche Sprache kann unter <a title="Language(s)" href="index.php?option=com_languages" target="_blank">„Extensions“ → „Language(s)“</a> als Standardsprache (Default), sowohl für die Website „Installed (Site)“ als auch für die Administration „Installed (Administrator)“, festgelegt werden.</p>
+	<p><span style="text-decoration: underline;">Aktualisierung:</span><br />Es sind keine weiteren Schritte erforderlich.</p>
 	<p><span style="text-decoration: underline;">Fehler:</span><br />Übersetzungsfehler, Tippfehler oder Anregungen können gerne auf GitHub im <a href="https://github.com/joomlagerman/joomla" target="_blank" title="https://github.com/joomlagerman/joomla">joomlagerman/joomla</a> Repository gemeldet werden.</p>
-        <p><span style="text-decoration: underline;">Hinweis:</span><br />Dieses Paket unterstützt die Joomla! eigene <a title="Joomla-Aktualisierungsfunktion" href="index.php?option=com_installer&amp;view=update" target="_blank">Aktualisierungsfunktion</a>.</p>
+	<p><span style="text-decoration: underline;">Hinweis:</span><br />Dieses Paket unterstützt die Joomla! eigene <a title="Joomla-Aktualisierungsfunktion" href="index.php?option=com_installer&amp;view=update" target="_blank">Aktualisierungsfunktion</a>.</p>
 	]]>
 	</description>
 	<blockChildUninstall>true</blockChildUninstall>

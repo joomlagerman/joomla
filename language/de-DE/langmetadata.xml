@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<metafile client="site" method="upgrade">
+<metafile client="site">
 	<name>German (Germany)</name>
 	<tag>de-DE</tag>
 	<version>4.1.0-rc2.1</version>

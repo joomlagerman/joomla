@@ -28,7 +28,7 @@ class Pkg_deDEInstallerScript extends InstallerScript
 		$this->minimumJoomla = '4.0';
 		$this->minimumPhp    = '7.2.5';
 
-		$this->deleteFiles = array(
+		$this->deleteFiles = [
 			// Backend
 			'/administrator/language/de-DE/de-DE.com_actionlogs.ini',
 			'/administrator/language/de-DE/de-DE.com_actionlogs.sys.ini',
@@ -406,7 +406,7 @@ class Pkg_deDEInstallerScript extends InstallerScript
 			'/language/de-DE/de-DE.tpl_protostar.ini',
 			'/language/de-DE/de-DE.tpl_protostar.sys.ini',
 			'/language/de-DE/de-DE.xml',
-		);
+		];
 	}
 
 	/**

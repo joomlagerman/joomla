@@ -1,7 +1,7 @@
 ---
 name: basic issue template
 about: Use this template for issues.
-assignees: tecpromotion, zero-24
+assignees: tecpromotion, zero-24, heelc29
 ---
 
 ### Was soll verbessert / korrigiert werden

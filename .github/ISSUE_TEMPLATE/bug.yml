@@ -1,4 +1,4 @@
-name: basic issue template
+name: Bug Report
 description: Use this template for issues.
 title: "[3.10/4.x]: "
 labels: ["enhancement"]

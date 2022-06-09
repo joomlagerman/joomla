@@ -6,3 +6,8 @@ assignees:
   - tecpromotion
   - zero-24
   - heelc29
+body:
+- type: markdown
+    attributes:
+      value: |
+        Vielen Dank, dass Du dir die Zeit genommen hast, diesen Fehlerbericht auszufüllen!

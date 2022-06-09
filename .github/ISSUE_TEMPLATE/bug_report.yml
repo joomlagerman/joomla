@@ -34,7 +34,7 @@ body:
       description: Welche Joomla Version wird genutzt?
       options:
         - 4.x (Empfohlen)
-        - 3.10 (Achtung: Der Support Joomla 3.10 wird August 2023 eingestellt)
+        - 3.10 (Achtung - Support Joomla 3.10 wird August 2023 eingestellt)
     validations:
       required: true
   - type: textarea

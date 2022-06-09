@@ -1,9 +1,11 @@
 name: Bug Report
-description: File a bug report
+description: Einen Verbesserungsvorschlag oder Fehler melden.
 title: "[3.10/4.x]: "
 labels: ["enhancement"]
 assignees:
-  - octocat
+  - tecpromotion
+  - zero-24
+  - heelc29
 body:
   - type: markdown
     attributes:

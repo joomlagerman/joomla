@@ -15,7 +15,7 @@ body:
     id: what-happened
     attributes:
       label: Was soll verbessert / korrigiert werden?
-      description: Bitte beschreibe möglichst ausführlich, wo und warum etwas verbessert oder korrigiert werden soll.
+      description: Bitte beschreibe möglichst ausführlich, **warum** etwas verbessert oder korrigiert werden soll.
       placeholder: Gerne mit Screenshots und Fehlermeldungen!
     validations:
       required: true
@@ -23,10 +23,18 @@ body:
     id: where-happened
     attributes:
       label: Wo wird der Sprachstring angezeigt (Frontend/Backend)
-      description: Bitte beschreibe möglichst ausführlich die Stelle, wo etwas verbessert oder korrigiert werden soll.
+      description: Bitte beschreibe möglichst ausführlich die Stelle, **wo** etwas verbessert oder korrigiert werden soll.
       placeholder: Gerne mit Screenshots und Fehlermeldungen!
     validations:
       required: true
+  - type: textarea
+    id: new-translation
+    attributes:
+      label: Was wäre eine bessere Übersetzung / Bezeichnung
+      description: Hier ist Platz für deinen Vorschlag.
+      placeholder: Gerne mit Screenshots und Fehlermeldungen!
+    validations:
+      required: false
   - type: dropdown
     id: version
     attributes:

@@ -10,7 +10,7 @@ body:
 - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Vielen Dank, dass Du dir die Zeit genommen hast, diesen Fehlerbericht auszufüllen!
 - type: textarea
     id: what-happened
     attributes:

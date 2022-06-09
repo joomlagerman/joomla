@@ -32,7 +32,7 @@ body:
     attributes:
       label: Was wäre eine bessere Übersetzung / Bezeichnung
       description: Hier ist Platz für deinen Vorschlag.
-      placeholder: Gerne mit Screenshots und Fehlermeldungen!
+      placeholder: Gerne mit Screenshots wie dies im Front- oder Backend dann aussehen kann!
     validations:
       required: false
   - type: dropdown

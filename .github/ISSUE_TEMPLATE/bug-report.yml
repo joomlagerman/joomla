@@ -1,7 +1,7 @@
 name: Bug Report
-description: Einen Verbesserungsvorschlage oder Fehler melden.
+description: Einen Verbesserungsvorschlag oder Fehler melden.
 title: "[3.10/4.x]: "
-labels: ["enhancement"]
+labels: ["bug"]
 assignees:
   - tecpromotion
   - zero-24

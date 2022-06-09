@@ -14,21 +14,21 @@ body:
     value: |
       Thanks for taking the time to fill out this bug!
 - type: textarea
-    id: what-happened
+    id: what
     attributes:
       label: Was soll verbessert / korrigiert werden
       description: Was soll verbessert / korrigiert werden?
     validations:
       required: true
 - type: textarea
-    id: where-happened
+    id: where
     attributes:
       label: Wo wird der Sprachstring angezeigt (Frontend/Backend)
       description: Wo wird der Sprachstring angezeigt (Frontend/Backend)?
     validations:
       required: true
 - type: textarea
-    id: better-translation
+    id: translation
     attributes:
       label: Was wäre eine bessere Übersetzung / Bezeichnung
       description: Was wäre eine bessere Übersetzung / Bezeichnung?
@@ -45,7 +45,7 @@ body:
     validations:
       required: true
 - type: textarea
-    id: more-informations
+    id: moreinformations
     attributes:
       label: Zusätzlichen Informationen
       description: Platz für zusätzliche Informationen

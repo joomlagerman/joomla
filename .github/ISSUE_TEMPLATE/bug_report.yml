@@ -3,4 +3,14 @@ description: Use this template for issues.
 body:
  - type: markdown
    value: "## Verbesserungsvorschlag oder Fehler melden."
-   
+- type: markdown
+  attributes:
+    value: |
+      Vielen Dank, dass Du dir Zeit nimmst, diesen Vorschlag oder Fehler zu melden!
+- type: textarea
+    id: what
+    attributes:
+      label: Was soll verbessert / korrigiert werden
+      description: Was soll verbessert / korrigiert werden?
+    validations:
+      required: true

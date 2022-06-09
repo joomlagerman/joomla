@@ -27,7 +27,7 @@ body:
       placeholder: Gerne mit Screenshots und Fehlermeldungen!
     validations:
       required: true
- - type: dropdown
+  - type: dropdown
     id: version
     attributes:
       label: Joomla Version
@@ -42,3 +42,5 @@ body:
     attributes:
       label: Zusätzliche Informationen
       description: Hier findest du Platz für weitere Informationen oder Links zum Forum etc.
+    validations:
+      required: false

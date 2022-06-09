@@ -18,14 +18,14 @@ body:
       description: Gerne mit Screenshots und Fehlermeldungen
     validations:
       required: true
-- type: textarea
+ - type: textarea
     id: where-happened
     attributes:
       label: Wo wird der Sprachstring angezeigt (Frontend/Backend)
       description: Wo wird der Sprachstring angezeigt (Frontend/Backend)?
     validations:
       required: true
-- type: textarea
+ - type: textarea
     id: new-translation
     attributes:
       label: Was wäre eine bessere Übersetzung / Bezeichnung

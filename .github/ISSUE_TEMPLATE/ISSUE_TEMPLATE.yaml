@@ -1,0 +1,51 @@
+name: basic issue template
+description: Use this template for issues.
+title: "[3.10/4.x]: "
+labels: ["enhancement"]
+assignees:
+  - tecpromotion
+  - zero-24
+  - heelc29
+body:
+- type: markdown
+    attributes:
+      value: |
+        Vielen Dank, dass Du dir die Zeit genommen hast, diesen Fehlerbericht auszufüllen!
+- type: textarea
+    id: what-happened
+    attributes:
+      label: Was soll verbessert / korrigiert werden
+      description: Was soll verbessert / korrigiert werden?
+    validations:
+      required: true
+- type: textarea
+    id: where-happened
+    attributes:
+      label: Wo wird der Sprachstring angezeigt (Frontend/Backend)
+      description: Wo wird der Sprachstring angezeigt (Frontend/Backend)?
+    validations:
+      required: true
+- type: textarea
+    id: better-translation
+    attributes:
+      label: Was wäre eine bessere Übersetzung / Bezeichnung
+      description: Was wäre eine bessere Übersetzung / Bezeichnung?
+    validations:
+      required: true
+- type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: Welche Joomla Version wird verwendet?
+      options:
+        - 4.1.x (Empfohlen)
+        - 3.10.x (Achtung, Support endet August 2023)
+    validations:
+      required: true
+- type: textarea
+    id: more-informations
+    attributes:
+      label: Zusätzlichen Informationen
+      description: Platz für zusätzliche Informationen
+    validations:
+      required: false

@@ -15,41 +15,30 @@ body:
     id: what-happened
     attributes:
       label: Was soll verbessert / korrigiert werden?
-      description: Bitte beschreibe möglichst ausführlich die Stelle, wo etwas verbessert oder korrigiert werden muss.
+      description: Bitte beschreibe möglichst ausführlich, wo und warum etwas verbessert oder korrigiert werden soll.
       placeholder: Gerne mit Screenshots und Fehlermeldungen!
     validations:
       required: true
-  - type: dropdown
-    id: version
+  - type: textarea
+    id: where-happened
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: Wo wird der Sprachstring angezeigt (Frontend/Backend)
+      description: Bitte beschreibe möglichst ausführlich die Stelle, wo etwas verbessert oder korrigiert werden soll.
+      placeholder: Gerne mit Screenshots und Fehlermeldungen!
     validations:
       required: true
-  - type: dropdown
-    id: browsers
+ - type: dropdown
+    id: version
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
+      label: Joomla Version
+      description: Welche Joomla Version wird genutzt?
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - 4.x (Empfohlen)
+        - 3.10 (Achtung: Der Support Joomla 3.10 wird August 2023 eingestellt)
+    validations:
+      required: true
   - type: textarea
-    id: logs
+    id: information
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Zusätzliche Informationen
+      description: Hier findest du Platz für weitere Informationen oder Links zum Forum etc.

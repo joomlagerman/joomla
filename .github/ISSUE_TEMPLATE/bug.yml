@@ -8,6 +8,46 @@ assignees:
   - heelc29
 body:
 - type: markdown
+  value: "## Welcome!"
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to fill out this bug!
+- type: textarea
+    id: what-happened
     attributes:
-      value: |
-        Vielen Dank, dass Du dir die Zeit genommen hast, diesen Fehlerbericht auszufüllen!
+      label: Was soll verbessert / korrigiert werden
+      description: Was soll verbessert / korrigiert werden?
+    validations:
+      required: true
+- type: textarea
+    id: where-happened
+    attributes:
+      label: Wo wird der Sprachstring angezeigt (Frontend/Backend)
+      description: Wo wird der Sprachstring angezeigt (Frontend/Backend)?
+    validations:
+      required: true
+- type: textarea
+    id: better-translation
+    attributes:
+      label: Was wäre eine bessere Übersetzung / Bezeichnung
+      description: Was wäre eine bessere Übersetzung / Bezeichnung?
+    validations:
+      required: true
+- type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: Welche Joomla Version wird verwendet?
+      options:
+        - 4.1.x (Empfohlen)
+        - 3.10.x (Achtung, Support endet August 2023)
+    validations:
+      required: true
+- type: textarea
+    id: more-informations
+    attributes:
+      label: Zusätzlichen Informationen
+      description: Platz für zusätzliche Informationen
+    validations:
+      required: false

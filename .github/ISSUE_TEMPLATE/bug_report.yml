@@ -1,2 +1,6 @@
 name: Bug Report
 description: Use this template for issues.
+body:
+ - type: markdown
+   value: "## Verbesserungsvorschlag oder Fehler melden."
+   

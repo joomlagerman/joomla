@@ -1,7 +1,7 @@
-name: Bug Report
+name: Issue template
 description: Einen Verbesserungsvorschlag oder Fehler melden.
 title: "[3.10/4.x]: "
-labels: ["bug"]
+labels: ["enhancement"]
 assignees:
   - tecpromotion
   - zero-24

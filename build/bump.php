@@ -194,7 +194,7 @@ foreach ($languageXmlFiles as $languageXmlFile)
 		$fileContents = file_get_contents($rootPath . $languageXmlFile);
 		$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['full'] . '</version>', $fileContents);
 		$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['credate'] . '</creationDate>', $fileContents);
-        $fileContents = preg_replace('#<span class=\"jgerman-vesion\">(.*)<\/span>#', '<span class="jgerman-version">' . $version['main'] . '</span>', $fileContents);
+        $fileContents = preg_replace('#<span class=\"jgerman-version\">(.*)<\/span>#', '<span class="jgerman-version">' . $version['main'] . '</span>', $fileContents);
 		file_put_contents($rootPath . $languageXmlFile, $fileContents);
 	}
 }
@@ -205,7 +205,7 @@ if (file_exists($rootPath . $installerXmlFile))
 	$fileContents = file_get_contents($rootPath . $installerXmlFile);
 	$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['install_version'] . '</version>', $fileContents);
 	$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['install_credate'] . '</creationDate>', $fileContents);
-    $fileContents = preg_replace('#<span class=\"jgerman-vesion\">(.*)<\/span>#', '<span class="jgerman-version">' . $version['main'] . '</span>', $fileContents);
+    $fileContents = preg_replace('#<span class=\"jgerman-version\">(.*)<\/span>#', '<span class="jgerman-version">' . $version['main'] . '</span>', $fileContents);
 	file_put_contents($rootPath . $installerXmlFile, $fileContents);
 }
 

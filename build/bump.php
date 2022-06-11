@@ -194,6 +194,7 @@ foreach ($languageXmlFiles as $languageXmlFile)
 		$fileContents = file_get_contents($rootPath . $languageXmlFile);
 		$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['full'] . '</version>', $fileContents);
 		$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['credate'] . '</creationDate>', $fileContents);
+        $fileContents = preg_replace('#<span class=\"jgerman-version\">(.*)<\/span>#', '<span class="jgerman-version">' . $version['main'] . '</span>', $fileContents);
 		file_put_contents($rootPath . $languageXmlFile, $fileContents);
 	}
 }
@@ -204,6 +205,7 @@ if (file_exists($rootPath . $installerXmlFile))
 	$fileContents = file_get_contents($rootPath . $installerXmlFile);
 	$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['install_version'] . '</version>', $fileContents);
 	$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['install_credate'] . '</creationDate>', $fileContents);
+    $fileContents = preg_replace('#<span class=\"jgerman-version\">(.*)<\/span>#', '<span class="jgerman-version">' . $version['main'] . '</span>', $fileContents);
 	file_put_contents($rootPath . $installerXmlFile, $fileContents);
 }
 
@@ -213,7 +215,7 @@ if (file_exists($rootPath . $languagePackXmlFile))
 	$fileContents = file_get_contents($rootPath . $languagePackXmlFile);
 	$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['full'] . '</version>', $fileContents);
 	$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['credate'] . '</creationDate>', $fileContents);
-	$fileContents = preg_replace('#<h2>(.*)<\/h2>#', '<h2>Deutsches Sprachpaket (Version: ' . $version['full'] . ') für Joomla! 4.1 von <a title="J!German" href="https://www.jgerman.de" target="_blank" rel="noopener noreferrer">J!German</a></h2>', $fileContents);
+	$fileContents = preg_replace('#<h2>(.*)<\/h2>#', '<h2>Deutsches Sprachpaket (Version: ' . $version['full'] . ') für Joomla! ' . $version['main'] . ' von <a title="J!German" href="https://www.jgerman.de" target="_blank" rel="noopener noreferrer">J!German</a></h2>', $fileContents);
 	file_put_contents($rootPath . $languagePackXmlFile, $fileContents);
 }
 

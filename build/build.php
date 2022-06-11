@@ -27,7 +27,10 @@
  * - php build/build.php --install --v
  * - php build/build.php --fullurl "https://github.com/joomla/joomla-cms/releases/download/4.1.0-rc1/Joomla_4.1.0-rc1-Release_Candidate-Full_Package.zip" --v
  * - php build/build.php --lpackages --v --tagversion "4.1.4v1"
- *
+ * - php build/build.php --crowdin --v --tagversion "4.1.4v1"
+ * - php build/build.php --install --v --tagversion "4.1.4v1"
+ * - php build/build.php --fullurl "https://github.com/joomla/joomla-cms/releases/download/4.1.0-rc1/Joomla_4.1.0-rc1-Release_Candidate-Full_Package.zip" --v  --tagversion "4.1.4v1"
+
  * @package    Joomla.Language
  * @copyright  (C) 2022 J!German <https://www.jgerman.de>
  * @license    GNU General Public License version 2 or later; see LICENSE.txt

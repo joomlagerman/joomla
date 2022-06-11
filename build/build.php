@@ -57,7 +57,7 @@ $tmp      = $here . '/tmp';
 $fullpath = $tmp . '/' . $time;
 
 // Parse input options
-$options = getopt('', ['help', 'fullurl:', 'install', 'lpackages', 'v', 'crowdin', 'tagversion:',]);
+$options = getopt('', ['help', 'fullurl:', 'install', 'lpackages', 'v', 'crowdin', 'tagversion:']);
 
 $showHelp         = isset($options['help']);
 $fullReleaseUrl   = $options['fullurl'] ?? false;

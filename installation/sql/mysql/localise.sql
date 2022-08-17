@@ -57,7 +57,6 @@ UPDATE IGNORE `#__modules` SET `title` = 'Symbolleiste' WHERE `id` = 8;
 UPDATE IGNORE `#__modules` SET `title` = 'Benachrichtigungen' WHERE `id` = 9;
 UPDATE IGNORE `#__modules` SET `title` = 'Angemeldete Benutzer' WHERE `id` = 10;
 UPDATE IGNORE `#__modules` SET `title` = 'Admin Menü' WHERE `id` = 12;
-UPDATE IGNORE `#__modules` SET `title` = 'Benutzerstatus' WHERE `id` = 14;
 UPDATE IGNORE `#__modules` SET `title` = 'Titel' WHERE `id` = 15;
 UPDATE IGNORE `#__modules` SET `title` = 'Anmeldeformular' WHERE `id` = 16;
 UPDATE IGNORE `#__modules` SET `title` = 'Navigationspfad' WHERE `id` = 17;

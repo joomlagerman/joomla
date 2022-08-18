@@ -74,7 +74,7 @@ UPDATE IGNORE `#__modules` SET `title` = 'Benutzer Dashboard' WHERE `id` = 95;
 UPDATE IGNORE `#__modules` SET `title` = 'Beliebte Beiträge' WHERE `id` = 96;
 UPDATE IGNORE `#__modules` SET `title` = 'Kürzlich hinzugefügte Beiträge' WHERE `id` = 97;
 UPDATE IGNORE `#__modules` SET `title` = 'Angemeldete Benutzer' WHERE `id` = 98;
-UPDATE IGNORE `#__modules` SET `title` = 'Frontend Link' WHERE `id` = 99;
+UPDATE IGNORE `#__modules` SET `title` = 'Link Website' WHERE `id` = 99;
 UPDATE IGNORE `#__modules` SET `title` = 'Nachrichten' WHERE `id` = 100;
 UPDATE IGNORE `#__modules` SET `title` = 'Nachinstallationshinweise' WHERE `id` = 101;
 UPDATE IGNORE `#__modules` SET `title` = 'Benutzermenü' WHERE `id` = 102;

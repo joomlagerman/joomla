@@ -25,7 +25,7 @@ abstract class De_DELocalise
 	/**
 	 * Returns the potential suffixes for a specific number of items
 	 *
-	 * @param   integer  $count  The number of items.
+	 * @param int $count  The number of items.
 	 *
 	 * @return  array  An array of potential suffixes.
 	 *
@@ -1061,7 +1061,7 @@ abstract class De_DELocalise
 	/**
 	 * Returns the lower length limit of search words
 	 *
-	 * @return  integer  The lower length limit of search words.
+	 * @return  int  The lower length limit of search words.
 	 *
 	 * @since   1.6
 	 */
@@ -1073,7 +1073,7 @@ abstract class De_DELocalise
 	/**
 	 * Returns the upper length limit of search words
 	 *
-	 * @return  integer  The upper length limit of search words.
+	 * @return  int  The upper length limit of search words.
 	 *
 	 * @since   1.6
 	 */
@@ -1085,7 +1085,7 @@ abstract class De_DELocalise
 	/**
 	 * Returns the number of chars to display when searching
 	 *
-	 * @return  integer  The number of chars to display when searching.
+	 * @return  int  The number of chars to display when searching.
 	 *
 	 * @since   1.6
 	 */

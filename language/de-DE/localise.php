@@ -33,17 +33,13 @@ abstract class De_DELocalise
 	 */
 	public static function getPluralSuffixes($count)
 	{
-		if ($count == 0)
-		{
+		if ($count == 0) {
 			return array('0');
-		}
-
-		if ($count == 1)
-		{
+		} elseif ($count == 1) {
 			return array('ONE', '1');
+		} else {
+			return array('OTHER', 'MORE');
 		}
-
-		return array('OTHER', 'MORE');
 	}
 
 	/**

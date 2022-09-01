@@ -19,7 +19,7 @@
  * 2. Commit the version changes
  * 3. Tag new release in the local git repository (for example, "git tag -s 4.1.0v1")
  * 3. Run from CLI as: 'php buid/build.php --lpackages"
- * 4. Check the the tmp directory.
+ * 4. Check the tmp directory.
  *
  * Examples:
  * - php build/build.php --lpackages --v

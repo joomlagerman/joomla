@@ -6,7 +6,7 @@
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-defined('_JEXEC') or die;
+\defined('_JEXEC') or die;
 
 use Joomla\CMS\Installer\InstallerScript;
 
@@ -24,8 +24,8 @@ class Pkg_deDEInstallerScript extends InstallerScript
 	 */
 	public function __construct()
 	{
-		// Define the minumum versions to be supported.
-		$this->minimumJoomla = '4.3';
+		// Define the minimum versions to be supported.
+		$this->minimumJoomla = '4.2';
 		$this->minimumPhp    = '7.2.5';
 
 		$this->deleteFiles = [
@@ -327,6 +327,8 @@ class Pkg_deDEInstallerScript extends InstallerScript
 			'/administrator/language/de-DE/de-DE.xml',
 			'/administrator/language/de-DE/plg_fields_image.ini',
 			'/administrator/language/de-DE/plg_fields_image.sys.ini',
+			'/administrator/language/de-DE/plg_fields_menuitem.ini',
+			'/administrator/language/de-DE/plg_fields_menuitem.sys.ini',
 			// Frontend
 			'/language/de-DE/de-DE.com_ajax.ini',
 			'/language/de-DE/de-DE.com_config.ini',

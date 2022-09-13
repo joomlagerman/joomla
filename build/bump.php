@@ -162,6 +162,7 @@ $version = array(
 	'reltime'         => date('H:i'),
 	'reltz'           => 'GMT',
 	'credate'         => date('Y-m-d'),
+	'credate_de'      => date('d.m.Y'),
 	'install_credate' => date('F Y'),
 	'install_version' => $versionSubParts[0] . '.' . $versionSubParts[1] . '.' . $versionSubParts[2],
 );
@@ -178,6 +179,7 @@ echo '- Release date:' . PHP_TAB . PHP_TAB . PHP_TAB . $version['reldate'] . PHP
 echo '- Release time:' . PHP_TAB . PHP_TAB . PHP_TAB . $version['reltime'] . PHP_EOL;
 echo '- Release timezone:' . PHP_TAB . PHP_TAB . $version['reltz'] . PHP_EOL;
 echo '- Creation date:' . PHP_TAB . PHP_TAB . $version['credate'] . PHP_EOL;
+echo '- Creation date DE:' . PHP_TAB . PHP_TAB . $version['credate_de'] . PHP_EOL;
 echo '- Installer: creation date:' . PHP_TAB . $version['install_credate'] . PHP_EOL;
 echo '- Installer: version:' . PHP_TAB . PHP_TAB . $version['install_version'] . PHP_EOL;
 
@@ -215,7 +217,7 @@ if (file_exists($rootPath . $languagePackXmlFile))
 	$fileContents = file_get_contents($rootPath . $languagePackXmlFile);
 	$fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['full'] . '</version>', $fileContents);
 	$fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['credate'] . '</creationDate>', $fileContents);
-	$fileContents = preg_replace('#<h2>(.*)<\/h2>#', '<h2>Deutsches Sprachpaket (Version: ' . $version['full'] . ') für Joomla! ' . $version['main'] . ' von <a title="J!German" href="https://www.jgerman.de" target="_blank" rel="noopener noreferrer">J!German</a></h2>', $fileContents);
+	$fileContents = preg_replace('#<h2>(.*)<\/h2>#', '<h2>Deutsches Sprachpaket (Version: ' . $version['full'] . ' vom ' . $version['credate_de'] . ') für Joomla! ' . $version['main'] . ' von <a title="J!German" href="https://www.jgerman.de" target="_blank" rel="noopener noreferrer">J!German</a></h2>', $fileContents);
 	file_put_contents($rootPath . $languagePackXmlFile, $fileContents);
 }
 

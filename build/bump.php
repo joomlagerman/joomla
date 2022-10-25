@@ -163,7 +163,7 @@ $version = array(
 	'reltz'           => 'GMT',
 	'credate'         => date('Y-m-d'),
 	'credate_de'      => date('d.m.Y'),
-	'install_credate' => date('F Y'),
+	'install_credate' => date('Y-m'),
 	'install_version' => $versionSubParts[0] . '.' . $versionSubParts[1] . '.' . $versionSubParts[2],
 );
 

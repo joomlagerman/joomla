@@ -364,7 +364,6 @@ bezüglich
 bietet
 bisher
 bislang
-bis
 bleiben
 blieb
 bloss
@@ -622,7 +621,6 @@ jähriges
 kam
 kannst
 kaum
-keines
 keinerlei
 keineswegs
 klar
@@ -875,7 +873,6 @@ unmöglichen
 unmöglicher
 unnötig
 unsem
-unser
 unsere
 unserem
 unseren
@@ -926,7 +923,6 @@ vorher
 vorne
 vorüber
 völlig
-während
 wachen
 waere
 warum

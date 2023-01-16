@@ -31,14 +31,14 @@ function usage($command)
 const PHP_TAB = "\t";
 
 // File paths.
-$languageXmlFiles = array(
+$languageXmlFiles = [
 	'/administrator/language/de-DE/install.xml',
 	'/administrator/language/de-DE/langmetadata.xml',
 	'/api/language/de-DE/install.xml',
 	'/api/language/de-DE/langmetadata.xml',
 	'/language/de-DE/install.xml',
 	'/language/de-DE/langmetadata.xml',
-);
+];
 
 $installerXmlFile = '/installation/language/de-DE/langmetadata.xml';
 
@@ -52,12 +52,12 @@ $languagePackSqlFile = '/installation/sql/mysql/localise.sql';
  * Also exclude build resources such as the packaging space or the API documentation build
  * as well as external libraries.
  */
-$directoryLoopExcludeDirectories = array(
+$directoryLoopExcludeDirectories = [
 	'/.git',
 	'/build/tmp/',
-);
+];
 
-$directoryLoopExcludeFiles = array();
+$directoryLoopExcludeFiles = [];
 
 // Check arguments (exit if incorrect cli arguments).
 $opts = getopt("v:l:");
@@ -148,7 +148,7 @@ else
 // Set version properties.
 $versionSubParts = explode('.', $versionParts[0]);
 
-$version = array(
+$version = [
 	'main'            => $versionSubParts[0] . '.' . $versionSubParts[1],
 	'major'           => $versionSubParts[0],
 	'minor'           => $versionSubParts[1],
@@ -165,7 +165,7 @@ $version = array(
 	'credate_de'      => date('d.m.Y'),
 	'install_credate' => date('Y-m'),
 	'install_version' => $versionSubParts[0] . '.' . $versionSubParts[1] . '.' . $versionSubParts[2],
-);
+];
 
 // Prints version information.
 echo PHP_EOL;

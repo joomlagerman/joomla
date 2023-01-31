@@ -2,12 +2,12 @@
 <extension client="site" type="language" method="upgrade">
 	<name>German (DE)</name>
 	<tag>de-DE</tag>
-	<version>4.2.6.1</version>
-	<creationDate>2022-12-13</creationDate>
+	<version>4.2.7.1</version>
+	<creationDate>2023-01-31</creationDate>
 	<author>J!German</author>
 	<authorEmail>team@jgerman.de</authorEmail>
 	<authorUrl>https://www.jgerman.de</authorUrl>
-	<copyright>(C) 2008 - 2022 J!German. All rights reserved.</copyright>
+	<copyright>(C) 2008 - 2023 J!German. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<description><![CDATA[
 	<img style="margin: 5px; vertical-align: middle;" alt="German (Deutsch)" src="data:;base64,R0lGODlhEgAMAJEAAP/OAAAAAN0AAAAAACH5BAAAAAAALAAAAAASAAwAAAIXjI+py+2vhJy02ouz3hb4D4biSJbmKRYAOw==" height="12" width="18" />Deutsche Frontend (Website)-Übersetzung für Joomla! <span class="jgerman-version">4.2</span>

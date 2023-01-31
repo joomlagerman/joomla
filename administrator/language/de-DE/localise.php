@@ -3,7 +3,7 @@
  * @package    Joomla.Language
  *
  * @copyright  (C) 2011 Open Source Matters, Inc. <https://www.joomla.org>
- * @copyright  (C) Translation 2008 - 2022 J!German <https://www.jgerman.de>
+ * @copyright  (C) Translation 2008 - 2023 J!German <https://www.jgerman.de>
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
 
  * @phpcs:disable Squiz.Classes.ValidClassName.NotCamelCaps

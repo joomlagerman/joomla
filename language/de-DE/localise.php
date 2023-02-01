@@ -3,7 +3,7 @@
  * @package    Joomla.Language
  *
  * @copyright  (C) 2011 Open Source Matters, Inc. <https://www.joomla.org>
- * @copyright  (C) Translation 2008 - 2022 J!German <https://www.jgerman.de>
+ * @copyright  (C) Translation 2008 - 2023 J!German <https://www.jgerman.de>
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
 
  * @phpcs:disable Squiz.Classes.ValidClassName.NotCamelCaps
@@ -34,11 +34,11 @@ abstract class De_DELocalise
 	public static function getPluralSuffixes($count)
 	{
 		if ($count == 0) {
-			return array('0');
+			return ['0'];
 		} elseif ($count == 1) {
-			return array('ONE', '1');
+			return ['ONE', '1'];
 		} else {
-			return array('OTHER', 'MORE');
+			return ['OTHER', 'MORE'];
 		}
 	}
 
@@ -53,7 +53,7 @@ abstract class De_DELocalise
 	 */
 	public static function getIgnoredSearchWords()
 	{
-		$search_ignore = array();
+		$search_ignore = [];
 		$search_ignore[] = "ab";
 		$search_ignore[] = "bei";
 		$search_ignore[] = "da";

@@ -84,3 +84,4 @@ UPDATE IGNORE `#__modules` SET `title` = '3rd Party' WHERE `id` = 105;
 UPDATE IGNORE `#__modules` SET `title` = 'Hilfe Dashboard' WHERE `id` = 106;
 UPDATE IGNORE `#__modules` SET `title` = 'Datenschutzanfragen' WHERE `id` = 107;
 UPDATE IGNORE `#__modules` SET `title` = 'Datenschutzstatus' WHERE `id` = 108;
+UPDATE IGNORE `#__modules` SET `title` = 'Guided Tours' WHERE `id` = 109;

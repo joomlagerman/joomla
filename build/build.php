@@ -126,7 +126,6 @@ $doNotPackage = [
 	'.gitattributes',
 	'.gitignore',
 	'.editorconfig',
-	'.gitignore',
 	'CODE_OF_CONDUCT.md',
 	'LICENSE',
 	'README.md',

@@ -20,7 +20,7 @@ INSERT INTO `#__languages` (`lang_id`, `lang_code`, `title`, `title_native`, `se
 (2, 'de-DE', 'German (DE)', 'Deutsch (Deutschland)', 'de', 'de_de', '', '', 1, 1, 2),
 (3, 'de-CH', 'German (CH)', 'Deutsch (Schweiz)', 'ch', 'de_ch', '', '', 0, 1, 3),
 (4, 'de-AT', 'German (AT)', 'Deutsch (Österreich)', 'at', 'de_at', '', '', 0, 1, 4),
-(5, 'de-LI', 'German (LI)', 'Deutsch (Lichtenstein)', 'li', 'de_li', '', '', 0, 1, 5),
+(5, 'de-LI', 'German (LI)', 'Deutsch (Liechtenstein)', 'li', 'de_li', '', '', 0, 1, 5),
 (6, 'de-LU', 'German (LU)', 'Deutsch (Luxemburg)', 'lu', 'de_lu', '', '', 0, 1, 6);
 
 --

@@ -126,7 +126,6 @@ $doNotPackage = [
 	'.gitattributes',
 	'.gitignore',
 	'.editorconfig',
-	'.gitignore',
 	'CODE_OF_CONDUCT.md',
 	'LICENSE',
 	'README.md',
@@ -412,10 +411,10 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 
 			// langmetadata.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<tag>de-DE</tag>', '<tag>de-LI</tag>');
-			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (Germany)</name>', '<name>German (Lichtenstein)</name>');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (Germany)</name>', '<name>German (Liechtenstein)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (DE)</name>', '<name>German (LI)</name>');
-			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Lichtenstein)</nativeName>');
-			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_LI.utf8, de_LI.UTF-8, de_LI, deu_LI, german-li, li, lichtenstein, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Liechtenstein)</nativeName>');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_LI.utf8, de_LI.UTF-8, de_LI, deu_LI, german-li, li, liechtenstein, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');
 
 			// install.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (LI)</name>');
@@ -490,10 +489,10 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 
 			// langmetadata.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<tag>de-DE</tag>', '<tag>de-LI</tag>');
-			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (Germany)</name>', '<name>German (Lichtenstein)</name>');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (Germany)</name>', '<name>German (Liechtenstein)</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<name>German (DE)</name>', '<name>German (LI)</name>');
-			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Lichtenstein)</nativeName>');
-			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_LI.utf8, de_LI.UTF-8, de_LI, deu_LI, german-li, li, lichtenstein, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<nativeName>Deutsch (Deutschland)</nativeName>', '<nativeName>Deutsch (Liechtenstein)</nativeName>');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', '<locale>de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>', '<locale>de_LI.utf8, de_LI.UTF-8, de_LI, deu_LI, german-li, li, liechtenstein, de_DE.utf8, de_DE.UTF-8, de_DE, deu_DE, german, german-de, de, deu, germany</locale>');
 
 			// install.xml
 			renameStringInFile($tmpLanguagePathLangCode . '/install.xml', '<name>German (DE)</name>', '<name>German (LI)</name>');
@@ -535,7 +534,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 
 		if ($languageCode === 'de-LI')
 		{
-			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-LI.xml', '<name>German (Germany) Language Pack</name>', '<name>German (Lichtenstein) Language Pack</name>');
+			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-LI.xml', '<name>German (Germany) Language Pack</name>', '<name>German (Liechtenstein) Language Pack</name>');
 			renameStringInFile($tmpLanguagePathLangCode . '/pkg_de-LI.xml', 'de-DE', 'de-LI');
 			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'de-DE', 'de-LI');
 			renameStringInFile($tmpLanguagePathLangCode . '/script.php', 'Pkg_deDE', 'Pkg_deLI');
@@ -571,10 +570,10 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 
 		if ($languageCode === 'de-LI')
 		{
-			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Germany', 'Lichtenstein');
-			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Deutschland', 'Lichtenstein');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Germany', 'Liechtenstein');
+			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Deutschland', 'Liechtenstein');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml',  'de-DE', 'de-LI');
-			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Lichtenstein');
+			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Liechtenstein');
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'ß', 'ss');
 		}
 

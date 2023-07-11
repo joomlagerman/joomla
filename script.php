@@ -25,8 +25,8 @@ class Pkg_deDEInstallerScript extends InstallerScript
 	public function __construct()
 	{
 		// Define the minimum versions to be supported.
-		$this->minimumJoomla = '4.2';
-		$this->minimumPhp    = '7.2.5';
+		$this->minimumJoomla = '5.0';
+		$this->minimumPhp    = '8.1.0';
 
 		$this->deleteFiles = [
 			// Backend

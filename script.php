@@ -404,6 +404,10 @@ class Pkg_deDEInstallerScript extends InstallerScript
 			'/language/de-DE/de-DE.tpl_protostar.sys.ini',
 			'/language/de-DE/de-DE.xml',
 			// Old files from Joomla 4 language packs
+			'/administrator/language/de-DE/plg_captcha_recaptcha.ini',
+			'/administrator/language/de-DE/plg_captcha_recaptcha.sys.ini',
+			'/administrator/language/de-DE/plg_captcha_recaptcha_invisible.ini',
+			'/administrator/language/de-DE/plg_captcha_recaptcha_invisible.sys.ini',
 			'/administrator/language/de-DE/plg_fields_image.ini',
 			'/administrator/language/de-DE/plg_fields_image.sys.ini',
 			'/administrator/language/de-DE/plg_fields_menuitem.ini',

@@ -410,6 +410,9 @@ class Pkg_deDEInstallerScript extends InstallerScript
 			'/administrator/language/de-DE/plg_fields_menuitem.sys.ini',
 			'/administrator/language/de-DE/plg_task_demotasks.ini',
 			'/administrator/language/de-DE/plg_task_demotasks.sys.ini',
+			// Old files from Joomla 5 language packs
+			'/administrator/language/de-DE/plg_system_updatenotification.ini',
+			'/administrator/language/de-DE/plg_system_updatenotification.sys.ini',
 		];
 	}
 

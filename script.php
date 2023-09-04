@@ -412,7 +412,7 @@ class Pkg_deDEInstallerScript extends InstallerScript
 			'/administrator/language/de-DE/plg_fields_menuitem.sys.ini',
 			'/administrator/language/de-DE/plg_task_demotasks.ini',
 			'/administrator/language/de-DE/plg_task_demotasks.sys.ini',
-			// Old files from Joomla 5 language packs (only relevant for Joomla 6, should then be swapped out m 6.0-dev branch if created)
+			// Old files from Joomla 5 language packs (Only relevant for Joomla 6, should then be included in the deletion array with the 6.0-dev branch once created)
 			// '/administrator/language/de-DE/plg_captcha_recaptcha_invisible.ini',
 			// '/administrator/language/de-DE/plg_captcha_recaptcha_invisible.sys.ini',
 		];

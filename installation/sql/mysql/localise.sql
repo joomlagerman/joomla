@@ -85,3 +85,8 @@ UPDATE IGNORE `#__modules` SET `title` = 'Hilfe Dashboard' WHERE `id` = 106;
 UPDATE IGNORE `#__modules` SET `title` = 'Datenschutzanfragen' WHERE `id` = 107;
 UPDATE IGNORE `#__modules` SET `title` = 'Datenschutzstatus' WHERE `id` = 108;
 UPDATE IGNORE `#__modules` SET `title` = 'Geführte Touren' WHERE `id` = 109;
+
+--
+-- Table `#__scheduler_tasks`
+--
+UPDATE IGNORE `#__scheduler_tasks` SET `title` = 'Protokolldateien rotieren' WHERE `id` = 1;

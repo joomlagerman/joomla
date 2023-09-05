@@ -91,3 +91,4 @@ UPDATE IGNORE `#__modules` SET `title` = 'Geführte Touren' WHERE `id` = 109;
 --
 UPDATE IGNORE `#__scheduler_tasks` SET `title` = 'Protokolldateien rotieren' WHERE `id` = 1;
 UPDATE IGNORE `#__scheduler_tasks` SET `title` = 'Sitzungsdaten bereinigen' WHERE `id` = 2;
+UPDATE IGNORE `#__scheduler_tasks` SET `title` = 'Joomla-Update-Mitteilung senden' WHERE `id` = 3;

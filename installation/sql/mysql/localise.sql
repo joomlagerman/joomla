@@ -8,10 +8,10 @@
 UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, 'en-GB', 'de-DE') WHERE `extension_id` = 10;
 
 INSERT INTO `#__extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `manifest_cache`, `params`, `custom_data`) VALUES
-(602, 605, 'German (DE)', 'language', 'de-DE', '', 0, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2023-07-11","author":"J!German","copyright":"Copyright (C) 2005 - 2023 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.3.3.1","group":""}' ,'' ,''),
-(603, 605, 'German (DE)', 'language', 'de-DE', '', 1, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2023-07-11","author":"J!German","copyright":"Copyright (C) 2005 - 2023 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.3.3.1","group":""}' ,'' ,''),
-(604, 605, 'German (DE)', 'language', 'de-DE', '', 3, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2023-07-11","author":"J!German","copyright":"Copyright (C) 2005 - 2023 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.3.3.1","group":""}' ,'' ,''),
-(605, 0, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', '', 0, 1, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"2023-07-11","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.3.3.1","group":"","filename":"pkg_de-DE"}' ,'' ,'');
+(602, 605, 'German (DE)', 'language', 'de-DE', '', 0, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2023-08-22","author":"J!German","copyright":"Copyright (C) 2005 - 2023 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.3.4.1","group":""}' ,'' ,''),
+(603, 605, 'German (DE)', 'language', 'de-DE', '', 1, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2023-08-22","author":"J!German","copyright":"Copyright (C) 2005 - 2023 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.3.4.1","group":""}' ,'' ,''),
+(604, 605, 'German (DE)', 'language', 'de-DE', '', 3, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2023-08-22","author":"J!German","copyright":"Copyright (C) 2005 - 2023 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.3.4.1","group":""}' ,'' ,''),
+(605, 0, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', '', 0, 1, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"2023-08-22","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.3.4.1","group":"","filename":"pkg_de-DE"}' ,'' ,'');
 
 --
 -- Table `#__languages`
@@ -35,7 +35,7 @@ UPDATE IGNORE `#__usergroups` SET `title` = 'Öffentlich' WHERE `id` = 1;
 UPDATE IGNORE `#__usergroups` SET `title` = 'Registriert' WHERE `id` = 2;
 UPDATE IGNORE `#__usergroups` SET `title` = 'Autor' WHERE `id` = 3;
 UPDATE IGNORE `#__usergroups` SET `title` = 'Super Benutzer' WHERE `id` = 8;
-UPDATE IGNORE `#__usergroups` SET `title` = 'Gast' WHERE `id` = 13;
+UPDATE IGNORE `#__usergroups` SET `title` = 'Gast' WHERE `id` = 9;
 
 --
 -- Table `#__viewlevels`

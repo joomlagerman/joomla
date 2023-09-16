@@ -35,7 +35,7 @@ UPDATE IGNORE `#__usergroups` SET `title` = 'Öffentlich' WHERE `id` = 1;
 UPDATE IGNORE `#__usergroups` SET `title` = 'Registriert' WHERE `id` = 2;
 UPDATE IGNORE `#__usergroups` SET `title` = 'Autor' WHERE `id` = 3;
 UPDATE IGNORE `#__usergroups` SET `title` = 'Super Benutzer' WHERE `id` = 8;
-UPDATE IGNORE `#__usergroups` SET `title` = 'Gast' WHERE `id` = 13;
+UPDATE IGNORE `#__usergroups` SET `title` = 'Gast' WHERE `id` = 9;
 
 --
 -- Table `#__viewlevels`

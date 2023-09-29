@@ -2,8 +2,8 @@
 <extension client="administrator" type="language" method="upgrade">
 	<name>German (DE)</name>
 	<tag>de-DE</tag>
-	<version>4.4.0-beta2.1</version>
-	<creationDate>2023-09-19</creationDate>
+	<version>4.4.0-beta3.1</version>
+	<creationDate>2023-09-29</creationDate>
 	<author>J!German</author>
 	<authorEmail>team@jgerman.de</authorEmail>
 	<authorUrl>https://www.jgerman.de</authorUrl>

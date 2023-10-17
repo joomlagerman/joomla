@@ -557,6 +557,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Deutschland', 'Österreich');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'de-DE', 'de-AT');
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Österreich');
+			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutsch DE', 'Deutsch AT');
 		}
 
 		if ($languageCode === 'de-CH')
@@ -565,6 +566,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Deutschland', 'Schweiz');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'de-DE', 'de-CH');
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Schweiz');
+			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutsch DE', 'Deutsch CH');
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'ß', 'ss');
 		}
 
@@ -574,6 +576,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Deutschland', 'Liechtenstein');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml',  'de-DE', 'de-LI');
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Liechtenstein');
+			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutsch DE', 'Deutsch LI');
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'ß', 'ss');
 		}
 
@@ -583,6 +586,7 @@ function applyTranslationChanges(string $languageCode, string $folder, string $t
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'Deutschland', 'Luxemburg');
 			renameStringInFile($tmpLanguagePathLangCode . '/langmetadata.xml', 'de-DE', 'de-LU');
 			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutschland', 'Luxemburg');
+			renameStringInFile($tmpLanguagePathLangCode . '/joomla.ini', 'Deutsch DE', 'Deutsch LU');
 		}
 	}
 }

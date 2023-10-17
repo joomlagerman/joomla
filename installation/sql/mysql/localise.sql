@@ -8,10 +8,10 @@
 UPDATE IGNORE `#__extensions` SET `params` = REPLACE(`params`, 'en-GB', 'de-DE') WHERE `extension_id` = 10;
 
 INSERT INTO `#__extensions` (`extension_id`, `package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `manifest_cache`, `params`, `custom_data`) VALUES
-(602, 605, 'German (DE)', 'language', 'de-DE', '', 0, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2023-10-04","author":"J!German","copyright":"Copyright (C) 2005 - 2023 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.4.0-rc1.1","group":""}' ,'' ,''),
-(603, 605, 'German (DE)', 'language', 'de-DE', '', 1, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2023-10-04","author":"J!German","copyright":"Copyright (C) 2005 - 2023 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.4.0-rc1.1","group":""}' ,'' ,''),
-(604, 605, 'German (DE)', 'language', 'de-DE', '', 3, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2023-10-04","author":"J!German","copyright":"Copyright (C) 2005 - 2023 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.4.0-rc1.1","group":""}' ,'' ,''),
-(605, 0, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', '', 0, 1, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"2023-10-04","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"4.4.0-rc1.1","group":"","filename":"pkg_de-DE"}' ,'' ,'');
+(602, 605, 'German (DE)', 'language', 'de-DE', '', 0, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2023-10-17","author":"J!German","copyright":"Copyright (C) 2005 - 2023 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"5.0.0.1","group":""}' ,'' ,''),
+(603, 605, 'German (DE)', 'language', 'de-DE', '', 1, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2023-10-17","author":"J!German","copyright":"Copyright (C) 2005 - 2023 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"5.0.0.1","group":""}' ,'' ,''),
+(604, 605, 'German (DE)', 'language', 'de-DE', '', 3, 1, 1, '{"name":"German (Germany)","type":"language","creationDate":"2023-10-17","author":"J!German","copyright":"Copyright (C) 2005 - 2023 Open Source Matters & J!German. All rights reserved.","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"5.0.0.1","group":""}' ,'' ,''),
+(605, 0, 'German (Germany) Language Pack', 'package', 'pkg_de-DE', '', 0, 1, 1, '{"name":"German (Germany) Language Pack","type":"package","creationDate":"2023-10-17","author":"J!German","copyright":"","authorEmail":"team@jgerman.de","authorUrl":"http:\/\/www.jgerman.de","version":"5.0.0.1","group":"","filename":"pkg_de-DE"}' ,'' ,'');
 
 --
 -- Table `#__languages`
@@ -85,3 +85,10 @@ UPDATE IGNORE `#__modules` SET `title` = 'Hilfe Dashboard' WHERE `id` = 106;
 UPDATE IGNORE `#__modules` SET `title` = 'Datenschutzanfragen' WHERE `id` = 107;
 UPDATE IGNORE `#__modules` SET `title` = 'Datenschutzstatus' WHERE `id` = 108;
 UPDATE IGNORE `#__modules` SET `title` = 'Geführte Touren' WHERE `id` = 109;
+
+--
+-- Table `#__scheduler_tasks`
+--
+UPDATE IGNORE `#__scheduler_tasks` SET `title` = 'Protokolldateien rotieren' WHERE `id` = 1;
+UPDATE IGNORE `#__scheduler_tasks` SET `title` = 'Sitzungsdaten bereinigen' WHERE `id` = 2;
+UPDATE IGNORE `#__scheduler_tasks` SET `title` = 'Joomla-Update-Mitteilung senden' WHERE `id` = 3;

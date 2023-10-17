@@ -25,11 +25,11 @@ class Pkg_deDEInstallerScript extends InstallerScript
 	public function __construct()
 	{
 		// Define the minimum versions to be supported.
-		$this->minimumJoomla = '4.2';
-		$this->minimumPhp    = '7.2.5';
+		$this->minimumJoomla = '5.0';
+		$this->minimumPhp    = '8.1.0';
 
 		$this->deleteFiles = [
-			// Backend
+			// Old files from Joomla 3 language packs
 			'/administrator/language/de-DE/de-DE.com_actionlogs.ini',
 			'/administrator/language/de-DE/de-DE.com_actionlogs.sys.ini',
 			'/administrator/language/de-DE/de-DE.com_admin.ini',
@@ -325,11 +325,6 @@ class Pkg_deDEInstallerScript extends InstallerScript
 			'/administrator/language/de-DE/de-DE.tpl_isis.ini',
 			'/administrator/language/de-DE/de-DE.tpl_isis.sys.ini',
 			'/administrator/language/de-DE/de-DE.xml',
-			'/administrator/language/de-DE/plg_fields_image.ini',
-			'/administrator/language/de-DE/plg_fields_image.sys.ini',
-			'/administrator/language/de-DE/plg_fields_menuitem.ini',
-			'/administrator/language/de-DE/plg_fields_menuitem.sys.ini',
-			// Frontend
 			'/language/de-DE/de-DE.com_ajax.ini',
 			'/language/de-DE/de-DE.com_config.ini',
 			'/language/de-DE/de-DE.com_contact.ini',
@@ -408,6 +403,28 @@ class Pkg_deDEInstallerScript extends InstallerScript
 			'/language/de-DE/de-DE.tpl_protostar.ini',
 			'/language/de-DE/de-DE.tpl_protostar.sys.ini',
 			'/language/de-DE/de-DE.xml',
+			// Old files from Joomla 4 language packs
+			'/administrator/language/de-DE/plg_captcha_recaptcha.ini',
+			'/administrator/language/de-DE/plg_captcha_recaptcha.sys.ini',
+			'/administrator/language/de-DE/plg_fields_image.ini',
+			'/administrator/language/de-DE/plg_fields_image.sys.ini',
+			'/administrator/language/de-DE/plg_fields_menuitem.ini',
+			'/administrator/language/de-DE/plg_fields_menuitem.sys.ini',
+			'/administrator/language/de-DE/plg_system_logrotation.ini',
+			'/administrator/language/de-DE/plg_system_logrotation.sys.ini',
+			'/administrator/language/de-DE/plg_system_sessiongc.ini',
+			'/administrator/language/de-DE/plg_system_sessiongc.sys.ini',
+ 			'/administrator/language/de-DE/plg_system_updatenotification.ini',
+			'/administrator/language/de-DE/plg_system_updatenotification.sys.ini',
+			'/administrator/language/de-DE/plg_task_demotasks.ini',
+			'/administrator/language/de-DE/plg_task_demotasks.sys.ini',
+			'/administrator/language/de-DE/plg_twofactorauth_totp.ini',
+			'/administrator/language/de-DE/plg_twofactorauth_totp.sys.ini',
+			'/administrator/language/de-DE/plg_twofactorauth_yubikey.ini',
+			'/administrator/language/de-DE/plg_twofactorauth_yubikey.sys.ini',
+			// Old files from Joomla 5 language packs (Only relevant for Joomla 6, should then be included in the deletion array with the 6.0-dev branch once created)
+			// '/administrator/language/de-DE/plg_captcha_recaptcha_invisible.ini',
+			// '/administrator/language/de-DE/plg_captcha_recaptcha_invisible.sys.ini',
 		];
 	}
 

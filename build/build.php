@@ -263,7 +263,7 @@ if ($fullReleaseUrl)
 	message('Build new full tar.bz2 package.', $verbose);
 	system("tar -cjf $tmp/packages/$tarbz2Filename * > '/dev/null'");
 	message('Build new full tar.zst package.', $verbose);
-	system("tar -I \"zstd -19\" -cvf $tmp/packages/$tarzstFilename * > '/dev/null'");
+	system("tar -I \"zstd --ultra -22\" -cf $tmp/packages/$tarzstFilename * > '/dev/null'");
 
 	chdir('..');
 }

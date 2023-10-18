@@ -252,7 +252,7 @@ if ($fullReleaseUrl)
 	$zipFilename = str_replace('.zip', '_German.zip', $filename);
 	$targzFilename = str_replace('.zip', '_German.tar.gz', $filename);
 	$tarbz2Filename = str_replace('.zip', '_German.tar.bz2', $filename);
-	$tarzst2Filename = str_replace('.zip', '_German.tar.zst', $filename);
+	$tarzstFilename = str_replace('.zip', '_German.tar.zst', $filename);
 
 	message('Build new full packages.', $verbose);
 

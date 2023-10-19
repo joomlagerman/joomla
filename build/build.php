@@ -252,6 +252,7 @@ if ($fullReleaseUrl)
 	$zipFilename = str_replace('.zip', '_German.zip', $filename);
 	$targzFilename = str_replace('.zip', '_German.tar.gz', $filename);
 	$tarbz2Filename = str_replace('.zip', '_German.tar.bz2', $filename);
+	$tarzstFilename = str_replace('.zip', '_German.tar.zst', $filename);
 
 	message('Build new full packages.', $verbose);
 
@@ -261,6 +262,8 @@ if ($fullReleaseUrl)
 	system("tar -czf $tmp/packages/$targzFilename * > '/dev/null'");
 	message('Build new full tar.bz2 package.', $verbose);
 	system("tar -cjf $tmp/packages/$tarbz2Filename * > '/dev/null'");
+	message('Build new full tar.zst package.', $verbose);
+	system("tar -I \"zstd --ultra -22\" -cf $tmp/packages/$tarzstFilename * > '/dev/null'");
 
 	chdir('..');
 }

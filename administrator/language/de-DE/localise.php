@@ -30,9 +30,6 @@ abstract class De_DELocalise
 	 * @return  array  An array of potential suffixes.
 	 *
 	 * @since   1.6
-	 *
-	 * @deprecated  5.1 will be removed in 7.0 without replacement
-	 *
 	 */
 	public static function getPluralSuffixes($count)
 	{

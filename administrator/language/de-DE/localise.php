@@ -30,6 +30,9 @@ abstract class De_DELocalise
 	 * @return  array  An array of potential suffixes.
 	 *
 	 * @since   1.6
+	 *
+	 * @deprecated  5.1 will be removed in 7.0 without replacement
+	 *
 	 */
 	public static function getPluralSuffixes($count)
 	{
@@ -48,6 +51,8 @@ abstract class De_DELocalise
 	 * @return  array  An array of ignored search words.
 	 *
 	 * @since   1.6
+	 *
+	 * @deprecated  5.1 will be removed in 7.0 without replacement
 	 *
 	 * @link    https://solariz.de/649/deutsche-stopwords.htm
 	 */
@@ -1060,6 +1065,9 @@ abstract class De_DELocalise
 	 * @return  int  The lower length limit of search words.
 	 *
 	 * @since   1.6
+	 *
+	 * @deprecated  5.1 will be removed in 7.0 without replacement
+	 *
 	 */
 	public static function getLowerLimitSearchWord()
 	{
@@ -1072,6 +1080,9 @@ abstract class De_DELocalise
 	 * @return  int  The upper length limit of search words.
 	 *
 	 * @since   1.6
+	 *
+	 * @deprecated  5.1 will be removed in 7.0 without replacement
+	 *
 	 */
 	public static function getUpperLimitSearchWord()
 	{
@@ -1084,6 +1095,9 @@ abstract class De_DELocalise
 	 * @return  int  The number of chars to display when searching.
 	 *
 	 * @since   1.6
+	 *
+	 * @deprecated  5.1 will be removed in 7.0 without replacement
+	 *
 	 */
 	public static function getSearchDisplayedCharactersNumber()
 	{

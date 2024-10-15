@@ -1,0 +1,107 @@
+name: Update core translations
+
+on:
+  release:
+    types: [released]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout german translations
+        uses: actions/checkout@v4
+        with:
+          path: main
+
+      - name: Checkout core translations
+        uses: actions/checkout@v4
+        with:
+          repository: joomlagerman/core-translations
+          token: ${{ secrets.GH_PAT }}
+          path: core-translations
+
+      - name: Fetch latest core translations
+        run: |
+          cd ./core-translations
+          git remote add upstream https://github.com/joomla/core-translations.git
+          git fetch upstream
+          git checkout --progress --force -b language-update/${{ github.ref_name }}
+          git reset --hard upstream/main
+
+      - name: Build crowdin packages
+        run: |
+          php ./main/build/build.php --crowdin --tagversion "${{ github.ref_name }}" --v
+          echo "SYNC_VERION=v$(echo ${{ github.ref_name }} | cut -d'.' -f1)" >> $GITHUB_ENV
+
+      - name: Syncing German (Germany) translation
+        run: |
+          LANGUAGE_CODE="de-DE"
+
+          SYNC_PATH="core/installation/language/${LANGUAGE_CODE}/"
+          mkdir -p ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          rsync -i -rptgo --checksum --ignore-times --delete ./main/build/tmp/crowdin/${SYNC_PATH} ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          SYNC_PATH="package/${LANGUAGE_CODE}/"
+          mkdir -p ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          rsync -i -rptgo --checksum --ignore-times --delete ./main/build/tmp/crowdin/${SYNC_PATH} ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+
+      - name: Syncing German (Austria) translation
+        run: |
+          LANGUAGE_CODE="de-AT"
+
+          SYNC_PATH="core/installation/language/${LANGUAGE_CODE}/"
+          mkdir -p ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          rsync -i -rptgo --checksum --ignore-times --delete ./main/build/tmp/crowdin/${SYNC_PATH} ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          SYNC_PATH="package/${LANGUAGE_CODE}/"
+          mkdir -p ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          rsync -i -rptgo --checksum --ignore-times --delete ./main/build/tmp/crowdin/${SYNC_PATH} ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+
+      - name: Syncing German (Switzerland) translation
+        run: |
+          LANGUAGE_CODE="de-CH"
+
+          SYNC_PATH="core/installation/language/${LANGUAGE_CODE}/"
+          mkdir -p ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          rsync -i -rptgo --checksum --ignore-times --delete ./main/build/tmp/crowdin/${SYNC_PATH} ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          SYNC_PATH="package/${LANGUAGE_CODE}/"
+          mkdir -p ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          rsync -i -rptgo --checksum --ignore-times --delete ./main/build/tmp/crowdin/${SYNC_PATH} ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+
+      - name: Syncing German (Liechtenstein) translation
+        run: |
+          LANGUAGE_CODE="de-LI"
+
+          SYNC_PATH="core/installation/language/${LANGUAGE_CODE}/"
+          mkdir -p ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          rsync -i -rptgo --checksum --ignore-times --delete ./main/build/tmp/crowdin/${SYNC_PATH} ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          SYNC_PATH="package/${LANGUAGE_CODE}/"
+          mkdir -p ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          rsync -i -rptgo --checksum --ignore-times --delete ./main/build/tmp/crowdin/${SYNC_PATH} ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+
+      - name: Syncing German (Luxemburg) translation
+        run: |
+          LANGUAGE_CODE="de-LU"
+
+          SYNC_PATH="core/installation/language/${LANGUAGE_CODE}/"
+          mkdir -p ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          rsync -i -rptgo --checksum --ignore-times --delete ./main/build/tmp/crowdin/${SYNC_PATH} ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          SYNC_PATH="package/${LANGUAGE_CODE}/"
+          mkdir -p ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+          rsync -i -rptgo --checksum --ignore-times --delete ./main/build/tmp/crowdin/${SYNC_PATH} ./core-translations/joomla_${{ env.SYNC_VERION }}/translations/${SYNC_PATH}
+
+      - name: Create commit
+        run: |
+          cd ./core-translations
+          git config user.name Translation Bot
+          git config user.email release+translation-bot@joomla.org
+          git add .
+          git commit -m "German Language update ${{ github.ref_name }} on `date +'%Y-%m-%d'`"
+          git push origin HEAD --force
+
+      - name: Create pull request
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          cd ./core-translations
+          gh pr list -R joomla/core-translations --state open --head language-update/${{ github.ref_name }} | grep -v "No pull" || \
+            gh pr create -R joomla/core-translations -B main --title "German Language update ${{ github.ref_name }}" --body "Automatically created pull request for release ${{ github.ref_name }}" --head language-update/${{ github.ref_name }}

@@ -2,7 +2,7 @@
 /**
  * @package    Joomla.Language
  *
- * @copyright  (C) 2023 J!German <https://www.jgerman.de>
+ * @copyright  (C) 2021 - 2025 J!German <https://www.jgerman.de>
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 

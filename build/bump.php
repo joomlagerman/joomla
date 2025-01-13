@@ -215,11 +215,6 @@ function changeCopyrightDate($rootPath, $year, $excludeDirectories, $excludeFile
 			$contents = file_get_contents($filePath);
 			$updated = false;
 
-			if (preg_match('#2005\s+-\s+[0-9]{4}\s+Open\s+Source\s+Matters#', $contents)) {
-				$contents = preg_replace('#2005\s+-\s+[0-9]{4}\s+Open\s+Source\s+Matters#', '2005 - ' . $year . ' Open Source Matters', $contents);
-				$updated = true;
-			}
-
 			if (preg_match('#2008\s+-\s+[0-9]{4}\s+J\!German#', $contents)) {
 				$contents = preg_replace('#2008\s+-\s+[0-9]{4}\s+J\!German#', '2008 - ' . $year . ' J!German', $contents);
 				$updated = true;

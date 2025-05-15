@@ -25,7 +25,7 @@ return new class () implements InstallerScriptInterface {
     /**
      * @var string
      */
-    private string $minimumJoomla = '6.0.0';
+    private string $minimumJoomla = '6.0.0-alpha1-dev';
     /**
      * @var string
      */
@@ -37,7 +37,8 @@ return new class () implements InstallerScriptInterface {
      */
     public function install(InstallerAdapter $adapter): bool
     {
-        echo "mod_hello install<br>";
+        Factory::getApplication()->enqueueMessage(sprintf(Text::_('COM_INSTALLER_UNINSTALL_SUCCESS'), $adapter->get('name')), 'message');
+
         return true;
     }
 

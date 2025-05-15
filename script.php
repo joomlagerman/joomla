@@ -32,6 +32,37 @@ return new class () implements InstallerScriptInterface {
     private string $minimumPhp    = '8.1.0';
 
     /**
+     * @param InstallerAdapter $adapter
+     * @return bool
+     */
+    public function install(InstallerAdapter $adapter): bool
+    {
+        echo "mod_hello install<br>";
+        return true;
+    }
+
+    /**
+     * @param InstallerAdapter $adapter
+     * @return bool
+     */
+    public function update(InstallerAdapter $adapter): bool
+    {
+
+        echo "mod_hello update<br>";
+        return true;
+    }
+
+    /**
+     * @param InstallerAdapter $adapter
+     * @return bool
+     */
+    public function uninstall(InstallerAdapter $adapter): bool
+    {
+        echo "mod_hello uninstall<br>";
+        return true;
+    }
+
+    /**
      * @return void
      */
     private function deleteUnexistingFiles()

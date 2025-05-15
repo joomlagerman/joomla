@@ -37,7 +37,7 @@ return new class () implements InstallerScriptInterface {
      */
     public function install(InstallerAdapter $adapter): bool
     {
-        Factory::getApplication()->enqueueMessage(sprintf(Text::_('COM_INSTALLER_UNINSTALL_SUCCESS')));
+        Factory::getApplication()->enqueueMessage(sprintf(Text::_('COM_INSTALLER_UNINSTALL_SUCCESS')), 'message');
 
         return true;
     }

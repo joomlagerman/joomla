@@ -1,6 +1,6 @@
 name: Bug Report
 description: Einen Verbesserungsvorschlag oder Fehler melden.
-title: "[4.x/5.x] "
+title: "[6.x/5.x/4.x] "
 labels: ["enhancement"]
 assignees:
   - tecpromotion
@@ -41,9 +41,9 @@ body:
       label: Joomla Version
       description: Welche Joomla Version wird genutzt?
       options:
+        - 6.x
         - 5.x
         - 4.x
-        - 3.10 (Achtung - Support für Joomla 3.10 wurde am 17.08.2023 eingestellt)
     validations:
       required: true
   - type: textarea

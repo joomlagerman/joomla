@@ -41,7 +41,10 @@ $directoryLoopExcludeDirectories = ['/.git', '/build/tmp/'];
 $directoryLoopExcludeFiles = [];
 
 // Function to display usage
- * @param string $command
+/**
+ * Prints usage instructions for the bump script.
+ *
+ * @param string $command The command name (usually $argv[0]).
  * @return void
  */
 function usage($command) {
@@ -54,8 +57,11 @@ function usage($command) {
 	echo PHP_EOL;
 }
 
- * @param string $dateString
- * @return DateTime|void
+/**
+ * Validates and parses a date string.
+ *
+ * @param string $dateString Date string in 'Y-m-d H:i' format or 'now'.
+ * @return DateTime Returns DateTime object if valid, otherwise exits script.
  */
 function validateDate($dateString) {
 	if ($dateString === 'now') {
@@ -70,8 +76,11 @@ function validateDate($dateString) {
 	return $date;
 }
 
- * @param array $versionParts
- * @return string
+/**
+ * Determines the development status from the version string.
+ *
+ * @param array $versionParts Array of version string parts (split by '-').
+ * @return string Returns the development status (Stable, Development, Alpha, Beta, Release Candidate).
  */
 function determineDevStatus($versionParts) {
 	$devStatus = 'Stable';
@@ -90,9 +99,11 @@ function determineDevStatus($versionParts) {
 }
 
 /**
- * @param string $rootPath
- * @param array $files
- * @param array $version
+ * Updates version and creation date in language XML files.
+ *
+ * @param string $rootPath Root path of the repository.
+ * @param array $files Array of relative file paths to update.
+ * @param array $version Version information array.
  * @return void
  */
 function updateLanguageXmlFiles($rootPath, $files, $version) {
@@ -112,9 +123,11 @@ function updateLanguageXmlFiles($rootPath, $files, $version) {
 }
 
 /**
- * @param string $rootPath
- * @param string $file
- * @param array $version
+ * Updates version and creation date in the installer XML file.
+ *
+ * @param string $rootPath Root path of the repository.
+ * @param string $file Relative file path to update.
+ * @param array $version Version information array.
  * @return void
  */
 function updateInstallerXmlFile($rootPath, $file, $version) {
@@ -132,9 +145,11 @@ function updateInstallerXmlFile($rootPath, $file, $version) {
 }
 
 /**
- * @param $rootPath
- * @param $file
- * @param $version
+ * Updates version, creation date, and description in the language pack XML file.
+ *
+ * @param string $rootPath Root path of the repository.
+ * @param string $file Relative file path to update.
+ * @param array $version Version information array.
  * @return void
  */
 function updateLanguagePackXmlFile($rootPath, $file, $version) {
@@ -156,9 +171,11 @@ function updateLanguagePackXmlFile($rootPath, $file, $version) {
 }
 
 /**
- * @param $rootPath
- * @param $file
- * @param $version
+ * Updates version and creation date in the language pack SQL file.
+ *
+ * @param string $rootPath Root path of the repository.
+ * @param string $file Relative file path to update.
+ * @param array $version Version information array.
  * @return void
  */
 function updateLanguagePackSqlFile($rootPath, $file, $version) {
@@ -175,10 +192,12 @@ function updateLanguagePackSqlFile($rootPath, $file, $version) {
 }
 
 /**
- * @param $rootPath
- * @param $year
- * @param $excludeDirectories
- * @param $excludeFiles
+ * Updates copyright year in all files except excluded ones.
+ *
+ * @param string $rootPath Root path of the repository.
+ * @param string $year Year to set in copyright.
+ * @param array $excludeDirectories Array of directory paths to exclude.
+ * @param array $excludeFiles Array of file paths to exclude.
  * @return void
  */
 function changeCopyrightDate($rootPath, $year, $excludeDirectories, $excludeFiles) {

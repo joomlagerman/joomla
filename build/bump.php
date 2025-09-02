@@ -54,8 +54,7 @@ function usage($command) {
 	echo PHP_EOL;
 }
 
-/**
- * @param $dateString
+ * @param string $dateString
  * @return DateTime|void
  */
 function validateDate($dateString) {
@@ -71,8 +70,7 @@ function validateDate($dateString) {
 	return $date;
 }
 
-/**
- * @param $versionParts
+ * @param array $versionParts
  * @return string
  */
 function determineDevStatus($versionParts) {
@@ -92,9 +90,9 @@ function determineDevStatus($versionParts) {
 }
 
 /**
- * @param $rootPath
- * @param $files
- * @param $version
+ * @param string $rootPath
+ * @param array $files
+ * @param array $version
  * @return void
  */
 function updateLanguageXmlFiles($rootPath, $files, $version) {
@@ -114,9 +112,9 @@ function updateLanguageXmlFiles($rootPath, $files, $version) {
 }
 
 /**
- * @param $rootPath
- * @param $file
- * @param $version
+ * @param string $rootPath
+ * @param string $file
+ * @param array $version
  * @return void
  */
 function updateInstallerXmlFile($rootPath, $file, $version) {

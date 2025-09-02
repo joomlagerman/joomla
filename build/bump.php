@@ -41,8 +41,7 @@ $directoryLoopExcludeDirectories = ['/.git', '/build/tmp/'];
 $directoryLoopExcludeFiles = [];
 
 // Function to display usage
-/**
- * @param $command
+ * @param string $command
  * @return void
  */
 function usage($command) {

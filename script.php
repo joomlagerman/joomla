@@ -428,12 +428,12 @@ class Pkg_deDEInstallerScript extends InstallerScript
             '/administrator/language/de-DE/plg_captcha_recaptcha_invisible.sys.ini',
             '/administrator/language/de-DE/plg_behaviour_compat.ini',
             '/administrator/language/de-DE/plg_behaviour_compat.sys.ini',
-            'administrator/language/de-DE/guidedtours.joomla_whatsnew_5_2.ini',
-            'administrator/language/de-DE/guidedtours.joomla_whatsnew_5_2_steps.ini',
-            'administrator/language/de-DE/guidedtours.joomla_whatsnew_5_3.ini',
-            'administrator/language/de-DE/guidedtours.joomla_whatsnew_5_3_steps.ini',
-            'administrator/language/de-DE/guidedtours.joomla_whatsnew_5_4.ini',
-            'administrator/language/de-DE/guidedtours.joomla_whatsnew_5_4_steps.ini'
+            '/administrator/language/de-DE/guidedtours.joomla_whatsnew_5_2.ini',
+            '/administrator/language/de-DE/guidedtours.joomla_whatsnew_5_2_steps.ini',
+            '/administrator/language/de-DE/guidedtours.joomla_whatsnew_5_3.ini',
+            '/administrator/language/de-DE/guidedtours.joomla_whatsnew_5_3_steps.ini',
+            '/administrator/language/de-DE/guidedtours.joomla_whatsnew_5_4.ini',
+            '/administrator/language/de-DE/guidedtours.joomla_whatsnew_5_4_steps.ini'
         ];
     }
 

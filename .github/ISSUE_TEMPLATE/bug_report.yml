@@ -1,6 +1,6 @@
 name: Bug Report
 description: Einen Verbesserungsvorschlag oder Fehler melden.
-title: "[6.x/5.x/4.x] "
+title: "[6.x/5.x] "
 labels: ["enhancement"]
 assignees:
   - tecpromotion
@@ -43,7 +43,6 @@ body:
       options:
         - 6.x
         - 5.x
-        - 4.x
     validations:
       required: true
   - type: textarea

@@ -433,7 +433,10 @@ class Pkg_deDEInstallerScript extends InstallerScript
             '/administrator/language/de-DE/guidedtours.joomla_whatsnew_5_3.ini',
             '/administrator/language/de-DE/guidedtours.joomla_whatsnew_5_3_steps.ini',
             '/administrator/language/de-DE/guidedtours.joomla_whatsnew_5_4.ini',
-            '/administrator/language/de-DE/guidedtours.joomla_whatsnew_5_4_steps.ini'
+            '/administrator/language/de-DE/guidedtours.joomla_whatsnew_5_4_steps.ini',
+            // Old files from Joomla 6 language packs
+            '/administrator/language/de-DE/plg_behaviour_compat6.ini',
+            '/administrator/language/de-DE/plg_behaviour_compat6.sys.ini'
         ];
     }
 

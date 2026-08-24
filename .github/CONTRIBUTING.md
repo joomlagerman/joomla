@@ -1,11 +1,11 @@
 # Contributing to joomlagerman/joomla
-(german language files for Joomla! 3.9 and up)
+(German language files for Joomla! 3.9 and up)
 
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
 Our [Code of conduct](../CODE_OF_CONDUCT.md). Please read carefully.
 
-Getting started with [git and github](https://guides.github.com/activities/hello-world/). If you don't have git on your machine, [install it]( https://help.github.com/articles/set-up-git/).
+Getting started with [git and GitHub](https://guides.github.com/activities/hello-world/). If you don't have git on your machine, [install it]( https://help.github.com/articles/set-up-git/).
 #### *If you're not comfortable with command line, [here are tutorials using GUI tools.]( #tutorials-using-other-tools )*
 
 ## Working with this repository
@@ -34,7 +34,7 @@ where `this-is-you` is your GitHub username. Here you're copying the contents of
 
 ### Create or take an issue
 
-Go to [Issues](https://github.com/joomlagerman/joomla/issues) and create a new issue or take one open issue to write an PR.  
+Go to [Issues](https://github.com/joomlagerman/joomla/issues) and create a new issue or take one open issue to write a PR.  
 Normally no PR without a previous issue. We have the *issue-first principle*.
 
 ### Create a branch
@@ -53,11 +53,11 @@ For example:
 ```
 git checkout -b <issue-number>
 ```
-(The name of the branch does not need to have a issue-number as branch name, but it's a easy thing to reference th issue here.)
+(The name of the branch does not need to have an issue-number as branch name, but it's an easy thing to reference the issue here.)
 
 ### Make necessary changes and commit those changes
 
-Now open all files in a text editor or in a IDE e.g. PhpStorm and change it. Now, save the file.
+Now open all files in a text editor or in an IDE e.g. PhpStorm and change it. Now, save the file.
 
 If you go to the project directory and execute the command `git status`, you'll see there are changes.
 

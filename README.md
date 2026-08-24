@@ -10,7 +10,7 @@ The J!German translation team provides German translation for the Open Source Co
 ## INSTALLATION WITHIN JOOMLA BACKEND
 
 Please go to Administration &rightarrow; Manage &rightarrow; Languages (yourdomain.tld/administrator/index.php?option=com_installer&view=languages) and search for **german**. 
-### Available german languages
+### Available German languages
 | Language                  | Language-Tag |
 |---------------------------|--------------|
 | German                    | de-DE        |
@@ -28,7 +28,7 @@ Our packages can be downloaded from [releases](https://github.com/joomlagerman/j
 
 ## HELP
 
-Please read our [contributing guidelines](.github/CONTRIBUTING.md) and start with an question/issue first.
+Please read our [contributing guidelines](.github/CONTRIBUTING.md) and start with a question/issue first.
 
 ### LICENCE
 GNU GENERAL PUBLIC LICENSE V2. Please see [License File](LICENSE) for more information.

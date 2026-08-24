@@ -10,7 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Vielen Dank, dass Du dir Zeit nimmst, diesen Vorschlag bzw. Fehler mit der Community zu teilen.
+        Vielen Dank, dass du dir Zeit nimmst, diesen Vorschlag bzw. Fehler mit der Community zu teilen.
   - type: textarea
     id: what-happened
     attributes:
